@@ -1,0 +1,437 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.overflow_height{
+    max-height: 35vh;
+    overflow-y: hidden;
+}
+:root {
+    --hero_color: #fff;
+    --primary: #297CEA;
+    --secondary1: #EA2959;
+    --secondary2: #EA9629;
+    --secondary3: #14C520;
+    --secondary4: #f1f4f1;
+    --secondary5: #fffefe;
+    --secondary6: #164e96f8;
+    --secondary7: #211f1f;
+}
+
+* {
+    @apply p-0 m-0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body, footer{
+    /* background-color: var(--secondary5) !important; */
+}
+
+section {
+    margin: auto;
+    margin-top: 4rem;
+}
+
+option{
+    color: var(--secondary4);
+}
+
+input::placeholder {
+    font: .2rem !important;
+}
+
+.m_extra{
+    margin-top: 6rem;
+}
+
+svg{
+    color: var(--primary);
+}
+
+.h_100{
+    height: 100vh;
+}
+
+.bg_one{
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    color: var(--hero_color);
+}
+.line_in_middle{
+    display: flex;
+    flex-direction: row;
+}
+.line_in_middle:before, .line_in_middle:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid var(--secondary4);
+    margin: auto;
+  }
+  .line_in_middle:before {
+    margin-right: 40px;
+  }
+  .line_in_middle:after {
+    margin-left: 40px;
+  }
+/* ._width{
+    width: 100%;
+    position: relative;
+} */
+
+input[type="submit"]{
+    background-color: var(--primary) ;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+
+.first_item {
+    margin-top: 73vh;
+}
+
+.first_item_extra {
+    margin-top: 77vh;
+}
+
+.first_item_hero {
+    margin-top: 100vh;
+}
+
+.m_auto{
+    margin: auto;
+}*
+button[type="submit"]{
+    background-color: var(--primary);
+}
+/* GET STARTED START */
+
+#get_started{
+    background-color: var(--primary);
+}
+#get_started button{
+    height: fit-content;
+}
+
+.section_space{
+    width: 95vw;
+}
+
+
+
+/* GET STARTED END */
+
+
+/* HOMEPAGE START */
+.hero #hero_text{
+    margin-top: 35vh;
+    color: var(--hero_color) !important;
+    margin-left: 15vw;
+    margin-right: 5vw;
+    max-width: 600px;
+}
+@media only screen and (max-width: 760px) {
+    .hero #hero_text{
+        margin-left: 10vw;
+    }
+  }
+#home_caro{
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    z-index: -1;
+}
+#get_started_btn{
+    position: absolute;
+    top: 50vh;
+    left: 10vw;
+    z-index: 90;
+}
+#home_banner{
+    height: 100vh !important;
+    width: 100vw;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    margin: 0;
+}
+#hero_home {
+    background-image: url("/assets/images/background-img/home-bg.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    color: var(--hero_color);
+}
+#web_home {
+    background-image: url("/assets/images/background-img/web-dev-bg.jpg");
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    color: var(--hero_color);
+}
+
+#marketing_home {
+    background-image: url("/assets/images/background-img/marketing-bg.png");
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    color: var(--hero_color);
+}
+
+#social_marketing_home {
+    background-image: url("/assets/images/background-img/social-marketing-bg.png");
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    color: var(--hero_color);
+}
+
+#branding_home {
+    background-image: url("/assets/images/background-img/branding-bg.png");
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    color: var(--hero_color);
+}
+
+#about_home {
+    background-image: url("/assets/images/background-img/about-bg.png");
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    color: var(--hero_color);
+}
+
+#seo_home {
+    background-image: url("/assets/images/background-img/seo-bg.jpg");
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    color: var(--hero_color);
+}
+
+.common_services {
+    width: 200px;
+}
+
+.learn_more {
+    color: var(--secondary1);
+}
+#over_1{
+    background-color: white;
+    height: 500px;
+}
+.more_services {
+    /* color: var(--secondary1); */
+    text-align: center;
+    justify-content: center;
+}
+
+#more_services_1, #more_services_1 .second h1{
+    background-color: var(--primary);
+}
+#more_services_1 .second p, #more_services_1 .second svg{
+    color: var(--primary) !important;
+}
+#more_services_2, #more_services_2 .second h1{
+    background-color: var(--secondary1);
+}
+#more_services_2 .second p, #more_services_2 .second svg{
+    color: var(--secondary1) !important;
+}
+#more_services_3, #more_services_3 .second h1{
+    background-color: var(--secondary2);
+}
+#more_services_3 .second p, #more_services_3 .second svg{
+    color: var(--secondary2) !important;
+}
+
+#more_services_4, #more_services_4 .second h1{
+    background-color: var(--secondary3);
+}
+#more_services_4 .second p, #more_services_4 .second svg{
+    color: var(--secondary3) !important;
+}
+
+.our_portfolio {
+    background-color: var(--secondary7);
+    margin-bottom: 2rem;
+}
+
+.our_portfolio .grid {
+    margin: 4rem auto 3rem auto;
+}
+
+/* HOMEPAGE END */
+
+/* ABOUT START */
+.vision{
+    background-color: var(--primary);
+
+}
+.vision_mission .text {
+    color: var(--secondary5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* ABOUT END */
+
+/* CONTACT START */
+
+.contact_hero{
+    background-color: var(--primary);
+    height: 40vh;
+}
+
+#send_message form{
+    right: 5rem;
+    top: 20vh;
+    margin: auto !important;
+}
+
+#send_message_2nd_section{
+    height: 50vh;
+}
+@media only screen and (max-width: 719px) {
+    .hero #hero_text{
+        margin-left: 10vw;
+    }
+    #send_message_2nd_section{
+        margin-top: 35rem;
+    }
+    #send_message_2nd_section{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+  }
+/* CONTACT END */
+
+/* OUR_WORK START */
+
+#our_work_home{
+    background-image: url("/assets/images/background-img/our-work-bg.png");
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    top: 0;
+    position: absolute;
+    z-index: -1;
+    color: var(--hero_color);
+}
+
+/* OUR_WORK END */
+
+/* BRANDING START */
+
+#purchase_a_package{
+    background-color: var(--primary);
+}
+#purchase_a_package_btn{
+    background-color: var(--secondary6) !important;
+}
+/* BRANDING END */
+
+/* BLOG START */
+
+#posts{
+    /* min-height: 10rem; */
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+/* BLOG END */
+
+/* SLIDE-START */
+
+.slide_on_hover .slide_item{
+    height: 250px;
+    overflow: hidden;
+}
+
+.slide_on_hover .slide_item .first{
+    padding-top: 5.5rem;
+    height: 250px;
+    width: 100%;
+}
+
+.slide_on_hover .slide_item:hover .first{
+    display: none;
+}
+.slide_on_hover .slide_item .second{
+    background-color: var(--hero_color);
+    height: 250px;
+    /* border: 1px solid var(--secondary4); */
+}
+.slide_on_hover .slide_item .second h1{
+    /* background-color: var(--secondary7); */
+    margin-bottom: 5vh;
+}
+
+.slide_on_hover .slide_item .second p{
+    width: fit-content;
+    margin: auto;
+}
+
+.slide_on_hover .slide_item .second p span{
+    display: block;
+    border-bottom: 1px solid var(--secondary4);
+    padding-bottom: 1px;
+    margin-bottom: 3px;
+}
+/* SLIDE END */
+
+/* OUR WORK START */
+
+.stick{
+    border-left: 1px solid #ddd4d4;
+}
+.our_work_menu{
+    background-color: var(--secondary4);
+}
+
+/* OUR WORK END */
