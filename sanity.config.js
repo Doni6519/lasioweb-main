@@ -4,7 +4,7 @@ import { deskTool } from "sanity/desk";
 import { visionTool } from "@sanity/vision";
 
 const config = defineConfig({
-    projectId: "q6lrshxy",
+    projectId: "xy4lqda8",
     dataset: "production",
     title: "lasioweb",
     apiVersion: "2023-9-18",
