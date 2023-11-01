@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import GetStarted from "@components/GetStarted";
-import { seoContactForm } from "@lib/api";
+import GetStarted from "@/components/GetStarted";
+import { seoContactForm } from "@/lib/api";
 import { useState } from "react";
 
 const initValues = {};

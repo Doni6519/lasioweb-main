@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { requestContactForm } from "@lib/api";
+import { requestContactForm } from "@/lib/api";
 
 const initValues = {
   // name: "",
