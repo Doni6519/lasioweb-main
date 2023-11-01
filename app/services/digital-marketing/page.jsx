@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ContentButton from "@components/ContentButton";
+import ContentButton from "@/components/ContentButton";
 
 const marketing = () => {
   return (
