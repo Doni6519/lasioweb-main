@@ -4,9 +4,84 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Nav = () => {
+// const Nav = () => {
+//   handleClick = () => {
+//     document.getElementById("sub_nav").style.display = "none";
+//   }
   return (
-    <nav className="dark:bg-gray-900  w-full z-20 top-0 left-0 backdrop-filter">
+    <nav className="dark:bg-gray-900 w-full z-20 top-0 left-0 backdrop-filter h-screen ">
+      <div className="sub_nav" id="sub_nav">
+        <div className="flex justify-between m-5">
+          <Link href="/" className="flex flex-center gap-2">
+            <Image
+              src="/assets/images/logo.png"
+              alt="logo"
+              width={60}
+              height={50}
+              className="object-contain"
+            />
+          </Link>
+          <svg
+            class="w-6 h-6 text-gray-800 dark:text-white"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 14 14"
+            // onClick={handleClick}
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+            />
+          </svg>
+        </div>
+        <ul className="flex flex-col p-4 text-center md:p-0 mt-4 font-medium text-2xl ms-0  md:static rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
+          <li>
+            <Link
+              href="/about"
+              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              aria-current="page"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/services"
+              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/our_work"
+              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Our work
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/blog"
+              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/contact"
+              className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link href="/" className="flex flex-center gap-2">
           <Image
@@ -53,10 +128,10 @@ const Nav = () => {
           </button>
         </div>
         <div
-          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 "
           id="navbar-sticky"
         >
-          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 bg-white md:bg-transparent w-full ms-0 smh-screen  md:static rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
             <li>
               <Link
                 href="/about"

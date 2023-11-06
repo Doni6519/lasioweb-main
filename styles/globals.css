@@ -435,3 +435,13 @@ button[type="submit"]{
 }
 
 /* OUR WORK END */
+
+/* NAV START */
+.sub_nav{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+}
+
+/* NAV END */

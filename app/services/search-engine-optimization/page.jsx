@@ -145,7 +145,7 @@ const seo = () => {
               <input
                 type="text"
                 placeholder="Last Name"
-                className="w-full block mb-5 ms-2"
+                className="w-full block mb-5 md:ms-2"
                 name="lastName"
                 value={values.lastName}
                 onChange={handleChange}

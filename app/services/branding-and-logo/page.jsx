@@ -15,9 +15,9 @@ const branding = () => {
         </div>
       </div>
       <section className="flex justify-around first_item w-5/6"></section>
-      <section className="flex w-5/6">
-        <div className="w-2/4 me-5">
-          <h1 className="text-4xl mb-5">We don't just design pretty logos</h1>
+      <section className="md:flex w-5/6">
+        <div className="md:w-2/4 me-5">
+          <h1 className="text-2xl md:text-4xl mb-5">We don't just design pretty logos</h1>
           <p>
             This article highlights three micro jobs sites where you can get
             paid in naira and discusses the type of compensation you can expect
@@ -29,7 +29,7 @@ const branding = () => {
             task
           </p>
         </div>
-        <div className="w-2/4 ms-5">
+        <div className="w-4/4 mt-10 md:mt-0 md:w-2/4 ms-5">
           <Image
             src="/assets/images/services/branding.png"
             width={500}
@@ -40,7 +40,7 @@ const branding = () => {
       <div className="w-4/6 m_auto mb-10">
         <ContentButton
           header="Still have questions?"
-          paragraph="Curious about our processor what it's like to work with us? Pick a
+          paragraph="Curious about our process or what it's like to work with us? Pick a
           package; we're happy to answer to give you the best creative designs."
           button="PURCHASE A PACKAGE"
         />
