@@ -438,10 +438,10 @@ button[type="submit"]{
 
 /* NAV START */
 .sub_nav{
-    position: absolute;
+    position:fixed;
     width: 100vw;
     height: 100vh;
-    background-color: red;
+    overflow: hidden;
 }
 
 /* NAV END */

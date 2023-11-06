@@ -14,7 +14,7 @@ const RootLayout = ({children}) => {
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"  rel="stylesheet" />
       <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
       </head>
-    <body className='font-sans'>
+    <body className='font-sans' id='body'>
         <main className='app'>
             <Nav />
             {children}

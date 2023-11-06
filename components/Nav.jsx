@@ -4,14 +4,19 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-// const Nav = () => {
-//   handleClick = () => {
-//     document.getElementById("sub_nav").style.display = "none";
-//   }
+const Nav = () => {
+  function handleClick(){
+    document.getElementById("sub_nav").style.display = "none";
+    document.getElementById("body").style.overflow = "scroll";
+  }
+  function handleMenu(){
+    document.getElementById("sub_nav").style.display = "block";
+    document.getElementById("body").style.overflow = "hidden";
+  }
   return (
-    <nav className="dark:bg-gray-900 w-full z-20 top-0 left-0 backdrop-filter h-screen ">
-      <div className="sub_nav" id="sub_nav">
-        <div className="flex justify-between m-5">
+    <nav className="dark:bg-gray-900 w-full z-20 top-0 left-0 backdrop-filter h-screen">
+      <div className="sub_nav hidden bg-gradient-to-b from-stone-100 via-stone-100 to-teal-200"  id="sub_nav">
+        <div className="flex justify-between m-4">
           <Link href="/" className="flex flex-center gap-2">
             <Image
               src="/assets/images/logo.png"
@@ -22,12 +27,12 @@ import Image from "next/image";
             />
           </Link>
           <svg
-            class="w-6 h-6 text-gray-800 dark:text-white"
+            className="w-5 h-5 dark:text-white mt-5 me-3 text-blue-700"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 14 14"
-            // onClick={handleClick}
+            onClick={handleClick}
           >
             <path
               stroke="currentColor"
@@ -116,6 +121,7 @@ import Image from "next/image";
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 17 14"
+              onClick={handleMenu}
             >
               <path
                 stroke="currentColor"
@@ -129,7 +135,7 @@ import Image from "next/image";
         </div>
         <div
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 "
-          id="navbar-sticky"
+          
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 bg-white md:bg-transparent w-full ms-0 smh-screen  md:static rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
             <li>
