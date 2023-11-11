@@ -616,7 +616,7 @@ export default async function Home() {
         <div className="w-5/6 m-auto">
         
         <Swiper
-          slidesPerView="auto"
+          slidesPerView={3}
           spaceBetween={30}
           loop={true}
           modules={[Grid, A11y]}
@@ -624,12 +624,12 @@ export default async function Home() {
         >          
         <SwiperNavButtons />
           {projects.map((project) => (
-          <SwiperSlide className="max-w-xs">
+          <SwiperSlide>
             <div
               // controls-carousel
               id={project.category}
               key={project._id}
-              className={project.category + " all relative "}
+              className={project.category + " all relative"}
               data-carousel="static"
             >
               <div class="relative h-56 overflow-hidden rounded-lg ">
