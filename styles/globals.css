@@ -128,6 +128,13 @@ button[type="submit"]{
 
 
 /* HOMEPAGE START */
+.home_port{
+    overflow-x: scroll;
+}
+.home_port div{
+    min-width: 300px;
+    max-width: 80%;
+}
 .hero #hero_text{
     margin-top: 35vh;
     color: var(--hero_color) !important;
@@ -445,3 +452,35 @@ button[type="submit"]{
 }
 
 /* NAV END */
+#app {
+    height: 100%;
+  }
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    width: 500px;
+    height: 200px !important;
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .my_nav{
+    margin: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80px;
+  }
+  .my_nav button{
+    border: 1px solid #fff;
+  }
