@@ -110,7 +110,7 @@ export default async function Home() {
           </ul>
         </div>
       </section>
-      <section className="w-5/6 m_extra px-10">
+      <section className="md:w-5/6 m_extra px-10">
         <h1 className="text-base md:text-4xl text-center md:text-left font-bold md:text-center lg:text-4xl">
           What We Do
         </h1>
@@ -126,7 +126,7 @@ export default async function Home() {
             viewBox="0 0 24 24"
             strokeWidth={2}
             stroke="#000"
-            className="w-4 h-4 mt-1"
+            className="w-4 h-4"
           >
             <path
               strokeLinecap="round"
@@ -616,7 +616,7 @@ export default async function Home() {
         <div className="w-5/6 m-auto">
         
         <Swiper
-          slidesPerView={3}
+          slidesPerView="auto"
           spaceBetween={30}
           loop={true}
           modules={[Grid, A11y]}
@@ -624,12 +624,12 @@ export default async function Home() {
         >          
         <SwiperNavButtons />
           {projects.map((project) => (
-          <SwiperSlide>
+          <SwiperSlide className="h-56 max-w-xs rounded-lg ">
             <div
               // controls-carousel
               id={project.category}
               key={project._id}
-              className={project.category + " all relative"}
+              className={project.category + " all relative "}
               data-carousel="static"
             >
               <div class="relative h-56 overflow-hidden rounded-lg ">
@@ -639,7 +639,7 @@ export default async function Home() {
                     width={1000}
                     height={1000}
                     src={project.image}
-                    className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover "
+                    className="absolute block w-full h-full object-cover "
                     alt=""
                   /></Link>
                 </div>

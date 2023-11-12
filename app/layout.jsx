@@ -21,7 +21,7 @@ const RootLayout = ({ children }) => {
         />
         <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
       </head>
-      <body className="font-sans">
+      <body className="font-sans" id="body">
         <main className="app">
           <Nav />
           {children}

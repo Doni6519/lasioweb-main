@@ -466,9 +466,7 @@ button[type="submit"]{
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
     width: 500px;
-    height: 200px !important;
   
     /* Center slide text vertically */
     display: flex;
