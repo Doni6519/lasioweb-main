@@ -617,14 +617,14 @@ export default async function Home() {
         
         <Swiper
           slidesPerView="auto"
-          spaceBetween={30}
+          // spaceBetween={30}
           loop={true}
           modules={[Grid, A11y]}
           className="mySwiper"
         >          
         <SwiperNavButtons />
           {projects.map((project) => (
-          <SwiperSlide className="h-56 max-w-xs rounded-lg ">
+          <SwiperSlide className="h-56 max-w-xs rounded-lg me-3">
             <div
               // controls-carousel
               id={project.category}
