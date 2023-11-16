@@ -31,6 +31,30 @@ export default async function ourWork() {
       }
     }
   }
+  // function handleFilterSelect(target) {
+  //   const category = ["blog", "web development", "portfolio"];
+  //   if (target.target.value != "all") {
+  //     for (let cat = 0; cat < category.length; cat++) {
+  //       let checkLen = document.getElementsByClassName(category[cat]);
+  //       for (let i = 0; i < checkLen.length; i++) {
+  //         document.getElementsByClassName(category[cat])[i].style.display =
+  //           "none";
+  //         if (target.target.innerText == category[cat]) {
+  //           document.getElementsByClassName(category[cat])[i].style.display =
+  //             "block";
+  //         }
+  //       }
+  //     }
+  //   } else {
+  //     for (let cat = 0; cat < category.length; cat++) {
+  //       let checkLen = document.getElementsByClassName(category[cat]);
+  //       for (let i = 0; i < checkLen.length; i++) {
+  //         document.getElementsByClassName(category[cat])[i].style.display =
+  //           "block";
+  //       }
+  //     }
+  //   }
+  // }
 
   return (
     <div className="text-sm">
@@ -44,7 +68,7 @@ export default async function ourWork() {
         </div>
       </div>
       <section className="flex justify-around first_item w-5/6"></section>
-      <section className="grid grid-cols-10 w-5/6 text-xs">
+      <section className="hidden md:grid grid sm:grid-cols-1 md:grid-cols-10 w-5/6 text-xs">
         <a className="" onClick={handleFilter}>
           all
         </a>
@@ -54,6 +78,23 @@ export default async function ourWork() {
           </a>
         ))}
       </section>
+      {/* <section className="w-5/6">
+        <select
+        onChange={handleFilterSelect}
+          id="underline_select"
+          class="block py-2.5 px-0 w-full text-sm text-black-500 bg-transparent border-0 border-b-2 border-gray-200 appearance-none dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"
+        >
+          <option selected>Choose a country</option>
+          <option value="all">all</option>
+          {categories.map((category) => (
+            <option value={category.category}>
+              <a className="" key={category._id}>
+                {category.category}
+              </a>
+            </option>
+          ))}
+        </select>
+      </section> */}
       <section
         className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-5/6"
         id="to_filter"

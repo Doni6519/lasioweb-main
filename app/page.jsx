@@ -135,7 +135,7 @@ export default async function Home() {
             />
           </svg>
         </p>
-        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover">
+        <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover">
           <div className="slide_item">
             <div
               id="more_services_1"

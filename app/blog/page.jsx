@@ -26,7 +26,7 @@ const blog = () => {
         <div className="basis-3/4 order-last sm:order-first">
           <h1 className="text-3xl">All Posts</h1>
           <div className="ms-2">
-            <h1 className="text-2xl">No posts yet</h1>
+            <h1 className="text-2xl">No post yet</h1>
           </div>
         </div>
         <div className="text-3xl hidden md:block">Browse Topics</div>
