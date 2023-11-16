@@ -405,9 +405,23 @@ button[type="submit"]{
     height: 250px;
     width: 100%;
 }
-
+@keyframes slow {
+    0% {margin-top: 0;border-top-width: 0;}
+  10% {margin-top: 0px;}
+  100% {margin-top: -250px;border-top-width: 0;}
+}
 .slide_on_hover .slide_item:hover .first{
-    display: none;
+    visibility: hidden;
+    /* margin-top: -250px; */
+
+}
+.slide_on_hover .slide_item:hover .second{
+    animation-name: slow;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+    /* display: none; */
+    /* margin-top: -250px; */
+
 }
 .slide_on_hover .slide_item .second{
     background-color: var(--hero_color);
