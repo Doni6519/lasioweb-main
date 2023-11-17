@@ -110,7 +110,7 @@ const page = () => {
         <h1 className="text-center text-4xl font-bold core_h1">
           Our Core Values
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover_val">
+        <div className="grid grid-cols-1 gap-5 md:gap-0 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover_val">
           <div className="slide_item">
             <div id="more_services_1_about" className="items-center text-white">
               <div
