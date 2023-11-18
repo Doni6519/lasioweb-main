@@ -5,32 +5,35 @@ const projects = await getProjects();
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import Nav from "@/components/Nav";
 export default async function Project({ params }) {
   const slug = params.our_work;
   const project = await getProject(slug);
   return (
     <div className="text-sm">
+      <Nav color="text-black hover:text-blue-500" />
       <section className="w-full mt-0 py-6 our_work_menu">
         <div className="flex justify-between w-5/6 m-auto">
           <div className="flex">
-            <svg
-              class="w-5 h-5 mt-2 me-3 text-gray-800 dark:text-white menu_border"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
+            <Link href="/our_work">
+              <svg
+                class="w-5 h-5 mt-2 me-3 text-gray-800 dark:text-white menu_border"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </Link>
             <p className="stick mx-1"></p>
-            <div className="flex">
+            {/* <div className="flex">
               <svg
                 class="w-5 h-5 mt-2 mx-3 text-gray-800 dark:text-white"
                 aria-hidden="true"
@@ -61,7 +64,7 @@ export default async function Project({ params }) {
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
-            </div>
+            </div> */}
           </div>
           <div className="self-center text-2xl font-bold">{project.name}</div>
         </div>

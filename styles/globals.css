@@ -349,7 +349,6 @@ button[type="submit"]{
 /* CONTACT START */
 
 .contact_hero{
-    background-color: var(--primary);
     height: 40vh;
     
 }
@@ -381,7 +380,7 @@ button[type="submit"]{
 
 #our_work_home{
     background-image: url("/assets/images/background-img/our-work-bg.png");
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;

@@ -33,9 +33,9 @@ const contact = () => {
   };
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-blue-500"/>
+      <Nav color="text-white hover:text-black" background="dark:bg-gray-900 w-full z-20 top-0 left-0 backdrop-filter text-base bg-blue-500"/>
       
-      <section className="contact_hero mt-0 p-10" id="send_message">
+      <section className="contact_hero bg-blue-500 mt-0 p-10" id="send_message">
         <h1 className="mt-10 text-4xl text-white font-bold">Contact us</h1>
         <p className="text-white">Lets talk about your ideas.</p>
         <section>

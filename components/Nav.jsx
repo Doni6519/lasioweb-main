@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Nav = ({color}) => {
+const Nav = ({color,background}) => {
   function handleClick(){
     document.getElementById("sub_nav").style.display = "none";
     document.getElementById("body").style.overflow = "scroll";
@@ -14,7 +14,7 @@ const Nav = ({color}) => {
     document.getElementById("body").style.overflow = "hidden";
   }
   return (
-    <nav className="dark:bg-gray-900 w-full z-20 top-0 left-0 backdrop-filter">
+    <nav className={background}>
       <div className="sub_nav hidden bg-gradient-to-b from-stone-100 via-stone-100 to-teal-200"  id="sub_nav">
         <div className="flex justify-between m-4">
           <Link href="/" className="flex flex-center gap-2">

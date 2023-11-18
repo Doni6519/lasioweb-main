@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Nav from "@/components/Nav";
 const privacy = () => {
   return (
     <div className="text-sm">
+      <Nav color="text-black hover:text-blue-500"/>
       <section className="w-5/6 flex flex-col md:flex-row justify-between items-center">
         <div className="me-5 align-middle order-last md:order-1 basis-2/4">
           <h1 className="text-4xl text-center mt-5 md:mt-0 uppercase">
@@ -59,7 +60,7 @@ const privacy = () => {
         <h1 className=" text-xl mt-7 mb-3">Contact Us</h1>
         <p>
           If you have any questions about this Privacy Policy, please
-          <Link href="/contact" className="text-blue-700">contact us</Link>.
+          <Link href="/contact" className="text-blue-700"> contact us</Link>.
         </p>
       </section>
     </div>

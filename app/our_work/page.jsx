@@ -3,7 +3,7 @@
 import { getCategory, getProjects } from "../../sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
-
+import Nav from "@/components/Nav";
 export default async function ourWork() {
   const categories = await getCategory();
   const projects = await getProjects();
@@ -58,6 +58,8 @@ export default async function ourWork() {
 
   return (
     <div className="text-sm">
+      <Nav color="text-white hover:text-blue-500"/>
+
       <div id="our_work_home" className="hero">
         <div id="hero_text">
           <h1 className="font-bold uppercase">website optimization</h1>
