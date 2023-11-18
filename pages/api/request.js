@@ -1,5 +1,4 @@
-import { mailOptions, transporter } from "@config/nodemailer";
-
+import { mailOptions, transporter } from "@/config/nodemailer";
 const CONTACT_MESSAGE_FIELDS = {
     name: "name",
     whatsapp_number: "whatsapp_number",
