@@ -1,9 +1,10 @@
 import Image from "next/image";
 import ContentButton from "@/components/ContentButton";
-
+import Nav from "@/components/Nav";
 const branding = () => {
   return (
     <div className="text-sm">
+      <Nav color="text-white hover:text-blue-500"/>
       <div id="branding_home" className="hero">
         <div id="hero_text">
           <h1 className="font-bold uppercase">

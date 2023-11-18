@@ -23,7 +23,7 @@ const RootLayout = ({ children }) => {
       </head>
       <body className="font-sans" id="body">
         <main className="app">
-          <Nav />
+          
           {children}
           <Footer />
         </main>

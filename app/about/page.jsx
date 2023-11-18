@@ -1,8 +1,9 @@
 import Image from "next/image";
-
+import Nav from "@/components/Nav";
 const page = () => {
   return (
     <div className="text-sm">
+      <Nav color="text-white hover:text-blue-500"/>
       <div id="about_home" className="hero">
         <div id="hero_text">
           <h1 className="font-bold uppercase">About us</h1>
@@ -110,7 +111,7 @@ const page = () => {
         <h1 className="text-center text-4xl font-bold core_h1">
           Our Core Values
         </h1>
-        <div className="grid grid-cols-1 gap-5 md:gap-0 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover_val">
+        <div className="grid grid-cols-1 gap-y-2 md:gap-0 lg:gap-0 sm:gap-1 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover_val">
           <div className="slide_item">
             <div id="more_services_1_about" className="items-center text-white">
               <div

@@ -1,16 +1,16 @@
 import Image from "next/image";
 import ContentButton from "@/components/ContentButton";
-
+import Nav from "@/components/Nav";
 const marketing = () => {
   return (
     <div className="text-sm">
+      <Nav color="text-white hover:text-black" />
       <div id="marketing_home" className="hero">
         <div id="hero_text">
-          <h1 className="font-bold uppercase">
-            website optimization
-          </h1>
+          <h1 className="font-bold uppercase">website optimization</h1>
           <p className="text-2xl mt-3">
-            Data driven strategies to increase your brand awareness and get you ahead of your competition.
+            Data driven strategies to increase your brand awareness and get you
+            ahead of your competition.
           </p>
         </div>
       </div>
@@ -30,7 +30,7 @@ const marketing = () => {
             <a href="tel:+9070807080">09070807080</a>; we're happy to answer all
             your question.
           </p>
-          <form action="" className="mt-5 lg:w-5/6" style={{fontSize: 1}}>
+          <form action="" className="mt-5 lg:w-5/6" style={{ fontSize: 1 }}>
             <div className="flex">
               <div className="basis-2/4 me-2">
                 <input
@@ -72,7 +72,6 @@ const marketing = () => {
             >
               SUBMIT
             </button>
-            
           </form>
         </div>
         <div className="ms-10 hidden md:block">
@@ -84,7 +83,9 @@ const marketing = () => {
         </div>
       </section>
       <section className="p-5 m_extra bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')]">
-        <h1 className="text-center font-bold text-2xl uppercase">how we promote content</h1>
+        <h1 className="text-center font-bold text-2xl uppercase">
+          how we promote content
+        </h1>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover">
           <div className="slide_item">
             <div
@@ -559,47 +560,48 @@ const marketing = () => {
         </div>
       </section>
       <section className="w-4/6 mb-10">
-        <h1 className="text-center text-2xl font-bold md:text-4xl">Our Capabilities</h1>
+        <h1 className="text-center text-2xl font-bold md:text-4xl">
+          Our Capabilities
+        </h1>
         <div className="grid md:grid-cols-1 md:grid-cols-3 mt-10 ">
           <div className="ms-10">
             <ul className="list-disc ms-5">
-                <li>Market Research</li>
-                <li>Competitive Analysis</li>
-                <li>Channel Identification</li>
-                <li>Campaign Strategy</li>
-                <li>Landing Page Design</li>
-                <li>Copywriting</li>
+              <li>Market Research</li>
+              <li>Competitive Analysis</li>
+              <li>Channel Identification</li>
+              <li>Campaign Strategy</li>
+              <li>Landing Page Design</li>
+              <li>Copywriting</li>
             </ul>
           </div>
           <div className="ms-10">
-          <ul className="list-disc ms-5">
-                <li>Market Research</li>
-                <li>Competitive Analysis</li>
-                <li>Channel Identification</li>
-                <li>Campaign Strategy</li>
-                <li>Landing Page Design</li>
-                <li>Copywriting</li>
+            <ul className="list-disc ms-5">
+              <li>Market Research</li>
+              <li>Competitive Analysis</li>
+              <li>Channel Identification</li>
+              <li>Campaign Strategy</li>
+              <li>Landing Page Design</li>
+              <li>Copywriting</li>
             </ul>
           </div>
           <div className="ms-10">
-          <ul className="list-disc ms-5">
-                <li>Market Research</li>
-                <li>Competitive Analysis</li>
-                <li>Channel Identification</li>
-                <li>Campaign Strategy</li>
-                <li>Landing Page Design</li>
-                <li>Copywriting</li>
+            <ul className="list-disc ms-5">
+              <li>Market Research</li>
+              <li>Competitive Analysis</li>
+              <li>Channel Identification</li>
+              <li>Campaign Strategy</li>
+              <li>Landing Page Design</li>
+              <li>Copywriting</li>
             </ul>
           </div>
         </div>
         <ContentButton
-        header="Still have questions?"
-        paragraph="Curious about our process or what it's like to work with us? Pick a
+          header="Still have questions?"
+          paragraph="Curious about our process or what it's like to work with us? Pick a
           package; we're happy to answer to give you the best creative designs."
-        button="CONTACT US"
-      />
+          button="CONTACT US"
+        />
       </section>
-      
     </div>
   );
 };

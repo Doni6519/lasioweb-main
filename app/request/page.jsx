@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { requestContactForm } from "@/lib/api";
-
+import Nav from "@/components/Nav";
 const initValues = {
   // name: "",
   // whatsapp_number: "",
@@ -53,6 +53,7 @@ const request = () => {
   };
   return (
     <div className="text-sm">
+      <Nav color="text-black hover:text-blue-500"/>
       <h1 className="text-center text-4xl font-bold mt-10">Submit a Request</h1>
       <p className="text-center text-base">
         Need any of our

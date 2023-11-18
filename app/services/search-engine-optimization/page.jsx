@@ -3,7 +3,7 @@ import Image from "next/image";
 import GetStarted from "@/components/GetStarted";
 import { seoContactForm } from "@/lib/api";
 import { useState } from "react";
-
+import Nav from "@/components/Nav";
 const initValues = {};
 const initState = { values: initValues };
 
@@ -48,6 +48,7 @@ const seo = () => {
   };
   return (
     <div className="text-sm">
+      <Nav color="text-black hover:text-blue-500" />
       <div id="seo_home" className="hero">
         <div id="hero_text">
           <h1 className="font-bold uppercase">website optimization</h1>

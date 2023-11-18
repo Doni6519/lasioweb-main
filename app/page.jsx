@@ -1,5 +1,5 @@
 "use client";
-
+import Nav from "@/components/Nav";
 import {  getProjects } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,6 +23,7 @@ export default async function Home() {
   // const swiper = useSwiper();
   return (
     <div className="text-sm">
+      <Nav color="text-white hover:text-blue-500"/>
       <div id="hero_home" className="hero">
         <div id="hero_text">
           <h1 className="font-bold text-4xl">We craft web experiences</h1>

@@ -1,7 +1,7 @@
 "use client";
 import { sendContactForm } from "@/lib/api";
 import { useState } from "react";
-
+import Nav from "@/components/Nav";
 const initValues = {
   name: "",
   phone: "",
@@ -33,7 +33,8 @@ const contact = () => {
   };
   return (
     <div className="text-sm">
-      {console.log(state.isLoading)};
+      <Nav color="text-white hover:text-blue-500"/>
+      
       <section className="contact_hero mt-0 p-10" id="send_message">
         <h1 className="mt-10 text-4xl text-white font-bold">Contact us</h1>
         <p className="text-white">Lets talk about your ideas.</p>

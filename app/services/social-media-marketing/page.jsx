@@ -1,9 +1,10 @@
 import Image from "next/image";
 import ContentButton from "@/components/ContentButton";
-
+import Nav from "@/components/Nav";
 const socialMediaMarketing = () => {
   return (
     <div className="text-sm">
+      <Nav color="text-white hover:text-blue-500"/>
       <div id="social_marketing_home" className="hero">
         <div id="hero_text">
           <h1 className="font-bold uppercase">

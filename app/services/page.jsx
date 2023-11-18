@@ -1,10 +1,11 @@
 import Image from "next/image";
 import GetStarted from "../../components/GetStarted"
 import Link from "next/link";
-
+import Nav from "@/components/Nav";
 const services = () => {
   return (
     <>
+    <Nav color="text-black hover:text-blue-500"/>
       <section className="w-5/6 flex flex-col md:flex-row justify-between items-center">
         <div className="me-5 align-middle order-last md:order-1">
             <h1 className="text-4xl text-center mt-5 md:mt-0">SERVICES</h1>

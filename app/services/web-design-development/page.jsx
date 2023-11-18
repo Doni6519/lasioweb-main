@@ -1,9 +1,10 @@
 import Link from "next/link";
 import GetStarted from "@/components/GetStarted";
-
+import Nav from "@/components/Nav";
 const webDev = () => {
   return (
     <div className="text-sm">
+      <Nav color="text-white hover:text-blue-500"/>
       <div id="web_home" className="hero">
         <div id="hero_text">
           <h1 className="font-bold uppercase">
