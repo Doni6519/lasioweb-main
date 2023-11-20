@@ -1,6 +1,6 @@
 "use client";
 import Nav from "@/components/Nav";
-import {  getProjects } from "@/sanity/sanity-utils";
+import { getProjects } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useRef, useState } from "react";
@@ -23,9 +23,16 @@ export default async function Home() {
   // const swiper = useSwiper();
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-blue-500"/>
+      <Nav color="text-white hover:text-blue-500" />
       <div id="hero_home" className="hero">
-        <div id="hero_text">
+        <Image
+          width={1000}
+          height={1000}
+          src="/assets/images/background-img/home-bg.png"
+          className="absolute block w-full h-full object-cover "
+          alt=""
+        />
+        <div id="hero_text" className="absolute">
           <h1 className="font-bold text-4xl">We craft web experiences</h1>
           <p className="text-2xl mt-3">
             <span className="font-bold">that</span> thrives businesses
@@ -69,21 +76,22 @@ export default async function Home() {
             <p className="hidden md:block">
               Some of our most common services includes:
             </p>
-            <p className="mt-5 flex m-auto w-fit">
-              <span className="me-1 font-bold text-sm">LEARN MORE</span>
+            <p className="mt-5 flex m-auto w-fit content-center items-center">
+              <Link
+                href="/about"
+                className="me-1 font-bold text-sm md:hover:text-blue-700 text-blue-500"
+              >
+                LEARN MORE{" "}
+              </Link>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={2}
-                stroke="#000"
-                className="w-4 h-4"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-right-fill"
+                viewBox="0 0 16 16"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
+                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
               </svg>
             </p>
           </div>
@@ -613,115 +621,123 @@ export default async function Home() {
         <h1 className="text-center mt-10 mb-8 text-xl font-bold md:text-4xl">
           Our Portfolio
         </h1>
-        
+
         <div className="w-5/6 m-auto">
-        
-        <Swiper
-          slidesPerView="auto"
-          // spaceBetween={30}
-          loop={true}
-          modules={[Grid, A11y]}
-          className="mySwiper"
-        >          
-        <SwiperNavButtons />
-          {projects.map((project) => (
-          <SwiperSlide className="h-56 max-w-xs rounded-lg me-3">
-            <div
-              // controls-carousel
-              id={project.category}
-              key={project._id}
-              className={project.category + " all relative "}
-              data-carousel="static"
-            >
-              <div class="relative h-56 overflow-hidden rounded-lg ">
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <Link href={`/our_work/${project.slug}`}>
-                  <Image
-                    width={1000}
-                    height={1000}
-                    src={project.image}
-                    className="absolute block w-full h-full object-cover "
-                    alt=""
-                  /></Link>
-                </div>
+          <Swiper
+            slidesPerView="auto"
+            // spaceBetween={30}
+            loop={true}
+            modules={[Grid, A11y]}
+            className="mySwiper"
+          >
+            <SwiperNavButtons />
+            {projects.map((project) => (
+              <SwiperSlide className="h-56 max-w-xs rounded-lg me-3">
                 <div
-                  class="hidden duration-700 ease-in-out"
-                  data-carousel-item="active"
+                  // controls-carousel
+                  id={project.category}
+                  key={project._id}
+                  className={project.category + " all relative "}
+                  data-carousel="static"
                 >
-                  <Image
-                    width={1000}
-                    height={1000}
-                    src={project.secondImage}
-                    className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                    alt=""
-                  />{" "}
-                </div>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                  <Image
-                    width={1000}
-                    height={1000}
-                    src={project.thirdImage}
-                    className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                    alt=""
-                  />{" "}
-                </div>
-              </div>
-              <button
-                type="button"
-                class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-prev
-              >
-                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg
-                    class="w-4 h-4 text-white dark:text-gray-800"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 6 10"
+                  <div class="relative h-56 overflow-hidden rounded-lg ">
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item
+                    >
+                      <Link href={`/our_work/${project.slug}`}>
+                        <Image
+                          width={1000}
+                          height={1000}
+                          src={project.image}
+                          className="absolute block w-full h-full object-cover "
+                          alt=""
+                        />
+                      </Link>
+                    </div>
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item="active"
+                    >
+                      <Link href={`/our_work/${project.slug}`}>
+                        <Image
+                          width={1000}
+                          height={1000}
+                          src={project.secondImage}
+                          className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+                          alt=""
+                        />{" "}
+                      </Link>
+                    </div>
+                    <div
+                      class="hidden duration-700 ease-in-out"
+                      data-carousel-item
+                    >
+                      <Link href={`/our_work/${project.slug}`}>
+                        <Image
+                          width={1000}
+                          height={1000}
+                          src={project.thirdImage}
+                          className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+                          alt=""
+                        />{" "}
+                      </Link>
+                    </div>
+                  </div>
+                  <button
+                    type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev
                   >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M5 1 1 5l4 4"
-                    />
-                  </svg>
-                  <span class="sr-only">Previous</span>
-                </span>
-              </button>
-              <button
-                type="button"
-                class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-                data-carousel-next
-              >
-                <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                  <svg
-                    class="w-4 h-4 text-white dark:text-gray-800"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 6 10"
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                      <svg
+                        class="w-4 h-4 text-white dark:text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 6 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M5 1 1 5l4 4"
+                        />
+                      </svg>
+                      <span class="sr-only">Previous</span>
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next
                   >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 9 4-4-4-4"
-                    />
-                  </svg>
-                  <span class="sr-only">Next</span>
-                </span>
-              </button>
-            </div>
-          </SwiperSlide>
-            
-        ))}
-        </Swiper>
-        
-        <div>
-      </div>
+                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                      <svg
+                        class="w-4 h-4 text-white dark:text-gray-800"
+                        aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 6 10"
+                      >
+                        <path
+                          stroke="currentColor"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="m1 9 4-4-4-4"
+                        />
+                      </svg>
+                      <span class="sr-only">Next</span>
+                    </span>
+                  </button>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+          <div></div>
         </div>
       </section>
     </div>

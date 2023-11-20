@@ -170,7 +170,7 @@ button[type="submit"]{
     margin: 0;
 }
 #hero_home {
-    background-image: url("/assets/images/background-img/home-bg.png");
+    /* background-image: url("/assets/images/background-img/home-bg.png"); */
     height: 100vh;
     width: 100%;
     background-repeat: no-repeat;
