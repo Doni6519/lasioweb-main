@@ -49,6 +49,13 @@ const seo = () => {
   return (
     <div className="text-sm">
       <Nav color="text-black hover:text-blue-500" />
+      <Image
+          width={2000}
+          height={2000}
+          src="/assets/images/background-img/seo-bg.jpg"
+          className="absolute block w-full h-full object-cover top-0 goback"
+          alt=""
+        />
       <div id="seo_home" className="hero">
         <div id="hero_text">
           <h1 className="font-bold uppercase">website optimization</h1>

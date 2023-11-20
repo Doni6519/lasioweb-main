@@ -5,7 +5,14 @@ const socialMediaMarketing = () => {
   return (
     <div className="text-sm">
       <Nav color="text-white hover:text-blue-500"/>
-      <div id="social_marketing_home" className="hero">
+      <div className="hero">
+      <Image
+          width={2000}
+          height={2000}
+          src="/assets/images/background-img/social-marketing-bg.png"
+          className="absolute block w-full h-full object-cover top-0 goback"
+          alt=""
+        />
         <div id="hero_text">
           <h1 className="font-bold uppercase">
             website optimization
@@ -15,7 +22,7 @@ const socialMediaMarketing = () => {
           </p>
         </div>
       </div>
-      <section className="justify-around first_item w-5/6"></section>
+      <section className="justify-around first_item_extra w-5/6"></section>
       <section className="md:flex w-5/6">
         <div className="basis-3/4">
           <h1 className="mt-10 text-2xl md:text-4xl">Reaching your audience</h1>

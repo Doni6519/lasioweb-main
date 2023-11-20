@@ -37,8 +37,7 @@ export default async function Home() {
           <p className="text-2xl mt-3">
             <span className="font-bold">that</span> thrives businesses
           </p>
-          <Link href="/request" className="flex flex-center gap-2 absolute ">
-            <button
+           <Link href="/request"
               type="button"
               class="bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
@@ -58,8 +57,7 @@ export default async function Home() {
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
-            </button>
-          </Link>
+            </Link>
         </div>
       </div>
 

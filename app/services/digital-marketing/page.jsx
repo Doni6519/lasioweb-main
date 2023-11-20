@@ -5,7 +5,14 @@ const marketing = () => {
   return (
     <div className="text-sm">
       <Nav color="text-white hover:text-black" />
-      <div id="marketing_home" className="hero">
+      <div className="hero">
+      <Image
+          width={2000}
+          height={2000}
+          src="/assets/images/background-img/marketing-bg.png"
+          className="absolute block w-full h-full object-cover top-0 goback"
+          alt=""
+        />
         <div id="hero_text">
           <h1 className="font-bold uppercase">website optimization</h1>
           <p className="text-2xl mt-3">
@@ -14,7 +21,7 @@ const marketing = () => {
           </p>
         </div>
       </div>
-      <section className="flex justify-around first_item w-5/6"></section>
+      <section className="flex justify-around first_item_extra w-5/6"></section>
       <section className="md:flex md:w-5/6 ps-10 pe-5 md:pe-10">
         <div className="me-10 md:basis-4/4 lg:basis-2/4">
           <h1 className="font-bold">OUR APPROACH TO DIGITAL MARKETING</h1>

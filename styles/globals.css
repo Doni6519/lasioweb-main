@@ -94,7 +94,7 @@ input:focus, textarea:focus{
 }
 
 .first_item {
-    margin-top: 84vh;
+    margin-top: 20vh;
 }
 
 .first_item_extra {
@@ -171,72 +171,6 @@ button[type="submit"]{
 }
 .goback{
     z-index: -1000000 !important;
-}
-#web_home {
-    background-image: url("/assets/images/background-img/web-dev-bg.jpg");
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    color: var(--hero_color);
-    overflow-x: hidden;
-}
-
-#marketing_home {
-    background-image: url("/assets/images/background-img/marketing-bg.png");
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    color: var(--hero_color);
-}
-
-#social_marketing_home {
-    background-image: url("/assets/images/background-img/social-marketing-bg.png");
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center left;
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    color: var(--hero_color);
-}
-
-#branding_home {
-    background-image: url("/assets/images/background-img/branding-bg.png");
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    color: var(--hero_color);
-}
-
-
-#seo_home {
-    background-image: url("/assets/images/background-img/seo-bg.jpg");
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    color: var(--hero_color);
 }
 
 .common_services {

@@ -1,11 +1,19 @@
 import Link from "next/link";
 import GetStarted from "@/components/GetStarted";
 import Nav from "@/components/Nav";
+import Image from "next/image";
 const webDev = () => {
   return (
     <div className="text-sm">
       <Nav color="text-white hover:text-blue-500"/>
       <div id="web_home" className="hero">
+      <Image
+          width={2000}
+          height={2000}
+          src="/assets/images/background-img/web-dev-bg.jpg"
+          className="absolute block w-full h-full object-cover top-0 goback"
+          alt=""
+        />
         <div id="hero_text">
           <h1 className="font-bold uppercase">
             web design & development
