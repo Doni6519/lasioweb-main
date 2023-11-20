@@ -5,6 +5,13 @@ const page = () => {
     <div className="text-sm">
       <Nav color="text-white hover:text-blue-500"/>
       <div id="about_home" className="hero">
+      <Image
+          width={2000}
+          height={2000}
+          src="/assets/images/background-img/about-bg.png"
+          className="absolute block w-full h-full object-cover top-0 goback"
+          alt=""
+        />
         <div id="hero_text">
           <h1 className="font-bold uppercase">About us</h1>
           <p className="text-2xl mt-3">
@@ -71,7 +78,7 @@ const page = () => {
         </p>
         <p className="mt-3 font-bold uppercase">Welcome to LasioWeb!</p>
       </section>
-      <section className="bg-slate-50">
+      <section className="bg-slate-100">
         <div className="grid grid-cols-1 gap-0 md:grid-cols-2 vision_mission">
           <div className="bg-slate-200 h-85 img hidden md:block">
             <Image

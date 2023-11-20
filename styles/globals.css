@@ -8,10 +8,10 @@
 }
 :root {
     --hero_color: #fff;
-    --primary: #297CEA;
-    --secondary1: #EA2959;
-    --secondary2: #EA9629;
-    --secondary3: #14C520;
+    --primary: #2675dc;
+    --secondary1: #112b4d;
+    --secondary2: #296cc3;
+    --secondary3: #0d223c;
     --secondary4: #f1f4f1;
     --secondary5: #fffefe;
     --secondary6: #164e96f8;
@@ -23,7 +23,7 @@
 }
 
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 body, footer{
@@ -98,11 +98,11 @@ input:focus, textarea:focus{
 }
 
 .first_item_extra {
-    margin-top: 90vh;
+    margin-top: 35vh;
 }
 
 .first_item_hero {
-    margin-top: 100vh;
+    margin-top: 35vh;
 }
 
 .m_auto{
@@ -169,17 +169,8 @@ button[type="submit"]{
     z-index: -1;
     margin: 0;
 }
-#hero_home {
-    /* background-image: url("/assets/images/background-img/home-bg.png"); */
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    color: var(--hero_color);
+.goback{
+    z-index: -1000000 !important;
 }
 #web_home {
     background-image: url("/assets/images/background-img/web-dev-bg.jpg");
@@ -234,18 +225,6 @@ button[type="submit"]{
     color: var(--hero_color);
 }
 
-#about_home {
-    background-image: url("/assets/images/background-img/about-bg.png");
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    color: var(--hero_color);
-}
 
 #seo_home {
     background-image: url("/assets/images/background-img/seo-bg.jpg");

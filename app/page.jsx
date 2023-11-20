@@ -26,38 +26,40 @@ export default async function Home() {
       <Nav color="text-white hover:text-blue-500" />
       <div id="hero_home" className="hero">
         <Image
-          width={1000}
-          height={1000}
+          width={2000}
+          height={2000}
           src="/assets/images/background-img/home-bg.png"
-          className="absolute block w-full h-full object-cover "
+          className="absolute block w-full h-full object-cover top-0 goback"
           alt=""
         />
-        <div id="hero_text" className="absolute">
+        <div id="hero_text" className="relative z-100">
           <h1 className="font-bold text-4xl">We craft web experiences</h1>
           <p className="text-2xl mt-3">
             <span className="font-bold">that</span> thrives businesses
           </p>
-          <button
-            type="button"
-            class="bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Get started
-            <svg
-              class="w-3.5 h-3.5 ml-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
+          <Link href="/request" className="flex flex-center gap-2 absolute ">
+            <button
+              type="button"
+              class="bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </button>
+              Get started
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -145,7 +147,7 @@ export default async function Home() {
           </svg>
         </p>
         <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover">
-          <div className="slide_item">
+          <div className="slide_item rounded">
             <div
               id="more_services_1"
               className="items-center rounded text-white "
@@ -237,7 +239,7 @@ export default async function Home() {
             </div>
           </div>
 
-          <div className="slide_item">
+          <div className="slide_item rounded">
             <div
               id="more_services_2"
               className="items-center rounded text-white "
@@ -360,7 +362,7 @@ export default async function Home() {
             </div>
           </div>
 
-          <div className="slide_item">
+          <div className="slide_item rounded">
             <div
               id="more_services_3"
               className="items-center rounded text-white "
@@ -488,7 +490,7 @@ export default async function Home() {
             </div>
           </div>
 
-          <div className="slide_item">
+          <div className="slide_item rounded">
             <div
               id="more_services_4"
               className="items-center rounded text-white "
