@@ -51,7 +51,6 @@ const contact = () => {
         <p className="text-white">Lets talk about your ideas.</p>
         <section>
           <form
-            method="post"
             className="bg-white md:w-3/6 lg:w-2/6 p-10 drop-shadow md:absolute"
           >
             <div id="toast"></div>

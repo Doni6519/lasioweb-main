@@ -287,7 +287,7 @@ const seo = () => {
           <p className="text-center mt-2 mb-6">
             Complete the form below to get your free quote and analysis.
           </p>
-          <form action="" className="w-5/6 m_auto">
+          <form className="w-5/6 m_auto">
             <div className="md:flex">
               <input
                 type="text"
