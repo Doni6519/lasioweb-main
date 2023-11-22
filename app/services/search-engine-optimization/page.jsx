@@ -4,7 +4,19 @@ import GetStarted from "@/components/GetStarted";
 import { seoContactForm } from "@/lib/api";
 import { useState } from "react";
 import Nav from "@/components/Nav";
-const initValues = {};
+const initValues = {
+  lastName: "",
+  company: "",
+  email: "",
+  phone: "",
+  url: "",
+  package: "",
+  budget1: "",
+  budget2: "",
+  budget3: "",
+  message: "",
+  firstName: ""
+};
 const initState = { values: initValues };
 
 const seo = () => {
@@ -25,6 +37,7 @@ const seo = () => {
     // }));
     try {
       await seoContactForm(values);
+      setState(initState);
     } catch (error) {}
   };
 
@@ -57,7 +70,7 @@ const seo = () => {
         alt=""
       />
       <div id="seo_home" className="hero">
-        <div id="hero_text">
+        <div id="hero_text" className=" absolute  z-100">
           <h1 className="font-bold uppercase">website optimization</h1>
           <p className="text-2xl mt-3">
             Data driven strategies to increase your brand awareness and get you
@@ -290,14 +303,16 @@ const seo = () => {
           <form className="w-5/6 m_auto">
             <div className="md:flex">
               <input
+                required
                 type="text"
                 placeholder="First Name"
                 className="w-full block mb-5 me-2"
                 name="firstName"
-                value={values.name}
+                value={values.firstName}
                 onChange={handleChange}
               />
               <input
+                required
                 type="text"
                 placeholder="Last Name"
                 className="w-full block mb-5 md:ms-2"
@@ -308,6 +323,7 @@ const seo = () => {
             </div>
             <div className="md:flex">
               <input
+                required
                 type="text"
                 placeholder="Company Name"
                 className="w-full block mb-5 me-5"
@@ -316,6 +332,7 @@ const seo = () => {
                 onChange={handleChange}
               />
               <input
+                required
                 type="text"
                 placeholder="Email"
                 className="w-full block mb-5"
@@ -327,6 +344,7 @@ const seo = () => {
             <div className="md:flex">
               <div className="basis-2/4 md:me-2">
                 <input
+                  required
                   type="text"
                   placeholder="Phone Number"
                   className="w-full block mb-5"
@@ -337,6 +355,7 @@ const seo = () => {
                 <select
                   name="package"
                   id="package"
+                  required
                   onChange={handlePackage}
                   className="w-full block mb-5 text-slate-100"
                   style={{ color: "#808480" }}
@@ -351,6 +370,7 @@ const seo = () => {
               </div>
               <div className="basis-2/4 md:ms-2">
                 <input
+                  required
                   type="text"
                   placeholder="Website URL"
                   className="w-full block mb-5"
@@ -361,6 +381,7 @@ const seo = () => {
                 <select
                   name="budget1"
                   id="bronze-budget"
+                  required
                   className="w-full block mb-5 text-slate-100 hidden"
                   style={{ color: "#808480" }}
                   onChange={handleChange}
@@ -371,6 +392,7 @@ const seo = () => {
                 </select>
                 <select
                   name="budget2"
+                  required
                   id="silver-budget"
                   className="w-full block mb-5 text-slate-100 hidden"
                   style={{ color: "#808480" }}
@@ -383,6 +405,7 @@ const seo = () => {
                 </select>
                 <select
                   name="budget3"
+                  required
                   id="gold-budget"
                   onChange={handleChange}
                   className="w-full block mb-5 text-slate-100 hidden"
@@ -401,6 +424,7 @@ const seo = () => {
             <textarea
               name="message"
               id=""
+              required
               cols="30"
               rows="10"
               placeholder="How can we help you on SEO?"
@@ -410,7 +434,7 @@ const seo = () => {
             ></textarea>
             <button
               type="submit"
-              className="px-7 py-4 text-white float-right mt-4"
+              className="px-7 py-4 text-white float-right mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
               onClick={onSubmit}
             >
               SUBMIT

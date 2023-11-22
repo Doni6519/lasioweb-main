@@ -84,7 +84,6 @@ svg{
     width: 100%;
     position: relative;
 } */
-
 input[type="submit"]{
     background-color: var(--primary) ;
 }
@@ -94,15 +93,15 @@ input:focus, textarea:focus{
 }
 
 .first_item {
-    margin-top: 20vh;
+    margin-top: 95vh;
 }
 
 .first_item_extra {
-    margin-top: 35vh;
+    margin-top: 95vh;
 }
 
 .first_item_hero {
-    margin-top: 35vh;
+    margin-top: 95vh;
 }
 
 .m_auto{
@@ -138,7 +137,7 @@ button[type="submit"]{
     max-width: 80%;
 }
 .hero #hero_text{
-    margin-top: 39vh;
+    margin-top: 20vh;
     color: var(--hero_color) !important;
     margin-left: 15vw;
     margin-right: 5vw;
@@ -146,7 +145,7 @@ button[type="submit"]{
 }
 @media only screen and (max-width: 760px) {
     .hero #hero_text{
-        margin-left: 10vw;
+        margin-left: 8vw;
     }
   }
 #home_caro{
@@ -278,7 +277,7 @@ button[type="submit"]{
 }
 @media only screen and (max-width: 719px) {
     .hero #hero_text{
-        margin-left: 10vw;
+        margin-left: 8vw;
     }
     #send_message_2nd_section{
         margin-top: 35rem;

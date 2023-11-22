@@ -14,7 +14,7 @@ const webDev = () => {
           className="absolute block w-full h-full object-cover top-0 goback"
           alt=""
         />
-        <div id="hero_text">
+        <div id="hero_text" className=" absolute  z-100">
           <h1 className="font-bold uppercase">
             web design & development
           </h1>

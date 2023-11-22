@@ -4,30 +4,30 @@ import Link from "next/link";
 import { requestContactForm } from "@/lib/api";
 import Nav from "@/components/Nav";
 const initValues = {
-  // name: "",
-  // whatsapp_number: "",
-  // business: "",
-  // email: "",
-  // url: "",
-  // comment: "",
-  // comment: "",
-  // checkbox1: "",
-  // checkbox2: "checkbox2",
-  // checkbox3: "checkbox3",
-  // checkbox4: "checkbox4",
-  // checkbox5: "checkbox5",
-  // checkbox6: "checkbox6",
-  // checkbox7: "checkbox7",
-  // checkbox8: "checkbox8",
-  // checkbox9: "checkbox9",
-  // checkbox10: "checkbox10",
-  // checkbox11: "checkbox11",
-  // checkbox12: "checkbox12",
-  // checkbox13: "checkbox13",
-  // checkbox14: "checkbox14",
-  // checkbox15: "checkbox15",
-  // checkbox16: "checkbox16",
-  // checkbox17: "checkbox17",
+  name: "",
+  whatsapp_number: "",
+  business: "",
+  email: "",
+  url: "",
+  comment: "",
+  comment: "",
+  checkbox1: "",
+  checkbox2: "",
+  checkbox3: "",
+  checkbox4: "",
+  checkbox5: "",
+  checkbox6: "",
+  checkbox7: "",
+  checkbox8: "",
+  checkbox9: "",
+  checkbox10: "",
+  checkbox11: "",
+  checkbox12: "",
+  checkbox13: "",
+  checkbox14: "",
+  checkbox15: "",
+  checkbox16: "",
+  checkbox17: "",
 };
 const initState = { values: initValues };
 
@@ -47,8 +47,10 @@ const request = () => {
     //   ...prev,
     //   isLoading: true
     // }));
+    
     try {
       await requestContactForm(values);
+      setState(initState);
     } catch (error) {}
   };
   return (
@@ -67,7 +69,7 @@ const request = () => {
         ? Fill the form below and we'll get in touch shortly.
       </p>
       <section className="mt-0 p-10 md:w-3/6 lg:w-2/6">
-        <form action="" method="post" className="bg-white p-5 drop-shadow">
+        <form className="bg-white p-5 drop-shadow">
           <div class="relative z-0 w-full mb-6 group">
             <input
               type="text"
@@ -149,7 +151,6 @@ const request = () => {
                 id="url"
                 class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
-                required
                 value={values.url}
                 onChange={handleChange}
               />
@@ -165,7 +166,7 @@ const request = () => {
             What do you need help with?
           </h1>
 
-          <fieldset>
+          <fieldset required>
             <legend class="sr-only">Checkbox variants</legend>
             <div class="flex items-center mb-4">
               <input

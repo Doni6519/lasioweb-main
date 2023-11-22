@@ -32,7 +32,7 @@ export default async function Home() {
           className="absolute block w-full h-full object-cover top-0 goback"
           alt=""
         />
-        <div id="hero_text" className="relative z-100">
+        <div id="hero_text" className="absolute z-100">
           <h1 className="font-bold text-4xl">We craft web experiences</h1>
           <p className="text-2xl mt-3">
             <span className="font-bold">that</span> thrives businesses

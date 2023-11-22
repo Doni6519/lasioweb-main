@@ -44,7 +44,7 @@ const generateEmailContent = (data) => {
 const handler = async (req, res) => {
   if (req.method === "POST") {
     const data = req.body;
-    if (!data.name || !data.email || !data.comment) {
+    if (!data.name || !data.email || !data.whatsapp_number) {
       return res.status(400).json({ message: "Bad request" });
     }
 
