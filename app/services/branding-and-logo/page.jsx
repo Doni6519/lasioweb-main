@@ -55,7 +55,7 @@ const branding = () => {
           />
         </div>
       </section>
-      <div className="w-4/6 m_auto mb-10">
+      <div className="w-5/6 m_auto mb-10">
         <ContentButton
           header="Still have questions?"
           paragraph="Curious about our process or what it's like to work with us? Pick a

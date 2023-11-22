@@ -59,8 +59,14 @@ export default async function ourWork() {
   return (
     <div className="text-sm">
       <Nav color="text-white hover:text-blue-500"/>
-
-      <div id="our_work_home" className="hero">
+      <Image
+          width={2000}
+          height={2000}
+          src="/assets/images/background-img/our-work-bg.png"
+          className="absolute block w-full h-full object-cover top-0 goback"
+          alt=""
+        />
+      <div className="hero">
         <div id="hero_text">
           <h1 className="font-bold uppercase">website optimization</h1>
           <p className="text-2xl mt-3">
@@ -69,8 +75,8 @@ export default async function ourWork() {
           </p>
         </div>
       </div>
-      <section className="flex justify-around first_item w-5/6"></section>
-      <section className="hidden md:grid grid sm:grid-cols-1 md:grid-cols-10 w-5/6 text-xs">
+      <section className="flex justify-around first_item_extra w-5/6"></section>
+      {/* <section className="hidden md:grid grid sm:grid-cols-1 md:grid-cols-10 w-5/6 text-xs">
         <a className="" onClick={handleFilter}>
           all
         </a>
@@ -79,7 +85,7 @@ export default async function ourWork() {
             {category.category}
           </a>
         ))}
-      </section>
+      </section> */}
       {/* <section className="w-5/6">
         <select
         onChange={handleFilterSelect}
@@ -102,7 +108,7 @@ export default async function ourWork() {
         id="to_filter"
       >
         {projects.map((project) => (
-          <Link href={`/our_work/${project.slug}`}>
+          
             <div
               // controls-carousel
               id={project.category}
@@ -112,6 +118,7 @@ export default async function ourWork() {
             >
               <div class="relative h-56 overflow-hidden rounded-lg ">
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <Link href={`/our_work/${project.slug}`}>
                   <Image
                     width={1000}
                     height={1000}
@@ -119,11 +126,13 @@ export default async function ourWork() {
                     className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
                     alt=""
                   />
+                  </Link>
                 </div>
                 <div
                   class="hidden duration-700 ease-in-out"
                   data-carousel-item="active"
                 >
+                  <Link href={`/our_work/${project.slug}`}>
                   <Image
                     width={1000}
                     height={1000}
@@ -131,8 +140,10 @@ export default async function ourWork() {
                     className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
                     alt=""
                   />{" "}
+                  </Link>
                 </div>
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <Link href={`/our_work/${project.slug}`}>
                   <Image
                     width={1000}
                     height={1000}
@@ -140,6 +151,7 @@ export default async function ourWork() {
                     className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
                     alt=""
                   />{" "}
+                  </Link>
                 </div>
               </div>
               <button
@@ -191,7 +203,6 @@ export default async function ourWork() {
                 </span>
               </button>
             </div>
-          </Link>
         ))}
       </section>
     </div>

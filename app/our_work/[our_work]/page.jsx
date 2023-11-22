@@ -150,38 +150,40 @@ export default async function Project({ params }) {
               className="uppercase border border-gray-200 font-bold p-2 rounded-full mb-3 text-xs"
               style={{ width: "fit-content" }}
             >
-              portfolio
+              {project.subCategory}
             </p>
             <p
               className="uppercase border border-gray-200 font-bold p-2 rounded-full mb-3 text-xs"
               style={{ width: "fit-content" }}
             >
-              web development
+              {project.category}
             </p>
           </div>
           <hr className="m-0 p-0 mb-2" />
-          <button
-            type="button"
-            className="mt-7 px-6 py-3.5 text-base font-medium text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            View Project
-            <svg
-              style={{ marginTop: 2 }}
-              className="w-4 h-4 ms-2 text-gray-800 dark:text-white"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 19 19"
+          <Link href={project.url}>
+            <button
+              type="button"
+              className="mt-7 px-6 py-3.5 text-base font-medium text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"
-              />
-            </svg>
-          </button>
+              View Project
+              <svg
+                style={{ marginTop: 2 }}
+                className="w-4 h-4 ms-2 text-gray-800 dark:text-white"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 19 19"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"
+                />
+              </svg>
+            </button>
+          </Link>
         </div>
       </section>
       {/* <section

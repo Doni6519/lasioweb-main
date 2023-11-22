@@ -6,7 +6,7 @@ const marketing = () => {
     <div className="text-sm">
       <Nav color="text-white hover:text-black" />
       <div className="hero">
-      <Image
+        <Image
           width={2000}
           height={2000}
           src="/assets/images/background-img/marketing-bg.png"
@@ -93,473 +93,165 @@ const marketing = () => {
         <h1 className="text-center font-bold text-2xl uppercase">
           how we promote content
         </h1>
-        <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover">
-          <div className="slide_item">
-            <div
-              id="more_services_1"
-              className="items-center rounded text-white "
-            >
+        <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover_val">
+          <div className="slide_item rounded">
+            <div id="more_services_1_about" className="items-center text-white">
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
               >
-                <div className="mb-5">
+                <div className="mb-5 mt-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="45"
-                    height="45"
                     fill="#fff"
-                    class="bi bi-laptop"
+                    className="bi bi-globe2 h-10 w-10"
                     viewBox="0 0 16 16"
                   >
-                    <path d="M13.5 3a.5.5 0 0 1 .5.5V11H2V3.5a.5.5 0 0 1 .5-.5h11zm-11-1A1.5 1.5 0 0 0 1 3.5V12h14V3.5A1.5 1.5 0 0 0 13.5 2h-11zM0 12.5h16a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5z" />
+                    <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
                   </svg>
                 </div>
                 <div className="text-center w-full ">
-                  <h1 className="text-base font-bold">
-                    Website Design & Development
-                  </h1>
+                  <h1 className="text-xl font">Search Engine Marketing</h1>
                 </div>
               </div>
-              <div className="second border border-gray-200">
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 lg:block lg:hidden">
-                  Web Design & Development
+              <div className="second bg-slate-800">
+                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+                  Search Engine Marketing
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 hidden lg:block">
-                  Web Design & Dev...
+                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                  Search Engine Marketing
                 </h1>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Consultation</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Wireframe</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Final Design</span>
+                <p className="text-white px-5">
+                  LasioWeb LTD uses Search Engine Marketing (SEM) by identifying
+                  relevant keywords, creating ad campaigns on platforms like
+                  Google Ads and Bing Ads, bidding on keywords, writing engaging
+                  ad copies, optimizing landing pages for conversions, and
+                  tracking performance to refine the SEM strategy.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="slide_item">
+          <div className="slide_item rounded">
             <div
-              id="more_services_2"
-              className="items-center rounded text-white "
+              id="more_services_2_about"
+              className="items-center  text-white "
             >
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
               >
-                <div className="mb-5">
+                <div className="mb-5 mt-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="45"
-                    height="45"
                     fill="#fff"
-                    class="bi bi-layers"
+                    className="bi bi-graph-up-arrow h-10 w-10"
                     viewBox="0 0 16 16"
                   >
-                    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z"
+                    />
                   </svg>
                 </div>
                 <div className="text-center w-full ">
-                  <h1 className="text-base font-bold">Logo & Branding</h1>
+                  <h1 className="text-xl font">SEO</h1>
                 </div>
               </div>
-              <div className="second border border-gray-200">
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6">
-                  Logo & Branding
+              <div className="second bg-slate-800">
+                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+                  SEO
                 </h1>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Exploration</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Sketches</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Digitigation</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Color</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Final Logo</span>
+                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                  SEO
+                </h1>
+                <p className="text-white px-5">
+                  LasioWeb uses SEO by optimizing keywords and website, creating
+                  quality content, building reputable backlinks, and tracking
+                  performance with analytics tools to enhance online visibility
+                  and content promotion.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="slide_item">
+          <div className="slide_item rounded">
             <div
-              id="more_services_3"
-              className="items-center rounded text-white "
+              id="more_services_1_about"
+              className="items-center  text-white "
             >
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
               >
-                <div className="mb-5">
+                <div className="mb-5 mt-5">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="45"
-                    height="45"
                     fill="#fff"
-                    class="bi bi-airplane-engines"
+                    className="bi bi-facebook w-10 h-10"
                     viewBox="0 0 16 16"
                   >
-                    <path d="M8 0c-.787 0-1.292.592-1.572 1.151A4.347 4.347 0 0 0 6 3v3.691l-2 1V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.191l-1.17.585A1.5 1.5 0 0 0 0 10.618V12a.5.5 0 0 0 .582.493l1.631-.272.313.937a.5.5 0 0 0 .948 0l.405-1.214 2.21-.369.375 2.253-1.318 1.318A.5.5 0 0 0 5.5 16h5a.5.5 0 0 0 .354-.854l-1.318-1.318.375-2.253 2.21.369.405 1.214a.5.5 0 0 0 .948 0l.313-.937 1.63.272A.5.5 0 0 0 16 12v-1.382a1.5 1.5 0 0 0-.83-1.342L14 8.691V7.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v.191l-2-1V3c0-.568-.14-1.271-.428-1.849C9.292.591 8.787 0 8 0ZM7 3c0-.432.11-.979.322-1.401C7.542 1.159 7.787 1 8 1c.213 0 .458.158.678.599C8.889 2.02 9 2.569 9 3v4a.5.5 0 0 0 .276.447l5.448 2.724a.5.5 0 0 1 .276.447v.792l-5.418-.903a.5.5 0 0 0-.575.41l-.5 3a.5.5 0 0 0 .14.437l.646.646H6.707l.647-.646a.5.5 0 0 0 .14-.436l-.5-3a.5.5 0 0 0-.576-.411L1 11.41v-.792a.5.5 0 0 1 .276-.447l5.448-2.724A.5.5 0 0 0 7 7V3Z" />
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
                   </svg>
                 </div>
                 <div className="text-center w-full ">
-                  <h1 className="text-base font-bold">
-                    Search Engine Optimization
-                  </h1>
+                  <h1 className="text-xl font">Social Media Marketing</h1>
                 </div>
               </div>
-              <div className="second border border-gray-200">
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 lg:hidden">
-                  Search Engine Optimization
-                </h1>
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 hidden lg:block">
-                  Search Engine Opt...
-                </h1>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Discover</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Strategy</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Optimization</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Content</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Reporting</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className="slide_item">
-            <div
-              id="more_services_4"
-              className="items-center rounded text-white "
-            >
-              <div
-                className="flex flex-col items-center first"
-                style={{ margin: "auto" }}
-              >
-                <div className="mb-5">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="45"
-                    height="45"
-                    fill="#fff"
-                    class="bi bi-instagram"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                  </svg>
-                </div>
-                <div className="text-center w-full ">
-                  <h1 className="text-base font-bold">
-                    Social Media Marketing
-                  </h1>
-                </div>
-              </div>
-              <div className="second border border-gray-200">
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 lg:hidden">
+              <div className="second bg-slate-700">
+                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Social Media Marketing
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 hidden lg:block">
-                  Social Media Mar...
+                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                  Social Media Marketing
                 </h1>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Discover</span>
+                <p className="text-white px-5">
+                  We use Social Media Marketing by creating engaging content
+                  tailored to each platform, interacting with followers, using
+                  targeted ads, and analyzing performance metrics to refine its
+                  strategy and effectively promote its content.
                 </p>
-                <p className="flex">
+              </div>
+            </div>
+          </div>
+
+          <div className="slide_item rounded">
+            <div
+              id="more_services_2_about"
+              className="items-center  text-white "
+            >
+              <div
+                className="flex flex-col items-center first"
+                style={{ margin: "auto" }}
+              >
+                <div className="mb-5 mt-5">
                   <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
+                    fill="#fff"
+                    className="bi bi-envelope-check w-10 h-10"
+                    viewBox="0 0 16 16"
                   >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
+                    <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z" />
                   </svg>
-                  <span>Strategy</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Optimization</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Content</span>
-                </p>
-                <p className="flex">
-                  <svg
-                    className="w-3 h-3 mt-1 text-white dark:text-white"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 8 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
-                    />
-                  </svg>
-                  <span>Reporting</span>
+                </div>
+                <div className="text-center w-full ">
+                  <h1 className="text-xl font">Email Marketing</h1>
+                </div>
+              </div>
+              <div className="second bg-slate-700">
+                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+                  Email Marketing
+                </h1>
+                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                  Email Marketing
+                </h1>
+                <p className="text-white px-5 mt-1">
+                  LasioWeb uses Email Marketing by crafting compelling subject
+                  lines, personalizing email content, segmenting its subscriber
+                  list, sending regular newsletters, and analyzing open and
+                  click-through rates to optimize its content promotion
+                  strategy.
                 </p>
               </div>
             </div>
@@ -571,7 +263,7 @@ const marketing = () => {
           Our Capabilities
         </h1>
         <div className="grid md:grid-cols-1 md:grid-cols-3 mt-10 ">
-          <div className="ms-10">
+          <div className="ms-10 mt-5 md:mt-0">
             <ul className="list-disc ms-5">
               <li>Market Research</li>
               <li>Competitive Analysis</li>
@@ -581,28 +273,30 @@ const marketing = () => {
               <li>Copywriting</li>
             </ul>
           </div>
-          <div className="ms-10">
+          <div className="ms-10 mt-5 md:mt-0">
             <ul className="list-disc ms-5">
-              <li>Market Research</li>
-              <li>Competitive Analysis</li>
-              <li>Channel Identification</li>
-              <li>Campaign Strategy</li>
-              <li>Landing Page Design</li>
-              <li>Copywriting</li>
+              <li>Content Calenders</li>
+              <li>Google Adwords</li>
+              <li>Yahoo Ads</li>
+              <li>Mobile Ads</li>
+              <li>SEO Setups and Audits</li>
+              <li>SEO Copywriting</li>
             </ul>
           </div>
-          <div className="ms-10">
+          <div className="ms-10 mt-5 md:mt-0">
             <ul className="list-disc ms-5">
-              <li>Market Research</li>
-              <li>Competitive Analysis</li>
-              <li>Channel Identification</li>
-              <li>Campaign Strategy</li>
-              <li>Landing Page Design</li>
-              <li>Copywriting</li>
+              <li>Local SEO</li>
+              <li>Facebook Ads</li>
+              <li>Twitter Ads</li>
+              <li>Linkedln Ads</li>
+              <li>Copywriting for Social Ads</li>
+              <li>Email Copywriting</li>
             </ul>
           </div>
         </div>
-        <ContentButton
+      </section>
+      <section className="w-5/6">
+      <ContentButton
           header="Still have questions?"
           paragraph="Curious about our process or what it's like to work with us? Pick a
           package; we're happy to answer to give you the best creative designs."

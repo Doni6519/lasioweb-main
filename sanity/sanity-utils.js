@@ -26,9 +26,11 @@ export async function getProjects() {
   return client.fetch(
     groq`*[_type=="project"]{
       _id,
+      url,
       _createdAt,
       name,
       category,
+      subCategory,
       "slug": slug.current,
       "image": image.asset->url,
       "secondImage": secondImage.asset->url,
@@ -47,9 +49,11 @@ export async function getProject(slug) {
   return client.fetch(
     groq`*[_type=="project" && slug.current == $slug][0]{
       _id,
+      url,
       _createdAt,
       name,
       category,
+      subCategory,
       "slug": slug.current,
       "image": image.asset->url,
       "secondImage": secondImage.asset->url,

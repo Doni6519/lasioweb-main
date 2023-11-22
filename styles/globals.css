@@ -292,19 +292,6 @@ button[type="submit"]{
 
 /* OUR_WORK START */
 
-#our_work_home{
-    background-image: url("/assets/images/background-img/our-work-bg.png");
-    height: 100vh;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    color: var(--hero_color);
-}
-
 /* OUR_WORK END */
 
 /* BRANDING START */

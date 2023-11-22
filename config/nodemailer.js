@@ -4,10 +4,10 @@ const email = "meshackdanieldoni@gmail.com"
 const pass = "nxwfpzxgicuseukl"
 
 export const transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: "Gmail",
     auth: {
         user: email,
-        pass
+        pass: pass
     }
 })
 
