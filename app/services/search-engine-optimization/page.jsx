@@ -78,7 +78,7 @@ const seo = () => {
           </p>
         </div>
       </div>
-      <section className=" justify-around first_item_extra w-5/6"></section>
+      <section className=" justify-around first_item w-5/6"></section>
       <section className="md:flex w-5/6">
         <div className="basis-2/4 justify-between">
           <h1 className="text-base text-center md:text-start md:text-2xl font-bold">

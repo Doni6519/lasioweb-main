@@ -1,7 +1,39 @@
+"use client";
 import Image from "next/image";
 import ContentButton from "@/components/ContentButton";
 import Nav from "@/components/Nav";
+import { dmContactForm } from "@/lib/api";
+import { useState } from "react";
+const initValues = {
+  company: "",
+  email: "",
+  phone: "",
+  url: "",
+  comment: "",
+};
+const initState = { values: initValues };
+
 const marketing = () => {
+  const [state, setState] = useState(initState);
+  const { values } = state;
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+  const onSubmit = async () => {
+    // setState((prev) => ({
+    //   ...prev,
+    //   isLoading: true
+    // }));
+    try {
+      await dmContactForm(values);
+      setState(initState);
+    } catch (error) {}
+  };
   return (
     <div className="text-sm">
       <Nav color="text-white hover:text-black" />
@@ -21,7 +53,7 @@ const marketing = () => {
           </p>
         </div>
       </div>
-      <section className="flex justify-around first_item_extra w-5/6"></section>
+      <section className="flex justify-around first_item w-5/6"></section>
       <section className="md:flex md:w-5/6 ps-10 pe-5 md:pe-10">
         <div className="me-10 md:basis-4/4 lg:basis-2/4">
           <h1 className="font-bold">OUR APPROACH TO DIGITAL MARKETING</h1>
@@ -37,44 +69,62 @@ const marketing = () => {
             <a href="tel:+9070807080">09070807080</a>; we're happy to answer all
             your question.
           </p>
-          <form action="" className="mt-5 lg:w-5/6" style={{ fontSize: 1 }}>
+          <form className="mt-5 lg:w-5/6" style={{ fontSize: 1 }}>
             <div className="flex">
               <div className="basis-2/4 me-2">
                 <input
                   type="text"
-                  placeholder="First Name"
+                  placeholder="Company"
                   className="w-full block mb-5"
+                  required
+                  name="company"
+                  value={values.company}
+                  onChange={handleChange}
                 />
                 <input
                   type="text"
-                  placeholder="Company Name"
+                  placeholder="Phone Number"
+                  name="phone"
+                  value={values.phone}
+                  onChange={handleChange}
                   className="w-full block mb-5"
                 />
               </div>
               <div className="basis-2/4 ms-2">
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Email"
                   className="w-full block mb-5"
+                  required
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange}
                 />
                 <input
-                  type="text"
+                  type="url"
                   placeholder="Website URL"
                   className="w-full block mb-5"
+                  name="url"
+                  value={values.url}
+                  onChange={handleChange}
                 />
               </div>
             </div>
 
             <textarea
-              name=""
               id=""
               cols="30"
               rows="10"
-              placeholder="How can we help you on SEO?"
+              name="comment"
+              required
+              value={values.comment}
+              onChange={handleChange}
+              placeholder="How can we help you?"
               className="w-full h-32"
             ></textarea>
             <button
               type="submit"
+              onClick={onSubmit}
               className="px-7 py-4 text-white float-right mt-4 text-sm"
             >
               SUBMIT
@@ -296,7 +346,7 @@ const marketing = () => {
         </div>
       </section>
       <section className="w-5/6">
-      <ContentButton
+        <ContentButton
           header="Still have questions?"
           paragraph="Curious about our process or what it's like to work with us? Pick a
           package; we're happy to answer to give you the best creative designs."

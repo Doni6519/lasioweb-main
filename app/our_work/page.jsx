@@ -75,7 +75,7 @@ export default async function ourWork() {
           </p>
         </div>
       </div>
-      <section className="flex justify-around first_item_extra w-5/6"></section>
+      <section className="flex justify-around first_item w-5/6"></section>
       {/* <section className="hidden md:grid grid sm:grid-cols-1 md:grid-cols-10 w-5/6 text-xs">
         <a className="" onClick={handleFilter}>
           all
