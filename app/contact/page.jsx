@@ -13,7 +13,7 @@ const initState = { values: initValues };
 
 const contact = () => {
   const [state, setState] = useState(initState);
-  const { values } = state;
+  const { values, error } = state;
   const handleChange = ({ target }) =>
     setState((prev) => ({
       ...prev,
@@ -29,21 +29,33 @@ const contact = () => {
     // }));
     try {
       await sendContactForm(values);
-    } catch (error) {}
+      setState(initState);
+    } catch (error) {
+      setState((prev) => ({
+        ...prev,
+        error: error.message,
+      }));
+    }
   };
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-black" background="dark:bg-gray-900 w-full z-20 top-0 left-0 backdrop-filter text-base bg-blue-900"/>
-      
+      <Nav
+        color="text-white hover:text-black"
+        background="dark:bg-gray-900 w-full z-20 top-0 left-0 backdrop-filter text-base bg-blue-900"
+      />
+
       <section className="contact_hero bg-blue-900 mt-0 p-10" id="send_message">
         <h1 className="mt-10 text-4xl text-white font-bold">Contact us</h1>
         <p className="text-white">Lets talk about your ideas.</p>
         <section>
           <form
-            action="/"
-            method="post"
+            // action="/"
+            // method="post"
             className="bg-white md:w-3/6 lg:w-2/6 p-10 drop-shadow md:absolute"
           >
+            {error && (
+              <p>{error} hi</p>
+            )}
             <h1 className="text-base md:text-2xl font-bold uppercase mb-5">
               Send us a message
             </h1>
