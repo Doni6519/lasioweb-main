@@ -15,14 +15,14 @@ const branding = () => {
           alt=""
         />
         <div id="hero_text" className=" absolute  z-100">
-          <h1 className="font-bold uppercase">website optimization</h1>
+          <h1 className="font-bold uppercase">Branding and logo</h1>
           <p className="text-2xl mt-3">
             Data driven strategies to increase your brand awareness and get you
             ahead of your competition.
           </p>
         </div>
       </div>
-      <section className="flex justify-around first_item w-5/6"></section>
+      <section className="flex justify-around first_item_extra_sm w-5/6"></section>
       <section className="md:flex w-5/6 text-slate-800">
         <div className="md:w-2/4 me-5">
           <h1 className="text-2xl md:text-4xl text-black mb-5">

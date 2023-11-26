@@ -99,6 +99,9 @@ input:focus, textarea:focus{
 .first_item_extra {
     margin-top: 95vh;
 }
+.first_item_extra_sm {
+    margin-top: 85vh;
+}
 
 .first_item_hero {
     margin-top: 95vh;
@@ -137,7 +140,7 @@ button[type="submit"]{
     max-width: 80%;
 }
 .hero #hero_text{
-    margin-top: 20vh;
+    margin-top: 30vh;
     color: var(--hero_color) !important;
     margin-left: 15vw;
     margin-right: 5vw;

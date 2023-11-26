@@ -61,7 +61,7 @@ const seo = () => {
   };
   return (
     <div className="text-sm">
-      <Nav color="text-black hover:text-blue-500" />
+      <Nav color="text-white hover:text-blue-500" />
       <Image
         width={2000}
         height={2000}
@@ -78,11 +78,11 @@ const seo = () => {
           </p>
         </div>
       </div>
-      <section className=" justify-around first_item w-5/6"></section>
+      <section className=" justify-around first_item_extra w-5/6"></section>
       <section className="md:flex w-5/6">
         <div className="basis-2/4 justify-between">
           <h1 className="text-base text-center md:text-start md:text-2xl font-bold">
-            PROFESSIONAL SEO THAT DRIVES RESULT
+            PROFESSIONAL SEO THAT DRIVES RESULTS
           </h1>
           <p className="mt-3">
             We combine research-driven strategy, inventive design, and clean

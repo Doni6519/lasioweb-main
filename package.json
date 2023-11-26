@@ -9,7 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@sanity/vision": "^3.19.0",
+    "framer-motion": "^10.16.5",
     "next": "14.0.1",
     "next-sanity": "^5.5.10",
     "nodemailer": "^6.9.7",

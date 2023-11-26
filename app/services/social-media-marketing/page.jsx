@@ -21,7 +21,7 @@ const socialMediaMarketing = () => {
           </p>
         </div>
       </div>
-      <section className="justify-around first_item w-5/6"></section>
+      <section className="justify-around first_item_extra w-5/6"></section>
       <section className="md:flex w-5/6">
         <div className="basis-3/4">
           <h1 className="mt-10 text-2xl md:text-4xl">Reaching your audience</h1>
