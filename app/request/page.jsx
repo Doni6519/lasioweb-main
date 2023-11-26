@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
+import { FormControl, useToast } from "@chakra-ui/react";
 import { requestContactForm } from "@/lib/api";
 import Nav from "@/components/Nav";
 const initValues = {
@@ -30,8 +31,8 @@ const initValues = {
   checkbox17: "",
 };
 const initState = { values: initValues };
-
 const request = () => {
+  const toast = useToast();
   const [state, setState] = useState(initState);
   const { values } = state;
   const handleChange = ({ target }) =>
@@ -47,15 +48,23 @@ const request = () => {
     //   ...prev,
     //   isLoading: true
     // }));
-    
+
     try {
       await requestContactForm(values);
       setState(initState);
+      toast({
+        title: "Message sent.",
+        description: "We'll get back to you shortly.",
+        status: "success",
+        duration: 3000,
+        position: "top",
+        isClosable: true,
+      });
     } catch (error) {}
   };
   return (
     <div className="text-sm">
-      <Nav color="text-black hover:text-blue-500"/>
+      <Nav color="text-black hover:text-blue-500" />
       <h1 className="text-center text-4xl font-bold mt-10">Submit a Request</h1>
       <p className="text-center text-base">
         Need any of our
@@ -69,7 +78,7 @@ const request = () => {
         ? Fill the form below and we'll get in touch shortly.
       </p>
       <section className="mt-0 p-10 md:w-3/6 lg:w-2/6">
-        <form className="bg-white p-5 drop-shadow">
+        <FormControl className="bg-white p-5 drop-shadow">
           <div class="relative z-0 w-full mb-6 group">
             <input
               type="text"
@@ -487,7 +496,7 @@ const request = () => {
           >
             Send
           </button>
-        </form>
+        </FormControl>
       </section>
     </div>
   );

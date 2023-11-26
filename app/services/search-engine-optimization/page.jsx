@@ -3,6 +3,7 @@ import Image from "next/image";
 import GetStarted from "@/components/GetStarted";
 import { seoContactForm } from "@/lib/api";
 import { useState } from "react";
+import { FormControl, useToast } from "@chakra-ui/react";
 import Nav from "@/components/Nav";
 const initValues = {
   lastName: "",
@@ -20,6 +21,7 @@ const initValues = {
 const initState = { values: initValues };
 
 const seo = () => {
+  const toast = useToast();
   const [state, setState] = useState(initState);
   const { values } = state;
   const handleChange = ({ target }) =>
@@ -38,6 +40,14 @@ const seo = () => {
     try {
       await seoContactForm(values);
       setState(initState);
+      toast({
+        title: "Message sent.",
+        description: "We'll get back to you shortly.",
+        status: "success",
+        duration: 3000,
+        position: "top",
+        isClosable: true,
+      });
     } catch (error) {}
   };
 
@@ -66,7 +76,7 @@ const seo = () => {
         width={2000}
         height={2000}
         src="/assets/images/background-img/seo-bg.jpg"
-        className="absolute block w-full h-full object-cover top-0 goback"
+        className="absolute block object-cover top-0 goback"
         alt=""
       />
       <div id="seo_home" className="hero">
@@ -300,7 +310,7 @@ const seo = () => {
           <p className="text-center mt-2 mb-6">
             Complete the form below to get your free quote and analysis.
           </p>
-          <form className="w-5/6 m_auto">
+          <FormControl className="w-5/6 m_auto">
             <div className="md:flex">
               <input
                 required
@@ -439,7 +449,7 @@ const seo = () => {
             >
               SUBMIT
             </button>
-          </form>
+          </FormControl>
         </div>
       </section>
       *

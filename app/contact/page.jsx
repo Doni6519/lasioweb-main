@@ -1,5 +1,6 @@
 "use client";
 import { sendContactForm } from "@/lib/api";
+import { FormControl, useToast } from "@chakra-ui/react";
 import { useState } from "react";
 import Nav from "@/components/Nav";
 const initValues = {
@@ -12,6 +13,7 @@ const initValues = {
 const initState = { values: initValues };
 
 const contact = () => {
+  const toast = useToast();
   const [state, setState] = useState(initState);
   const { values, error } = state;
   const handleChange = ({ target }) =>
@@ -30,8 +32,16 @@ const contact = () => {
     try {
       await sendContactForm(values);
       setState(initState);
-      document.getElementById("toast").innerHTML =
-        '<div id="toast-simple" class="flex items-center mb-5 w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-green-100 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert"><svg class="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/></svg><div class="ps-4 text-sm font-normal">Message sent successfully.</div></div>';
+      toast({
+        title: "Message sent.",
+        description: "We'll get back to you shortly.",
+        status: "success",
+        duration: 3000,
+        position: "top",
+        isClosable: true,
+      });
+      // document.getElementById("toast").innerHTML =
+      //   '<div id="toast-simple" class="flex items-center mb-5 w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-green-100 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert"><svg class="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/></svg><div class="ps-4 text-sm font-normal">Message sent successfully.</div></div>';
     } catch (error) {
       setState((prev) => ({
         ...prev,
@@ -49,12 +59,10 @@ const contact = () => {
       <section className="contact_hero bg-blue-900 mt-0 p-10" id="send_message">
         <h1 className="mt-10 text-4xl text-white font-bold">Contact us</h1>
         <p className="text-white">Lets talk about your ideas.</p>
-        <section>
-          <form
-            className="bg-white md:w-3/6 lg:w-2/6 p-10 drop-shadow md:absolute"
-          >
+        <section className="bg-white md:w-3/6 lg:w-2/6 p-10 drop-shadow md:absolute form">
+          <FormControl>
             <div id="toast"></div>
-            {error && (
+            {/* {error && (
               <div
                 id="toast-warning"
                 className="mb-5 flex items-center w-full max-w-xs p-4 text-gray-500 bg-orange-100 rounded-lg shadow dark:text-gray-400 dark:bg-gray-800 justify-between"
@@ -97,7 +105,7 @@ const contact = () => {
                   </svg>
                 </button>
               </div>
-            )}
+            )} */}
             <h1 className="text-base md:text-2xl font-bold uppercase mb-5">
               Send us a message
             </h1>
@@ -194,7 +202,7 @@ const contact = () => {
             >
               Send
             </button>
-          </form>
+          </FormControl>
         </section>
       </section>
       <section

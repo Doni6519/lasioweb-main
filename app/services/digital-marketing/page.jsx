@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import ContentButton from "@/components/ContentButton";
+import { FormControl, useToast } from "@chakra-ui/react";
 import Nav from "@/components/Nav";
 import { dmContactForm } from "@/lib/api";
 import { useState } from "react";
@@ -14,6 +15,7 @@ const initValues = {
 const initState = { values: initValues };
 
 const marketing = () => {
+  const toast = useToast();
   const [state, setState] = useState(initState);
   const { values } = state;
   const handleChange = ({ target }) =>
@@ -32,6 +34,14 @@ const marketing = () => {
     try {
       await dmContactForm(values);
       setState(initState);
+      toast({
+        title: "Message sent.",
+        description: "We'll get back to you shortly.",
+        status: "success",
+        duration: 3000,
+        position: "top",
+        isClosable: true,
+      });
     } catch (error) {}
   };
   return (
@@ -42,7 +52,7 @@ const marketing = () => {
           width={2000}
           height={2000}
           src="/assets/images/background-img/marketing-bg.png"
-          className="absolute block w-full h-full object-cover top-0 goback"
+          className="absolute block object-cover top-0 goback"
           alt=""
         />
         <div id="hero_text" className=" absolute  z-100">
@@ -69,7 +79,7 @@ const marketing = () => {
             <a href="tel:+9070807080">09070807080</a>; we're happy to answer all
             your question.
           </p>
-          <form className="mt-5 lg:w-5/6" style={{ fontSize: 1 }}>
+          <FormControl className="mt-5 lg:w-5/6" style={{ fontSize: 1 }}>
             <div className="flex">
               <div className="basis-2/4 me-2">
                 <input
@@ -129,7 +139,7 @@ const marketing = () => {
             >
               SUBMIT
             </button>
-          </form>
+          </FormControl>
         </div>
         <div className="ms-10 hidden md:block">
           <Image

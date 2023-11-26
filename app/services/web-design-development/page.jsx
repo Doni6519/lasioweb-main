@@ -11,7 +11,7 @@ const webDev = () => {
           width={2000}
           height={2000}
           src="/assets/images/background-img/web-dev-bg.png"
-          className="absolute block w-full h-full object-cover top-0 goback"
+          className="absolute block object-cover top-0 goback"
           alt=""
         />
         <div id="hero_text" className=" absolute  z-100">
