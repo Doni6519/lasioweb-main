@@ -7,7 +7,7 @@ const Footer = () => {
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-            <a href="https://flowbite.com/" class="flex items-center">
+            <a href="./" class="flex items-center">
               <Image
                 src="/assets/images/logo.png"
                 alt="logo"
@@ -27,12 +27,12 @@ const Footer = () => {
               </h2>
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
-                  <a href="https://flowbite.com/" class="hover:underline">
+                  <a href="tel:+2349070807080" class="hover:underline">
                     +234 90 7080 7080
                   </a>
                 </li>
                 <li>
-                  <a href="https://tailwindcss.com/" class="hover:underline">
+                  <a href="mailto:start@lasioweb.com" class="hover:underline">
                     start@lasioweb.com
                   </a>
                 </li>
@@ -45,7 +45,7 @@ const Footer = () => {
               <ul class="text-gray-500 dark:text-gray-400 font-medium">
                 <li class="mb-4">
                   <a
-                    href="https://github.com/themesberg/flowbite"
+                    href=""
                     class="hover:underline "
                   >
                     Github
@@ -53,10 +53,10 @@ const Footer = () => {
                 </li>
                 <li>
                   <a
-                    href="https://discord.gg/4eeurUVvTy"
+                    href=""
                     class="hover:underline"
                   >
-                    Discord
+                    Instagram
                   </a>
                 </li>
               </ul>
