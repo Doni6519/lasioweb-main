@@ -17,7 +17,7 @@ export default async function Project({ params }) {
           <div className="flex">
             <Link href="/our_work">
               <svg
-                class="w-5 h-5 mt-2 me-3 text-gray-800 dark:text-white menu_border"
+                className="w-5 h-5 mt-2 me-3 text-gray-800 dark:text-white menu_border"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -25,9 +25,9 @@ export default async function Project({ params }) {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 1h15M1 7h15M1 13h15"
                 />
               </svg>
@@ -35,7 +35,7 @@ export default async function Project({ params }) {
             <p className="stick mx-1"></p>
             {/* <div className="flex">
               <svg
-                class="w-5 h-5 mt-2 mx-3 text-gray-800 dark:text-white"
+                className="w-5 h-5 mt-2 mx-3 text-gray-800 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -43,14 +43,14 @@ export default async function Project({ params }) {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M13 5H1m0 0 4 4M1 5l4-4"
                 />
               </svg>
               <svg
-                class="w-5 h-5 mt-2 mx-3 text-gray-800 dark:text-white"
+                className="w-5 h-5 mt-2 mx-3 text-gray-800 dark:text-white"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -58,9 +58,9 @@ export default async function Project({ params }) {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M1 5h12m0 0L9 1m4 4L9 9"
                 />
               </svg>
@@ -92,8 +92,8 @@ export default async function Project({ params }) {
             >
               <path
                 stroke="currentColor"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M10 6v4l3.276 3.276M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
               />
             </svg>
@@ -111,9 +111,9 @@ export default async function Project({ params }) {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M7 8a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm-2 3h4a4 4 0 0 1 4 4v2H1v-2a4 4 0 0 1 4-4Z"
               />
             </svg>
@@ -135,8 +135,8 @@ export default async function Project({ params }) {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeWidth="2"
                 d="M1 10c1.5 1.5 5.25 3 9 3s7.5-1.5 9-3m-9-1h.01M2 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1ZM14 5V3a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2h8Z"
               />
             </svg>
@@ -176,9 +176,9 @@ export default async function Project({ params }) {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"
                 />
               </svg>
@@ -198,9 +198,9 @@ export default async function Project({ params }) {
             className={project.category + " all relative w-full"}
             data-carousel="static"
           >
-            <div class="relative h-56 overflow-hidden rounded-lg ">
+            <div className="relative h-56 overflow-hidden rounded-lg ">
               <Link href={`/our_work/${project.slug}`}>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <Image
                     width={1000}
                     height={1000}
@@ -212,7 +212,7 @@ export default async function Project({ params }) {
               </Link>
               <Link href={`/our_work/${project.slug}`}>
                 <div
-                  class="hidden duration-700 ease-in-out"
+                  className="hidden duration-700 ease-in-out"
                   data-carousel-item="active"
                 >
                   <Image
@@ -225,7 +225,7 @@ export default async function Project({ params }) {
                 </div>
               </Link>
               <Link href={`/our_work/${project.slug}`}>
-                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <Image
                     width={1000}
                     height={1000}
@@ -238,12 +238,12 @@ export default async function Project({ params }) {
             </div>
             <button
               type="button"
-              class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
               data-carousel-prev
             >
-              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                 <svg
-                  class="w-4 h-4 text-white dark:text-gray-800"
+                  className="w-4 h-4 text-white dark:text-gray-800"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -251,23 +251,23 @@ export default async function Project({ params }) {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M5 1 1 5l4 4"
                   />
                 </svg>
-                <span class="sr-only">Previous</span>
+                <span className="sr-only">Previous</span>
               </span>
             </button>
             <button
               type="button"
-              class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
               data-carousel-next
             >
-              <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                 <svg
-                  class="w-4 h-4 text-white dark:text-gray-800"
+                  className="w-4 h-4 text-white dark:text-gray-800"
                   aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -275,13 +275,13 @@ export default async function Project({ params }) {
                 >
                   <path
                     stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="m1 9 4-4-4-4"
                   />
                 </svg>
-                <span class="sr-only">Next</span>
+                <span className="sr-only">Next</span>
               </span>
             </button>
           </div>

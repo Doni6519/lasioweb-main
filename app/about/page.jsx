@@ -3,14 +3,14 @@ import Nav from "@/components/Nav";
 const page = () => {
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-blue-500"/>
+      <Nav />
       <div id="about_home" className="hero">
       <Image
           width={2000}
           height={2000}
           src="/assets/images/background-img/about-bg.png"
           className="absolute block object-cover top-0 goback"
-          alt=""
+          alt="logo"
         />
         <div id="hero_text" className=" absolute  z-100">
           <h1 className="font-bold uppercase">About us</h1>
@@ -86,6 +86,7 @@ const page = () => {
               width={700}
               height={500}
               style={{ height: "100%", objectFit: "cover" }}
+              alt="vision"
             />
           </div>
           <div className="h-80 p-10 text vision">
@@ -110,6 +111,7 @@ const page = () => {
               width={700}
               height={500}
               style={{ height: "100%", objectFit: "cover" }}
+              alt="mission"
             />
           </div>
         </div>
@@ -174,9 +176,9 @@ const page = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="1"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="1"
                       d="M9.041 11.862A5 5 0 0 1 11 15.831V19M1 1v3.169a5 5 0 0 0 1.891 3.916M11 1v3.169a5 5 0 0 1-2.428 4.288l-5.144 3.086A5 5 0 0 0 1 15.831V19M1 3h10M1.399 6h9.252M2 14h8.652M1 17h10"
                     />
                   </svg>
@@ -254,7 +256,7 @@ const page = () => {
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="#fff"
-                    class="bi bi-chat-left-text h-10 h-10"
+                    className="bi bi-chat-left-text h-10 h-10"
                     viewBox="0 0 16 16"
                   >
                     <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />

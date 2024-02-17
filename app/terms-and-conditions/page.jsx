@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Nav from "@/components/Nav";
+import Nav from "@/components/Navblack";
 const privacy = () => {
   return (
     <div className="text-sm">

@@ -4,11 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Nav = () => {
-  function handleClick(){
+  function handleClick() {
     document.getElementById("sub_nav").style.display = "none";
     document.getElementById("body").style.overflowY = "scroll";
   }
-  function handleMenu(){
+  function handleMenu() {
     document.getElementById("sub_nav").style.display = "block";
     document.getElementById("body").style.overflow = "hidden";
   }
@@ -49,7 +49,7 @@ const Nav = () => {
           <li>
             <Link
               href="/about"
-              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700md:hover:bg-transparent md:hover:text-blue-700 md:p -0"
             >
               About
             </Link>
@@ -57,7 +57,7 @@ const Nav = () => {
           <li>
             <Link
               href="/services"
-              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700md:hover:bg-transparent md:hover:text-blue-700 md:p -0"
             >
               Services
             </Link>
@@ -65,7 +65,7 @@ const Nav = () => {
           <li>
             <Link
               href="/our_work"
-              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700md:hover:bg-transparent md:hover:text-blue-700 md:p -0"
             >
               Our work
             </Link>
@@ -73,7 +73,7 @@ const Nav = () => {
           <li>
             <Link
               href="/blog"
-              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700md:hover:bg-transparent md:hover:text-blue-700 md:p -0"
             >
               Blog
             </Link>
@@ -81,7 +81,7 @@ const Nav = () => {
           <li>
             <Link
               href="/contact"
-              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
+              className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700md:hover:bg-transparent md:hover:text-blue-700 md:p -0"
             >
               Contact
             </Link>
@@ -136,8 +136,8 @@ const Nav = () => {
             <li>
               <Link
                 href="/about"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                aria-current="page"
+                className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700"
+                ar ia-current="page"
               >
                 About
               </Link>
@@ -145,7 +145,7 @@ const Nav = () => {
             <li>
               <Link
                 href="/services"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700 md:hover:bg-transparent"
               >
                 Services
               </Link>
@@ -153,7 +153,7 @@ const Nav = () => {
             <li>
               <Link
                 href="/our_work"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700 md:hover:bg-transparent"
               >
                 Our work
               </Link>
@@ -161,7 +161,7 @@ const Nav = () => {
             <li>
               <Link
                 href="/blog"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700 md:hover:bg-transparent"
               >
                 Blog
               </Link>
@@ -169,7 +169,7 @@ const Nav = () => {
             <li>
               <Link
                 href="/contact"
-                className="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:text-blue-700 md:hover:bg-transparent"
               >
                 Contact
               </Link>

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { FormControl, useToast } from "@chakra-ui/react";
 import { requestContactForm } from "@/lib/api";
-import Nav from "@/components/Nav";
+import Nav from "@/components/Navblack";
 const initValues = {
   name: "",
   whatsapp_number: "",
@@ -64,7 +64,7 @@ const request = () => {
   };
   return (
     <div className="text-sm">
-      <Nav color="text-black hover:text-blue-500" />
+      <Nav />
       <h1 className="text-center text-4xl font-bold mt-10">Submit a Request</h1>
       <p className="text-center text-base">
         Need any of our
@@ -79,93 +79,93 @@ const request = () => {
       </p>
       <section className="mt-0 p-10 md:w-3/6 lg:w-2/6">
         <FormControl className="bg-white p-5 drop-shadow">
-          <div class="relative z-0 w-full mb-6 group">
+          <div className="relative z-0 w-full mb-6 group">
             <input
               type="text"
               name="name"
               id="name"
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=" "
               required
               value={values.name}
               onChange={handleChange}
             />
             <label
-              for="name"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              htmlFor="name"
+              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Full name
             </label>
           </div>
-          <div class="relative z-0 w-full mb-6 group">
+          <div className="relative z-0 w-full mb-6 group">
             <input
               type="email"
               name="email"
               id="email"
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=" "
               required
               value={values.email}
               onChange={handleChange}
             />
             <label
-              for="email"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              htmlFor="email"
+              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Email address
             </label>
           </div>
-          <div class="relative z-0 w-full mb-6 group">
+          <div className="relative z-0 w-full mb-6 group">
             <input
               type="text"
               name="business"
               id="business"
-              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
               placeholder=""
               required
               value={values.business}
               onChange={handleChange}
             />
             <label
-              for="business"
-              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              htmlFor="business"
+              className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
             >
               Business name
             </label>
           </div>
-          <div class=" md:grid-cols-2 md:gap-6">
-            <div class="relative z-0 w-full mb-6 group">
+          <div className=" md:grid-cols-2 md:gap-6">
+            <div className="relative z-0 w-full mb-6 group">
               <input
                 type="tel"
                 // pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                 name="whatsapp_number"
                 id="whatsapp_number"
-                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 required
                 value={values.whatsapp_number}
                 onChange={handleChange}
               />
               <label
-                for="whatsapp_number"
-                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                htmlFor="whatsapp_number"
+                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Whatsapp number (123-456-7890)
               </label>
             </div>
-            <div class="relative z-0 w-full mb-6 group">
+            <div className="relative z-0 w-full mb-6 group">
               <input
                 type="text"
                 name="url"
                 id="url"
-                class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                 placeholder=" "
                 value={values.url}
                 onChange={handleChange}
               />
               <label
-                for="url"
-                class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                htmlFor="url"
+                className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
               >
                 Website URL (if any)
               </label>
@@ -176,106 +176,106 @@ const request = () => {
           </h1>
 
           <fieldset required>
-            <legend class="sr-only">Checkbox variants</legend>
-            <div class="flex items-center mb-4">
+            <legend className="sr-only">Checkbox variants</legend>
+            <div className="flex items-center mb-4">
               <input
                 id="checkbox-1"
                 type="checkbox"
                 name="checkbox1"
                 value="I want a new website"
                 onChange={handleChange}
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
-                for="checkbox-1"
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                htmlFor="checkbox-1"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 I want a new website
               </label>
             </div>
 
-            <div class="flex items-center mb-4">
+            <div className="flex items-center mb-4">
               <input
                 id="checkbox-2"
                 type="checkbox"
                 name="checkbox2"
                 value="I want to redesign my current website"
                 onChange={handleChange}
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
-                for="checkbox-2"
+                htmlFor="checkbox-2"
                 onChange={handleChange}
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 I want to redesign my current website
               </label>
             </div>
 
-            <div class="flex items-center mb-4">
+            <div className="flex items-center mb-4">
               <input
                 id="checkbox-3"
                 type="checkbox"
                 name="checkbox3"
                 value="I want my website on google first page (SEO)"
                 onChange={handleChange}
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
-                for="checkbox-3"
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                htmlFor="checkbox-3"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 I want my website on google first page (SEO)
               </label>
             </div>
 
-            <div class="flex items-center mb-4">
+            <div className="flex items-center mb-4">
               <input
                 id="checkbox-4"
                 type="checkbox"
                 name="checkbox4"
                 value="I want to setup an online store"
                 onChange={handleChange}
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
-                for="checkbox-4"
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                htmlFor="checkbox-4"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 I want to setup an online store
               </label>
             </div>
 
             <div className="md:flex">
-              <div class="flex items-center mb-4 me-3">
+              <div className="flex items-center mb-4 me-3">
                 <input
                   id="checkbox-5"
                   type="checkbox"
                   name="checkbox5"
                   value="I need a logo design"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-5"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-5"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   I need a logo design
                 </label>
               </div>
 
-              <div class="flex items-center mb-4">
+              <div className="flex items-center mb-4">
                 <input
                   id="checkbox-6"
                   type="checkbox"
                   name="checkbox6"
                   value="Investment Website"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-6"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-6"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   Investment Website
                 </label>
@@ -283,70 +283,70 @@ const request = () => {
             </div>
 
             <div className="md:flex">
-              <div class="flex items-center mb-4 me-3">
+              <div className="flex items-center mb-4 me-3">
                 <input
                   id="checkbox-7"
                   type="checkbox"
                   name="checkbox7"
                   value="Affiliate Marketing System"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-7"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-7"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   Affiliate Marketing System
                 </label>
               </div>
 
-              <div class="flex items-center mb-4">
+              <div className="flex items-center mb-4">
                 <input
                   id="checkbox-8"
                   type="checkbox"
                   name="checkbox8"
                   value="Social & Digital Marketing"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-8"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-8"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   Social & Digital Marketing
                 </label>
               </div>
             </div>
 
-            <div class="flex items-center mb-4">
+            <div className="flex items-center mb-4">
               <input
                 id="checkbox-9"
                 type="checkbox"
                 name="checkbox9"
                 value="I Need Help With Website Maintenance or Hosting"
                 onChange={handleChange}
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
-                for="checkbox-9"
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                htmlFor="checkbox-9"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 I Need Help With Website Maintenance or Hosting
               </label>
             </div>
 
-            <div class="flex items-center mb-4">
+            <div className="flex items-center mb-4">
               <input
                 id="checkbox-10"
                 type="checkbox"
                 name="checkbox10"
                 value="Other (Specify below)"
                 onChange={handleChange}
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
-                for="checkbox-10"
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                htmlFor="checkbox-10"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Other (Specify below)
               </label>
@@ -357,7 +357,7 @@ const request = () => {
             id="message"
             rows="4"
             name="comment"
-            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
             placeholder="Comment other things you need help with"
             value={values.comment}
             onChange={handleChange}
@@ -365,124 +365,124 @@ const request = () => {
           <h1 className="font-bold text-base mt-3 mb-3">Your Budget</h1>
 
           <fieldset>
-            <legend class="sr-only">Checkbox variants</legend>
+            <legend className="sr-only">Checkbox variants</legend>
 
             <div className="flex">
-              <div class="flex items-center mb-4 me-3">
+              <div className="flex items-center mb-4 me-3">
                 <input
                   id="checkbox-11"
                   type="checkbox"
                   name="checkbox11"
                   value="0 - $450"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-11"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-11"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   0 - $450
                 </label>
               </div>
 
-              <div class="flex items-center mb-4 me-3">
+              <div className="flex items-center mb-4 me-3">
                 <input
                   id="checkbox-12"
                   type="checkbox"
                   name="checkbox12"
                   value="$500 - $1000"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-12"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-12"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   $500 - $1000
                 </label>
               </div>
 
-              <div class="flex items-center mb-4 me-3">
+              <div className="flex items-center mb-4 me-3">
                 <input
                   id="checkbox-13"
                   type="checkbox"
                   name="checkbox13"
                   value="$1000 - $2000"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-13"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-13"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   $1000 - $2000
                 </label>
               </div>
             </div>
             <div className="flex">
-              <div class="flex items-center mb-4 me-3">
+              <div className="flex items-center mb-4 me-3">
                 <input
                   id="checkbox-14"
                   type="checkbox"
                   name="checkbox14"
                   value="$2000 - $ 5000"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-14"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-14"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   $2000 - $ 5000
                 </label>
               </div>
 
-              <div class="flex items-center mb-4 me-3">
+              <div className="flex items-center mb-4 me-3">
                 <input
                   id="checkbox-15"
                   type="checkbox"
                   name="checkbox15"
                   value="$5000 - $10000"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-15"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-15"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   $5000 - $10000
                 </label>
               </div>
 
-              <div class="flex items-center mb-4 me-3">
+              <div className="flex items-center mb-4 me-3">
                 <input
                   id="checkbox-16"
                   type="checkbox"
                   name="checkbox16"
                   value="$20000 - $50000"
                   onChange={handleChange}
-                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
                 />
                 <label
-                  for="checkbox-16"
-                  class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  htmlFor="checkbox-16"
+                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                 >
                   $20000 - $50000
                 </label>
               </div>
             </div>
-            <div class="flex items-center mb-4 me-3">
+            <div className="flex items-center mb-4 me-3">
               <input
                 id="checkbox-17"
                 type="checkbox"
                 name="checkbox17"
                 value="Dont have a budget"
                 onChange={handleChange}
-                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
               />
               <label
-                for="checkbox-17"
-                class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                htmlFor="checkbox-17"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
               >
                 Dont have a budget
               </label>
@@ -492,7 +492,7 @@ const request = () => {
           <button
             type="submit"
             onClick={onSubmit}
-            class="mt-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="mt-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Send
           </button>

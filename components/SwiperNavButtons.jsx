@@ -10,7 +10,7 @@ const SwiperNavButtons = () => {
         className="rounded-full p-2 me-1"
       >
         <svg
-          class="w-4 h-4 text-white dark:text-gray-800"
+          className="w-4 h-4 text-white dark:text-gray-800"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -30,7 +30,7 @@ const SwiperNavButtons = () => {
         className="rounded-full p-2 ms-1"
       >
         <svg
-          class="w-4 h-4 text-white dark:text-gray-800"
+          className="w-4 h-4 text-white dark:text-gray-800"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
