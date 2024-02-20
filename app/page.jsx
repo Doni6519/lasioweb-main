@@ -35,7 +35,7 @@ export default async function Home() {
         <div id="hero_text" className="absolute z-100">
           <h1 className="font-bold text-4xl">We craft web experiences</h1>
           <p className="text-2xl mt-3">
-            <span className="font-bold">that</span> thrives businesses
+            <span className="font-bold">that</span> thrives businessessss -
           </p>
           <Link
             href="/request"
