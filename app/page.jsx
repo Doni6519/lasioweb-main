@@ -632,7 +632,16 @@ export default async function Home() {
             className="mySwiper"
           >
             <SwiperNavButtons />
-            {projects.map((project) => (
+            <SwiperSlide>
+            <Image
+          width={2000}
+          height={2000}
+          src="/assets/images/background-img/home-bg.png"
+          className="absolute block  object-cover top-0 goback"
+          alt=""
+        />
+            </SwiperSlide>
+            {/* {projects.map((project) => (
               <SwiperSlide className="h-56 max-w-xs rounded-lg me-3">
                 <div
                   // controls-carousel
@@ -735,7 +744,7 @@ export default async function Home() {
                   </button>
                 </div>
               </SwiperSlide>
-            ))}
+            ))} */}
           </Swiper>
           
         </div>
