@@ -632,13 +632,7 @@ export default async function Home() {
             className="mySwiper"
           >
             <SwiperNavButtons />
-            <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-            {/* {projects.map((project) => (
+            {projects.map((project) => (
               <SwiperSlide className="h-56 max-w-xs rounded-lg me-3">
                 <div
                   // controls-carousel
@@ -741,7 +735,7 @@ export default async function Home() {
                   </button>
                 </div>
               </SwiperSlide>
-            ))} */}
+            ))}
           </Swiper>
           
         </div>
