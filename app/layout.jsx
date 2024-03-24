@@ -17,6 +17,10 @@ const RootLayout = ({ children }) => {
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         /> */}
         <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+        <link
           href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
           rel="stylesheet"
         />
@@ -31,7 +35,7 @@ const RootLayout = ({ children }) => {
           <Footer />
         </main>
     </ChakraProvider>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         {/* <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> */}
         <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
