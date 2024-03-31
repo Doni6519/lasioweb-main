@@ -17,7 +17,7 @@ const blog = () => {
         <div className="ms-5">
           <Image
             className="rounded-md"
-            src="/assets/images/services/services.jpg"
+            src="/assets/images/blog/bg.jpg"
             width={500}
             height={500}
           />

@@ -10,7 +10,7 @@ const webDev = () => {
       <Image
           width={2000}
           height={2000}
-          src="/assets/images/background-img/web-dev-bg.png"
+          src="/assets/images/background-img/web-dev-bg.jpg"
           className="absolute block object-cover top-0 goback"
           alt=""
         />

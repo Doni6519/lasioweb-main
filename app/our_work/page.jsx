@@ -29,7 +29,7 @@ export default async function ourWork() {
             "block";
         }
       }
-    }
+    } 
   }
   // function handleFilterSelect(target) {
   //   const category = ["blog", "web development", "portfolio"];
@@ -62,7 +62,7 @@ export default async function ourWork() {
       <Image
           width={2000}
           height={2000}
-          src="/assets/images/background-img/our-work-bg.png"
+          src="/assets/images/background-img/bg.jpg"
           className="absolute block object-cover top-0 goback"
           alt=""
         />
