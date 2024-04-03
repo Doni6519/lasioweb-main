@@ -15,10 +15,9 @@ const branding = () => {
           alt=""
         />
         <div id="hero_text" className=" absolute  z-100">
-          <h1 className="font-bold uppercase">Branding and logo</h1>
-          <p className="text-2xl mt-3">
-            Data driven strategies to increase your brand awareness and get you
-            ahead of your competition.
+          <h1 className="font-extrabold uppercase text-xl">Branding and logo</h1>
+          <p className="text-3xl mt-3">
+            Create your identity and story in few steps.
           </p>
         </div>
       </div>
@@ -56,12 +55,12 @@ const branding = () => {
         </div>
       </section>
       <div className="w-5/6 m_auto mb-10">
-        <ContentButton
+        <Link href="/contact"><ContentButton
           header="Still have questions?"
           paragraph="Curious about our process or what it's like to work with us? Pick a
           package; we're happy to answer to give you the best creative designs."
           button="PURCHASE A PACKAGE"
-        />
+        /></Link>
       </div>
     </div>
   );

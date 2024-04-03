@@ -15,10 +15,10 @@ const webDev = () => {
           alt=""
         />
         <div id="hero_text" className=" absolute  z-100">
-          <h1 className="font-bold uppercase">
+          <h1 className="font-extrabold uppercase text-xl">
             web design & development
           </h1>
-          <p className="text-2xl">
+          <p className="text-3xl">
             Everyone can set up a website this days. We build strategic engaging
             websites that enforce credibility and communicate key messages and
             turning them into profits.
@@ -45,7 +45,7 @@ const webDev = () => {
             type="button"
             className="mt-6 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  font-medium text-sm px-4 py-4 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            <Link href="/">Request for a quote</Link>
+            <Link href="/request">Request for a quote</Link>
           </button>
         </div>
         <div className="basis-2/4 mt-5 md:mt-0 md:ms-5">

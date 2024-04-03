@@ -81,10 +81,9 @@ const seo = () => {
       />
       <div id="seo_home" className="hero">
         <div id="hero_text" className=" absolute  z-100">
-          <h1 className="font-bold uppercase">website optimization</h1>
-          <p className="text-2xl mt-3">
-            Data driven strategies to increase your brand awareness and get you
-            ahead of your competition.
+          <h1 className="font-extrabold uppercase text-xl">search engine optimization</h1>
+          <p className="text-3xl mt-3">
+            We make you always appear first on search related to you.
           </p>
         </div>
       </div>

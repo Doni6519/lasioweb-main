@@ -56,10 +56,9 @@ const marketing = () => {
           alt=""
         />
         <div id="hero_text" className=" absolute  z-100">
-          <h1 className="font-bold uppercase">website optimization</h1>
-          <p className="text-2xl mt-3">
-            Data driven strategies to increase your brand awareness and get you
-            ahead of your competition.
+          <h1 className="font-extrabold uppercase text-xl">Digital marketing</h1>
+          <p className="text-3xl mt-3">
+            Let's give you a space in the world's largest market.
           </p>
         </div>
       </div>
