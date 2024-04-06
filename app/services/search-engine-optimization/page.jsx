@@ -83,7 +83,7 @@ const seo = () => {
         <div id="hero_text" className=" absolute  z-100">
           <h1 className="font-extrabold uppercase text-xl">search engine optimization</h1>
           <p className="text-3xl mt-3">
-            We make you always appear first on search related to you.
+            Always appear first on searches related to you.
           </p>
         </div>
       </div>
