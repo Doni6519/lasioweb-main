@@ -129,7 +129,7 @@ export default async function ourWork() {
                   </Link>
                 </div>
                 <div
-                  className="hidden duration-700 ease-in-out"
+                  className="hidden duration-700 ease-in-out "
                   data-carousel-item="active"
                 >
                   <Link href={`/our_work/${project.slug}`}>
