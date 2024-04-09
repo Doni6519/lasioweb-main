@@ -149,7 +149,7 @@ export default async function Home() {
           <div className="slide_item rounded">
             <div
               id="more_services_1"
-              className="items-center rounded text-white "
+              className="items-center rounded text-white"
             >
               <div
                 className="flex flex-col items-center first"
