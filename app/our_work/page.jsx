@@ -133,7 +133,7 @@ export default async function ourWork() {
                   data-carousel-item="active"
                 >
                   <Link href={`/our_work/${project.slug}`}>
-                  <Image
+                  <Image 
                     width={1000}
                     height={1000}
                     src={project.secondImage}
