@@ -27,14 +27,7 @@ const RootLayout = ({ children }) => {
         />
         <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
       </head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-5031ECEFSM"></script>
-<script>
-  {
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-5031ECEFSM');}
-</script>
+      
       <body className="font-sans" id="body">
       <ChakraProvider>
 
