@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import Nav from "components/Nav";
+import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { ChakraProvider } from '@chakra-ui/react';
 import { GoogleTagManager } from '@next/third-parties/google'
@@ -20,7 +20,6 @@ const RootLayout = ({ children }) => {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         /> */}
-        <meta name="google-site-verification" content="-2xdV3SW1jxPvKA585Z4dWYhNxPcNhJs9CGcUxfHjQk" />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css"
           rel="stylesheet"
@@ -35,7 +34,8 @@ const RootLayout = ({ children }) => {
           {children}
           <Footer />
         </main>
-      <GoogleTagManager gtmId="G-5031ECEFSM" />
+      <GoogleTagManager gtmId="G-C7V0KLX9FF" />
+      
     </ChakraProvider>
 
         {/* <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> */}
