@@ -48,7 +48,7 @@ const Footer = () => {
                     href=""
                     className="hover:underline "
                   >
-                    Github
+                    <Link href={"https://web.facebook.com/people/Lasioweb/61555114805482/?sk=about"}>Facebook</Link>
                   </a>
                 </li>
                 <li>

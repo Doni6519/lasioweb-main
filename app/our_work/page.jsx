@@ -68,10 +68,9 @@ export default async function ourWork() {
         />
       <div className="hero">
         <div id="hero_text" className=" absolute  z-100">
-          <h1 className="font-bold uppercase">website optimization</h1>
-          <p className="text-2xl mt-3">
-            Data driven strategies to increase your brand awareness and get you
-            ahead of your competition.
+          <h1 className="text-2xl font-bold uppercase">Our Work</h1>
+          <p className="text-3xl mt-3">
+            Each completed project makes us better, thereby delivering excellent results.
           </p>
         </div>
       </div>

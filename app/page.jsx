@@ -40,7 +40,7 @@ export default async function Home() {
           <Link
             href="/request"
             type="button"
-            className="bg-white hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="bg-white hover:bg-blue-300 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Get started
             <svg
@@ -100,22 +100,22 @@ export default async function Home() {
         <div>
           <ul className="list-none  mt-10 text-lg text-center common_services hidden md:block">
             <li className="hover:text-blue-900">
-              <a href="/">e-commerce</a>
+              e-commerce
             </li>
             <li className="hover:text-blue-900 mt-2">
-              <a href="/">corporate</a>
+              corporate
             </li>
             <li className="hover:text-blue-900 mt-2">
-              <a href="/">portfolio</a>
+              portfolio
             </li>
             <li className="hover:text-blue-900 mt-2">
-              <a href="/">Nonprofit</a>
+              Nonprofit
             </li>
             <li className="hover:text-blue-900 mt-2">
-              <a href="/">Legal</a>
+              Legal
             </li>
             <li className="hover:text-blue-900 mt-2">
-              <a href="/">Financial</a>
+              Financial
             </li>
           </ul>
         </div>
