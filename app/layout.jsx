@@ -27,7 +27,6 @@ const RootLayout = ({ children }) => {
         />
         <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
       </head>
-      <GoogleTagManager gtmId="G-5031ECEFSM" />
       <body className="font-sans" id="body">
       <ChakraProvider>
 
@@ -36,6 +35,7 @@ const RootLayout = ({ children }) => {
           {children}
           <Footer />
         </main>
+      <GoogleTagManager gtmId="G-5031ECEFSM" />
     </ChakraProvider>
 
         {/* <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> */}
