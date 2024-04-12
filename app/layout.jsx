@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import Nav from "components/Nav";
 import Footer from "@/components/Footer";
 import { ChakraProvider } from '@chakra-ui/react';
-import { Metadata } from "next";
+import { GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata = {
   title: {
@@ -27,7 +27,7 @@ const RootLayout = ({ children }) => {
         />
         <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
       </head>
-      
+      <GoogleTagManager gtmId="G-5031ECEFSM" />
       <body className="font-sans" id="body">
       <ChakraProvider>
 
