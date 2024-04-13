@@ -45,10 +45,10 @@ const Footer = () => {
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 <li className="mb-4">
                   <a
-                    href=""
+                    href="https://web.facebook.com/people/Lasioweb/61555114805482/?sk=about"
                     className="hover:underline "
                   >
-                    <Link href={"https://web.facebook.com/people/Lasioweb/61555114805482/?sk=about"}>Facebook</Link>
+                    Facebook
                   </a>
                 </li>
                 <li>
@@ -83,7 +83,7 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div className="sm:flex sm:items-center sm:justify-between">
           <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{" "}
+            © 2024{" "}
             <a href="https://flowbite.com/" className="hover:underline">
               LasioWeb
             </a>
