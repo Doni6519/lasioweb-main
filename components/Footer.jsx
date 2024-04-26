@@ -89,7 +89,7 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+          {/* <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
             <a
               href="#"
               className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
@@ -181,7 +181,7 @@ const Footer = () => {
               </svg>
               <span className="sr-only">Dribbble account</span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
