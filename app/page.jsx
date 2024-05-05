@@ -23,7 +23,6 @@ export default async function Home() {
   // const swiper = useSwiper();
   return (
     <div className="text-sm">
-      <Nav />
       <div id="hero_home" className="hero">
         <Image
           width={2000}
