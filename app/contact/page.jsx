@@ -51,10 +51,10 @@ const contact = () => {
   };
   return (
     <div className="text-sm">
-      <Nav
+      {/* <Nav
         color="text-white hover:text-black"
         background="dark:bg-gray-900 w-full z-20 top-0 left-0 backdrop-filter text-base bg-blue-900"
-      />
+      /> */}
 
       <section className="contact_hero bg-blue-900 mt-0 p-10" id="send_message">
         <h1 className="mt-10 text-4xl text-white font-bold">Contact us</h1>

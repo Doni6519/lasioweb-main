@@ -11,7 +11,7 @@ export default async function Project({ params }) {
   const project = await getProject(slug);
   return (
     <div className="text-sm">
-      <Nav color="text-black hover:text-blue-500" />
+      {/* <Nav color="text-black hover:text-blue-500" /> */}
       <section className="w-full mt-0 py-6 our_work_menu">
         <div className="flex justify-between w-5/6 m-auto">
           <div className="flex">

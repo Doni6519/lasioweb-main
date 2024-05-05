@@ -64,7 +64,7 @@ const request = () => {
   };
   return (
     <div className="text-sm">
-      <Nav />
+      {/* <Nav /> */}
       <h1 className="text-center text-4xl font-bold mt-10">Submit a Request</h1>
       <p className="text-center text-base">
         Need any of our

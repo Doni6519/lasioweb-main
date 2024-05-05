@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 const page = () => {
   return (
     <div className="text-sm">
-      <Nav />
+      {/* <Nav /> */}
       <div id="about_home" className="hero">
       <Image
           width={2000}

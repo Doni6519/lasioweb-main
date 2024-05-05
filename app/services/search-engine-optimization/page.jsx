@@ -71,7 +71,7 @@ const seo = () => {
   };
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-blue-500" />
+      {/* <Nav color="text-white hover:text-blue-500" /> */}
       <Image
         width={2000}
         height={2000}

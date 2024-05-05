@@ -46,7 +46,7 @@ const marketing = () => {
   };
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-black" />
+      {/* <Nav color="text-white hover:text-black" /> */}
       <div className="hero">
         <Image
           width={2000}

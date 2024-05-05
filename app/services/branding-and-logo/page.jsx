@@ -5,7 +5,7 @@ import Link from "next/link";
 const branding = () => {
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-blue-500" />
+      {/* <Nav color="text-white hover:text-blue-500" /> */}
       <div className="hero">
       <Image
           width={2000}

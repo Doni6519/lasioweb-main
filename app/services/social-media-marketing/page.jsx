@@ -4,7 +4,7 @@ import Nav from "@/components/Nav";
 const socialMediaMarketing = () => {
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-blue-500" />
+      {/* <Nav color="text-white hover:text-blue-500" /> */}
       <div className="hero">
         <Image
           width={2000}

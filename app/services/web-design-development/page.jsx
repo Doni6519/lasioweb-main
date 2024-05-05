@@ -5,7 +5,7 @@ import Image from "next/image";
 const webDev = () => {
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-blue-500"/>
+      {/* <Nav color="text-white hover:text-blue-500"/> */}
       <div id="web_home" className="hero">
       <Image
           width={2000}
