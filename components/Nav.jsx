@@ -1,6 +1,6 @@
 "use client";
 import { useEffect } from "react";
-import a from "next/a";
+import Link from "next/link";
 import Image from "next/image";
 
 const Nav = () => {
@@ -19,7 +19,7 @@ const Nav = () => {
         id="sub_nav"
       >
         <div className="flex justify-between m-4">
-          <a href="/" className="flex flex-center gap-2">
+          <Link href="/" className="flex flex-center gap-2">
             <Image
               src="/assets/images/logo.png"
               alt="logo"
@@ -27,7 +27,7 @@ const Nav = () => {
               height={60}
               className="object-contain"
             />
-          </a>
+          </Link>
           <svg
             className="w-5 h-5 dark:text-white mt-5 me-3 text-blue-700"
             aria-hidden="true"
@@ -64,7 +64,7 @@ const Nav = () => {
           </li>
           <li onClick={handleClick}>
             <a
-              href="/our_work"
+              href="https://lasioweb.com/our_work"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
             >
               Our work
@@ -89,7 +89,7 @@ const Nav = () => {
         </ul>
       </div>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex flex-center gap-2">
+        <Link href="/" className="flex flex-center gap-2">
           <Image
             src="/assets/images/logo.png"
             alt="logo"
@@ -98,16 +98,16 @@ const Nav = () => {
             className="object-contain"
           />
           {/* <p>LasioWeb</p> */}
-        </a>
+        </Link>
         <div className="flex md:order-2">
-          <a href="/request">
+          <Link href="/request">
             <button
               type="button"
               className="text-white font-bold uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
             >
               Get Quote
             </button>
-          </a>
+          </Link>
           <button
             type="button"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
@@ -134,45 +134,45 @@ const Nav = () => {
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1 ">
           <ul className="text-sm uppercase flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 bg-white md:bg-transparent w-full ms-0 smh-screen  md:static rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0  dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 ">
             <li>
-              <a
+              <Link
                 href="/about"
                 className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 aria-current="page"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/services"
                 className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
               <a
-                href="/our_work"
+                href="https://lasioweb.com/our_work"
                 className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Our work
               </a>
             </li>
             <li>
-              <a
+              <Link
                 href="/blog"
                 className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/contact"
                 className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
