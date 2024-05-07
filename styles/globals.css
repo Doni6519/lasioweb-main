@@ -26,12 +26,8 @@ body {
     overflow-x: hidden !important;
 }
 
-body, footer{
-    /* background-color: var(--secondary5) !important; */
-}
-
-nav{
-    /* background-color: rgba(38, 117, 220, 1); */
+#top_black{
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 section {

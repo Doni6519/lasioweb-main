@@ -12,6 +12,10 @@ export default async function Project({ params }) {
   return (
     <div className="text-sm">
       {/* <Nav color="text-black hover:text-blue-500" /> */}
+      <div
+        id="top_black"
+        className="bg-black h-24 pb-2 top-0 absolute w-full -z-10"
+      ></div>
       <section className="w-full mt-0 py-6 our_work_menu">
         <div className="flex justify-between w-5/6 m-auto">
           <div className="flex">
