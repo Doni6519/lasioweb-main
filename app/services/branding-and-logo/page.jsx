@@ -14,7 +14,7 @@ const branding = () => {
           className="absolute block object-cover top-0 goback"
           alt=""
         />
-        <div id="hero_text" className=" absolute  z-100">
+        <div id="hero_text" className=" absolute  z-100 top-0">
           <h1 className="font-extrabold uppercase text-xl">Branding and logo</h1>
           <p className="text-3xl mt-3">
             Create your identity and story in few steps.

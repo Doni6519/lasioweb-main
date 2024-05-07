@@ -13,7 +13,7 @@ const socialMediaMarketing = () => {
           className="absolute block object-cover top-0 goback"
           alt=""
         />
-        <div id="hero_text" className=" absolute  z-100">
+        <div id="hero_text" className=" absolute  z-100 top-0">
           <h1 className="font-bold uppercase text-xl">social media marketing</h1>
           <p className="text-3xl mt-3">
             Data driven strategies to increase your brand awareness and get you

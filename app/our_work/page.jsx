@@ -58,7 +58,7 @@ export default async function ourWork() {
 
   return (
     <div className="text-sm">
-      <Nav color="text-white hover:text-blue-500"/>
+      {/* <Nav color="text-white hover:text-blue-500"/> */}
       <Image
           width={2000}
           height={2000}
@@ -67,7 +67,7 @@ export default async function ourWork() {
           alt=""
         />
       <div className="hero">
-        <div id="hero_text" className=" absolute  z-100">
+        <div id="hero_text" className=" absolute  z-100 top-0">
           <h1 className="font-bold uppercase">website optimization</h1>
           <p className="text-2xl mt-3">
             Data driven strategies to increase your brand awareness and get you

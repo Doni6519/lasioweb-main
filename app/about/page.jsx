@@ -12,7 +12,7 @@ const page = () => {
           className="absolute block object-cover top-0 goback"
           alt="logo"
         />
-        <div id="hero_text" className=" absolute  z-100">
+        <div id="hero_text" className=" absolute  z-100 top-0">
           <h1 className="font-bold uppercase">About us</h1>
           <p className="text-2xl mt-3">
             We are experienced web designers who solve problems and grow
