@@ -30,6 +30,10 @@ body, footer{
     /* background-color: var(--secondary5) !important; */
 }
 
+nav{
+    /* background-color: rgba(38, 117, 220, 1); */
+}
+
 section {
     margin: auto;
     margin-top: 4rem;

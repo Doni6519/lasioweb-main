@@ -1,7 +1,7 @@
 import Image from "next/image";
 import GetStarted from "../../components/GetStarted"
 import Link from "next/link";
-import Nav from "@/components/Navblack";
+// import Nav from "@/components/Navblack";
 const services = () => {
   return (
     <>

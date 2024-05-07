@@ -1,6 +1,6 @@
 import Link from "next/link";
 import GetStarted from "@/components/GetStarted";
-import Nav from "@/components/Nav";
+// import Nav from "@/components/Nav";
 import Image from "next/image";
 const webDev = () => {
   return (
