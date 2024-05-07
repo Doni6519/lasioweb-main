@@ -46,7 +46,7 @@ const Nav = () => {
           </svg>
         </div>
         <ul className="flex text-black flex-col p-4 text-center md:p-0 mt-4 font-medium text-2xl ms-0  md:static rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700 ">
-          <li>
+          <li onClick={handleClick}>
             <Link
               href="/about"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
@@ -54,7 +54,7 @@ const Nav = () => {
               About
             </Link>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <Link
               href="/services"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
@@ -62,7 +62,7 @@ const Nav = () => {
               Services
             </Link>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <Link
               href="/our_work"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
@@ -70,7 +70,7 @@ const Nav = () => {
               Our work
             </Link>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <Link
               href="/blog"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
@@ -78,7 +78,7 @@ const Nav = () => {
               Blog
             </Link>
           </li>
-          <li>
+          <li onClick={handleClick}>
             <Link
               href="/contact"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
