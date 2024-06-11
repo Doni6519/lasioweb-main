@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 import { getProjects } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useRef, useState } from "react";
+import { createContext } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import { useSwiper } from "swiper/react";
