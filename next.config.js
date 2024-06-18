@@ -1,3 +1,5 @@
+const { withNextVideo } = require('next-video/process')
+
 const nextConfig = {
     images: {
         remotePatterns: [
@@ -10,4 +12,4 @@ const nextConfig = {
       }
 }
 
-module.exports = nextConfig
+module.exports = withNextVideo(nextConfig)

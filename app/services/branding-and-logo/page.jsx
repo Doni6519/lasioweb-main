@@ -1,27 +1,20 @@
 import Image from "next/image";
 import ContentButton from "@/components/ContentButton";
-import Nav from "@/components/Nav";
+import Newsletter from "@/components/Newsletter";
 import Link from "next/link";
 const branding = () => {
   return (
     <div className="text-sm">
-      {/* <Nav color="text-white hover:text-blue-500" /> */}
-      <div className="hero">
-      <Image
-          width={2000}
-          height={2000}
-          src="/assets/images/background-img/branding-bg.png"
-          className="absolute block object-cover top-0 goback"
-          alt=""
-        />
-        <div id="hero_text" className=" absolute  z-100 top-0">
-          <h1 className="font-extrabold uppercase text-xl">Branding and logo</h1>
-          <p className="text-3xl mt-3">
-            Create your identity and story in few steps.
+      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-blue-800 h-screen">
+        <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">
+            Branding & Logo
+          </h1>
+          <p className="text-2xl mt-3">
+          Create your identity and story in few steps.
           </p>
         </div>
       </div>
-      <section className="flex justify-around first_item_extra_sm w-5/6"></section>
       <section className="md:flex w-5/6 text-slate-800">
         <div className="md:w-2/4 me-5">
           <h1 className="text-2xl md:text-4xl text-black mb-5">
@@ -44,7 +37,15 @@ const branding = () => {
             <li>Affordable Pricing</li>
             <li>Excellent Customer Service</li>
           </ol>
-          <p className="mt-4"> A logo designed by Lasioweb LTD not only enhances your brand image but also helps in building trust with your customers. So, why wait? <Link className="text-blue-500 hover:text-blue-700" href="/contact">Contact us</Link> and get your logo designed by Lasioweb LTD today!</p>
+          <p className="mt-4">
+            {" "}
+            A logo designed by Lasioweb LTD not only enhances your brand image
+            but also helps in building trust with your customers. So, why wait?{" "}
+            <Link className="text-blue-500 hover:text-blue-700" href="/contact">
+              Contact us
+            </Link>{" "}
+            and get your logo designed by Lasioweb LTD today!
+          </p>
         </div>
         <div className="w-4/4 mt-10 md:mt-0 md:w-2/4 md:ms-5">
           <Image
@@ -55,13 +56,16 @@ const branding = () => {
         </div>
       </section>
       <div className="w-5/6 m_auto mb-10">
-        <Link href="/contact"><ContentButton
-          header="Still have questions?"
-          paragraph="Curious about our process or what it's like to work with us? Pick a
+        <Link href="/contact">
+          <ContentButton
+            header="Still have questions?"
+            paragraph="Curious about our process or what it's like to work with us? Pick a
           package; we're happy to answer to give you the best creative designs."
-          button="PURCHASE A PACKAGE"
-        /></Link>
+            button="PURCHASE A PACKAGE"
+          />
+        </Link>
       </div>
+      <Newsletter background="bg-blue-800" />
     </div>
   );
 };

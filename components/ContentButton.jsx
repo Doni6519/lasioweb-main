@@ -4,14 +4,13 @@ const ContentButton = (props) => {
   return (
     <>
       <section
-        className="text-center px-2 py-7 text-white"
-        id="purchase_a_package"
+        className={`text-center px-2 py-7 bg-gray-200 text-gray-900`}
       >
-        <h1 className="text-2xl mb-5">{props.header}</h1>
-        <p className="mb-3">
+        <h1 className="text-3xl mb-5 font-semibold">{props.header}</h1>
+        <p className="mb-3 text-lg">
           {props.paragraph}
         </p>
-        <button className="px-7 py-4 m_auto mt-4 font-bold" id="purchase_a_package_btn">
+        <button className={`px-7 bg-gray-400 hover:bg-gray-600 text-white py-4 m_auto mt-4 font-bold`}>
           {props.button}
         </button>
       </section>

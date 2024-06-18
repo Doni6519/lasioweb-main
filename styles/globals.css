@@ -18,10 +18,6 @@
     --secondary7: #211f1f;
 }
 
-* {
-    @apply p-0 m-0;
-}
-
 body {
     overflow-x: hidden !important;
 }
@@ -92,26 +88,11 @@ input:focus, textarea:focus{
     outline: none;
 }
 
-.first_item {
-    margin-top: 85vh;
-}
-
-.first_item_extra {
-    margin-top: 95vh;
-}
-.first_item_extra_sm {
-    margin-top: 85vh;
-}
-
-.first_item_hero {
-    margin-top: 95vh;
-}
-
 .m_auto{
     margin: auto;
 }*
 button[type="submit"]{
-    background-color: var(--primary);
+    /* background-color: var(--primary); */
 }
 /* GET STARTED START */
 
@@ -163,19 +144,6 @@ button[type="submit"]{
     left: 10vw;
     z-index: 90;
 }
-#home_banner{
-    height: 100vh !important;
-    width: 100vw;
-    top: 0;
-    position: absolute;
-    z-index: -1;
-    margin: 0;
-}
-.goback{
-    z-index: -1000000 !important;
-    height: 100vh;
-}
-
 .common_services {
     width: 200px;
 }
@@ -193,46 +161,9 @@ button[type="submit"]{
     justify-content: center;
 }
 
-#more_services_1, #more_services_1 .second h1{
-    background-color: var(--primary);
-}
-#more_services_1 .second p, #more_services_1 .second svg{
-    color: var(--primary) !important;
-}
-#more_services_2, #more_services_2 .second h1{
-    background-color: var(--secondary1);
-}
-#more_services_2 .second p, #more_services_2 .second svg{
-    color: var(--secondary1) !important;
-}
-#more_services_3, #more_services_3 .second h1{
-    background-color: var(--secondary2);
-}
-#more_services_3 .second p, #more_services_3 .second svg{
-    color: var(--secondary2) !important;
-}
-#more_services_1_about, #more_services_1_about .second h1{
-    background-color: #296cc3;
-}
-#more_services_2_about, #more_services_2_about .second h1{
-    background-color: #112b4d;
-}
-#more_services_3_about, #more_services_3_about .second h1{
-    background-color: var(--secondary2);
-}
-#more_services_4_about, #more_services_4_about .second h1{
-    background-color: var(--secondary3) !important;
-}
-#more_services_4, #more_services_4 .second h1{
-    background-color: var(--secondary3);
-}
-#more_services_4 .second p, #more_services_4 .second svg{
-    color: var(--secondary3) !important;
-}
 
 .our_portfolio {
     background-color: var(--secondary7);
-    margin-bottom: 2rem;
 }
 
 .our_portfolio .grid {
@@ -266,8 +197,8 @@ button[type="submit"]{
 /* CONTACT START */
 
 .contact_hero{
-    height: 40vh;
-    
+    height: 50vh;
+    max-height: 500px;
 }
 
 #send_message .form{
@@ -277,14 +208,14 @@ button[type="submit"]{
 }
 
 #send_message_2nd_section{
-    height: 50vh;
+    height: 40vh;
 }
 @media only screen and (max-width: 719px) {
     .hero #hero_text{
         margin-left: 8vw;
     }
     #send_message_2nd_section{
-        margin-top: 35rem;
+        margin-top: 30rem;
     }
     #send_message_2nd_section{
         height: fit-content;
@@ -348,7 +279,7 @@ button[type="submit"]{
 
 }
 .slide_on_hover .slide_item .second{
-    background-color: var(--hero_color);
+    /* background-color: var(--hero_color); */
     height: 250px;
     /* border: 1px solid var(--secondary4); */
 }

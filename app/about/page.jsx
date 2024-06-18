@@ -1,27 +1,48 @@
 import Image from "next/image";
-import Nav from "@/components/Nav";
+import Link from "next/link";
+import Newsletter from "@/components/Newsletter";
+import BackgroundVideo from "next-video/background-video";
+
 const page = () => {
   return (
-    <div className="text-sm">
-      {/* <Nav /> */}
-      <div id="about_home" className="hero">
-      <Image
-          width={2000}
-          height={2000}
-          src="/assets/images/background-img/about-bg.png"
-          className="absolute block object-cover top-0 goback"
-          alt="logo"
-        />
-        <div id="hero_text" className=" absolute  z-100 top-0">
-          <h1 className="font-bold uppercase">About us</h1>
+    <div className="overflow-hidden">
+      <BackgroundVideo
+        src="https://res.cloudinary.com/dxmpvvt2k/video/upload/v1718683076/wksqfwge3mxvmrusxyl8.mp4"
+        className="h-screen w-full max-w-screen-2xl"
+      >
+        <div className="h-screen w-screen max-w-screen-2xl bg-green-800 absolute top-0 -z-10"></div>
+        <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">About us</h1>
           <p className="text-2xl mt-3">
             We are experienced web designers who solve problems and grow
             businesses.
           </p>
+          <Link
+            href="/request"
+            type="button"
+            className="bg-white hover:bg-green-300 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Hire us
+            <svg
+              className="w-3.5 h-3.5 ml-2 text-green-800"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 10"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M1 5h12m0 0L9 1m4 4L9 9"
+              />
+            </svg>
+          </Link>
         </div>
-      </div>
-      <section className="first_item_extra w-5/6 md:w-3/6">
-        <h1 className="text-center text-xl md:text-4xl font-bold">
+      </BackgroundVideo>
+      <section className="w-5/6 md:w-4/6">
+        <h1 className="text-center uppercase text-xl font-bold md:text-3xl">
           Who We Are
         </h1>
         <p className="mt-5 text-center sm:text-start md:text-start  ">
@@ -31,44 +52,40 @@ const page = () => {
           businesses establish a strong online presence and reach their full
           potential in the digital world.
         </p>
-        <h1 className="text-center text-xl md:text-4xl font-bold mt-10">
+        <h1 className="text-center text-xl font-bold md:text-3xl uppercase mt-10">
           Our Expertise
         </h1>
-        <h2 className="mt-5 text-base sm:text-2xl font-bold">Web Design</h2>
+        <h1 className="mt-5 text-xl font-semibold">Web Design</h1>
         <p className="mt-3">
           We believe that a website is the digital face of your business. Our
           team of experienced web designers is dedicated to creating visually
           appealing and user-friendly websites that reflect your brand's
           identity and values.
         </p>
-        <h2 className="mt-5 text-base sm:text-2xl font-bold">
-          Logo and Branding
-        </h2>
+        <h1 className="mt-5 text-xl font-semibold">Logo and Branding</h1>
         <p className="mt-3">
           Your logo and branding are the first things that people notice about
           your business. At LasioWeb, we create unique and memorable logos and
           branding elements that effectively communicate your brand's
           personality and make you stand out from the competition.
         </p>
-        <h2 className="mt-5 text-base sm:text-2xl font-bold">
+        <h1 className="mt-5 text-xl font-semibold">
           Search Engine Optimization (SEO)
-        </h2>
+        </h1>
         <p className="mt-3">
           In today's digital age, visibility on search engines is crucial for
           your business's success. Our SEO experts use proven strategies to
           improve your website's ranking on search engine results pages,
           increasing your visibility and driving more traffic to your site.
         </p>
-        <h2 className="mt-5 text-base sm:text-2xl font-bold">
-          Social Media Marketing
-        </h2>
+        <h1 className="mt-5 text-xl font-semibold">Social Media Marketing</h1>
         <p className="mt-3">
           Social media platforms are powerful tools for reaching and engaging
           with your target audience. Our social media marketing team helps you
           leverage these platforms to build relationships with your audience,
           increase brand awareness, and drive more traffic to your website.
         </p>
-        <h2 className="mt-5 text-base sm:text-2xl font-bold">Our Commitment</h2>
+        <h1 className="mt-5 text-xl font-semibold">Our Commitment</h1>
         <p className="mt-3">
           At LasioWeb, we are committed to delivering high-quality services that
           meet our clients' needs. We work closely with our clients throughout
@@ -76,7 +93,7 @@ const page = () => {
           and goals. Your success is our success! Join us on this exciting
           journey to digital excellence!
         </p>
-        <p className="mt-3 font-bold uppercase">Welcome to LasioWeb!</p>
+        <p className="mt-3 font-semibold uppercase">Welcome to LasioWeb!</p>
       </section>
       <section className="bg-slate-100">
         <div className="grid grid-cols-1 gap-0 md:grid-cols-2 vision_mission">
@@ -85,18 +102,20 @@ const page = () => {
               src={"/assets/images/about/vision.png"}
               width={700}
               height={500}
-              style={{ height: "100%", objectFit: "cover" }}
+              class="h-full object-cover w-full"
               alt="vision"
             />
           </div>
           <div className="h-80 p-10 text vision">
-            <h1 className="text-center text-2xl font-bold">Vision Statement</h1>
+            <h1 className="text-center text-2xl font-semibold">
+              Vision Statement
+            </h1>
             <p className="mt-3">
               To be the largest web development agency globally.
             </p>
           </div>
           <div className="h-80 p-10 text mission">
-            <h1 className="text-center text-2xl font-bold">
+            <h1 className="text-center text-2xl font-semibold">
               Mission Statement
             </h1>
             <p className="mt-3">
@@ -110,7 +129,7 @@ const page = () => {
               src={"/assets/images/about/mission.png"}
               width={700}
               height={500}
-              style={{ height: "100%", objectFit: "cover" }}
+              class="h-full object-cover w-full"
               alt="mission"
             />
           </div>
@@ -121,8 +140,8 @@ const page = () => {
           Our Core Values
         </h1>
         <div className="grid grid-cols-1 gap-y-2 md:gap-0 lg:gap-0 sm:gap-1 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover_val">
-          <div className="slide_item">
-            <div id="more_services_1_about" className="items-center text-white">
+          <div className="slide_item bg-green-500">
+            <div id="" className="items-center text-white">
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
@@ -142,14 +161,14 @@ const page = () => {
                   <h1 className="text-xl font">Excellence</h1>
                 </div>
               </div>
-              <div className="second bg-slate-800">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white border border-green-500">
+                <h1 className="bg-green-500 text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Excellence
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="bg-green-500 text-base md:text-base lg:text-xl p-7  hidden lg:block">
                   Excellence
                 </h1>
-                <p className="text-white px-5">
+                <p className="px-5 text-gray-700">
                   At LasioWeb LTD, we pursue the the highest quality in all
                   aspect of the development process.
                 </p>
@@ -157,11 +176,8 @@ const page = () => {
             </div>
           </div>
 
-          <div className="slide_item">
-            <div
-              id="more_services_2_about"
-              className="items-center  text-white "
-            >
+          <div className="slide_item bg-green-800">
+            <div className="items-center text-white ">
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
@@ -187,14 +203,14 @@ const page = () => {
                   <h1 className="text-xl font">Flexibility</h1>
                 </div>
               </div>
-              <div className="second bg-slate-800">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white border border-green-800">
+                <h1 className="bg-green-800 text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Flexibility
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="bg-green-800 text-base md:text-base lg:text-xl p-7  hidden lg:block">
                   Flexibility
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   At LasioWeb we understand that client's are likely to change
                   their mind regarding key features during the early phase of
                   development; Therefore we make the development process as
@@ -204,11 +220,8 @@ const page = () => {
             </div>
           </div>
 
-          <div className="slide_item">
-            <div
-              id="more_services_1_about"
-              className="items-center  text-white "
-            >
+          <div className="slide_item bg-green-600">
+            <div className="items-center  text-white ">
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
@@ -227,14 +240,14 @@ const page = () => {
                   <h1 className="text-xl font">Creativity</h1>
                 </div>
               </div>
-              <div className="second bg-slate-700">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white border border-green-600">
+                <h1 className="bg-green-600 text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Creativity
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="bg-green-600 text-base md:text-base lg:text-xl p-7  hidden lg:block">
                   Creativity
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   We regularly find new and emerging ways to deliver services
                   which features meets a client's needs in an unexpected way by
                   staying updated and learning new technologies.
@@ -243,7 +256,7 @@ const page = () => {
             </div>
           </div>
 
-          <div className="slide_item">
+          <div className="slide_item bg-green-900">
             <div
               id="more_services_2_about"
               className="items-center  text-white "
@@ -267,14 +280,14 @@ const page = () => {
                   <h1 className="text-xl font">Communication</h1>
                 </div>
               </div>
-              <div className="second bg-slate-700">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white border border-green-900">
+                <h1 className="border-green-900 bg-green-900 text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Communication
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="border-green-900 bg-green-900 text-base md:text-base lg:text-xl p-7  hidden lg:block">
                   Communication
                 </h1>
-                <p className="text-white px-5 mt-1">
+                <p className="text-gray-500 px-5 mt-1">
                   Effective communication is key in understanding the needs of
                   the client and delivering a product that meets those needs.
                   Before implementing any project, we clearly map out and
@@ -285,6 +298,27 @@ const page = () => {
           </div>
         </div>
       </section>
+      <div className="min-h-60 w-full py-10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-gray-700">
+          <div>
+            <h1 className="text-4xl font-bold">1000+</h1>
+            <p>Students enrolled</p>
+          </div>
+          <div>
+            <h1 className="text-4xl font-bold">10+</h1>
+            <p>Partners</p>
+          </div>
+          <div>
+            <h1 className="text-4xl font-bold">70+</h1>
+            <p>Educators</p>
+          </div>
+          <div>
+            <h1 className="text-4xl font-bold">22</h1>
+            <p>Awards</p>
+          </div>
+        </div>
+      </div>
+      <Newsletter background="bg-green-800" />
     </div>
   );
 };

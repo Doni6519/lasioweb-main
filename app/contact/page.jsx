@@ -51,14 +51,9 @@ const contact = () => {
   };
   return (
     <div className="text-sm">
-      {/* <Nav
-        color="text-white hover:text-black"
-        background="dark:bg-gray-900 w-full z-20 top-0 left-0 backdrop-filter text-base bg-blue-900"
-      /> */}
-
-      <section className="contact_hero bg-blue-900 mt-0 p-10" id="send_message">
-        <h1 className="mt-10 text-4xl text-white font-bold">Contact us</h1>
-        <p className="text-white">Lets talk about your ideas.</p>
+      <section className="contact_hero bg-blue-800 mt-0 p-10" id="send_message">
+        <h1 className="mt-32 text-4xl text-white font-bold ">Contact us</h1>
+        <p className="text-white mb-10 md:mb-0">Lets talk about your ideas.</p>
         <section className="bg-white md:w-3/6 lg:w-2/6 p-10 drop-shadow md:absolute form">
           <FormControl>
             <div id="toast"></div>
@@ -184,7 +179,6 @@ const contact = () => {
                 </label>
               </div>
             </div>
-
             <textarea
               id="message"
               rows="3"
@@ -194,7 +188,6 @@ const contact = () => {
               value={values.message}
               onChange={handleChange}
             ></textarea>
-
             <button
               type="submit"
               className="mt-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -206,7 +199,7 @@ const contact = () => {
         </section>
       </section>
       <section
-        className=" sm:block md:block lg:flex w-5/6"
+        className="sm:block md:block lg:flex w-5/6"
         id="send_message_2nd_section"
       >
         <div className="flex">

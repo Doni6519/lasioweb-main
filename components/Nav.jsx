@@ -1,21 +1,77 @@
 "use client";
-import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
 const Nav = () => {
-  function handleClick(){
+  const pathname = usePathname();
+  var textColor;
+  var bgColor;
+  var hoverColor;
+  var bgGradient;
+
+  switch (pathname) {
+    case "/about":
+      textColor = "text-green-500";
+      hoverColor = "md:hover:text-green-500";
+      bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-green-400";
+      bgColor = "bg-green-500 hover:bg-green-700 shadow-green-500/50";
+      break;
+    case "/services/search-engine-optimization":
+      textColor = "text-green-500";
+      hoverColor = "md:hover:text-green-500";
+      bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-green-400";
+      bgColor = "bg-green-500 hover:bg-green-700 shadow-green-500/50";
+      break;
+    case "/services/social-media-marketing":
+      textColor = "text-green-500";
+      hoverColor = "md:hover:text-green-500";
+      bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-green-400";
+      bgColor = "bg-green-500 hover:bg-green-700 shadow-green-500/50";
+      break;
+    case "/blog":
+      textColor = "text-green-500";
+      hoverColor = "md:hover:text-green-500";
+      bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-green-400";
+      bgColor = "bg-green-500 hover:bg-green-700 shadow-green-500/50";
+      break;
+    case "/request":
+      textColor = "text-green-500";
+      hoverColor = "md:hover:text-green-500";
+      bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-green-400";
+      bgColor = "bg-green-500 hover:bg-green-700 shadow-green-500/50";
+      break;
+    case "/services":
+      textColor = "text-red-500";
+      hoverColor = "md:hover:text-red-500";
+      bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-red-400";
+      bgColor = "bg-red-500 hover:bg-red-700 shadow-red-500/50";
+      break;
+    case "/services/digital-marketing":
+      textColor = "text-red-500";
+      hoverColor = "md:hover:text-red-500";
+      bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-red-400";
+      bgColor = "bg-red-500 hover:bg-red-700 shadow-red-500/50";
+      break;
+    default:
+      textColor = "text-blue-500";
+      hoverColor = "md:hover:text-blue-500";
+      bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-blue-400";
+      bgColor = "bg-red-blue hover:bg-blue-700 shadow-blue-500/50";
+      break;
+  }
+  function handleClick() {
     document.getElementById("sub_nav").style.display = "none";
     document.getElementById("body").style.overflowY = "scroll";
   }
-  function handleMenu(){
+  function handleMenu() {
     document.getElementById("sub_nav").style.display = "block";
     document.getElementById("body").style.overflow = "hidden";
   }
   return (
-    <nav>
+    <nav className="absolute z-10 top-0 w-full">
       <div
-        className="sub_nav hidden bg-gradient-to-b from-stone-100 via-stone-100 to-teal-200"
+        className={`sub_nav hidden ${bgGradient}`}
         id="sub_nav"
       >
         <div className="flex justify-between m-4">
@@ -29,7 +85,7 @@ const Nav = () => {
             />
           </Link>
           <svg
-            className="w-5 h-5 dark:text-white mt-5 me-3 text-blue-700"
+            className={`w-5 h-5 mt-5 me-3 ${textColor}`}
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -47,44 +103,44 @@ const Nav = () => {
         </div>
         <ul className="flex text-black flex-col p-4 text-center md:p-0 mt-4 font-medium text-2xl ms-0  md:static rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:border-gray-700 ">
           <li onClick={handleClick}>
-            <a
+            <Link
               href="/about"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
             >
               About
-            </a>
+            </Link>
           </li>
           <li onClick={handleClick}>
-            <a
-              href="https://lasioweb.com/services"
+            <Link
+              href="/services"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
             >
               Services
-            </a>
+            </Link>
           </li>
           <li onClick={handleClick}>
-            <a
-              href="https://lasioweb.com/our_work"
+            <Link
+              href="/our_work"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
             >
               Our work
-            </a>
+            </Link>
           </li>
           <li onClick={handleClick}>
-            <a
+            <Link
               href="/blog"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
             >
               Blog
-            </a>
+            </Link>
           </li>
           <li onClick={handleClick}>
-            <a
+            <Link
               href="/contact"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
@@ -103,7 +159,7 @@ const Nav = () => {
           <Link href="/request">
             <button
               type="button"
-              className="text-white font-bold uppercase bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+              className={`text-white ${bgColor} shadow-lg font-bold uppercase bg-blue-700 focus:ring-4 focus:outline-none rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0`}
             >
               Get Quote
             </button>
@@ -114,7 +170,7 @@ const Nav = () => {
           >
             <span className="sr-only">Open main menu</span>
             <svg
-              className="w-5 h-5 text-red"
+              className={`${textColor} w-5 h-5`}
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -136,32 +192,32 @@ const Nav = () => {
             <li>
               <Link
                 href="/about"
-                className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className={`block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent ${hoverColor} md:p-0`}
                 aria-current="page"
               >
                 About
               </Link>
             </li>
             <li>
-              <a
-                href="https://lasioweb.com/services"
-                className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              <Link
+                href="/services"
+                className={`block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent ${hoverColor} md:p-0`}
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="https://lasioweb.com/our_work"
-                className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              <Link
+                href="/our_work"
+                className={`block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent ${hoverColor} md:p-0`}
               >
                 Our work
-              </a>
+              </Link>
             </li>
             <li>
               <Link
                 href="/blog"
-                className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className={`block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent ${hoverColor} md:p-0`}
               >
                 Blog
               </Link>
@@ -169,7 +225,7 @@ const Nav = () => {
             <li>
               <Link
                 href="/contact"
-                className="block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className={`block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent ${hoverColor} md:p-0`}
               >
                 Contact
               </Link>

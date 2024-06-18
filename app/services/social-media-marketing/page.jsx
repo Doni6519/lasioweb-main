@@ -1,27 +1,18 @@
-import Image from "next/image";
 import ContentButton from "@/components/ContentButton";
-import Nav from "@/components/Nav";
+import GetStarted from "@/components/GetStarted";
+import Newsletter from "@/components/Newsletter";
+
 const socialMediaMarketing = () => {
   return (
     <div className="text-sm">
-      {/* <Nav color="text-white hover:text-blue-500" /> */}
-      <div className="hero">
-        <Image
-          width={2000}
-          height={2000}
-          src="/assets/images/background-img/social-marketing-bg.png"
-          className="absolute block object-cover top-0 goback"
-          alt=""
-        />
-        <div id="hero_text" className=" absolute  z-100 top-0">
-          <h1 className="font-bold uppercase text-xl">social media marketing</h1>
-          <p className="text-3xl mt-3">
-            Data driven strategies to increase your brand awareness and get you
-            ahead of your competition.
+      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-green-800 h-screen">
+        <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">Social Media Marketing</h1>
+          <p className="text-2xl mt-3">
+          Data driven strategies to increase your brand awareness and get you ahead of your competition.
           </p>
         </div>
       </div>
-      <section className="justify-around first_item_extra w-5/6"></section>
       <section className="md:flex w-5/6">
         <div className="basis-3/4">
           <h1 className="mt-10 text-2xl md:text-4xl">Reaching your audience</h1>
@@ -52,7 +43,7 @@ const socialMediaMarketing = () => {
           Our strengths
         </h1>
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover_val">
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow bg-green-500 rounded">
             <div id="more_services_1_about" className="items-center text-white">
               <div
                 className="flex flex-col items-center first"
@@ -72,14 +63,14 @@ const socialMediaMarketing = () => {
                   <h1 className="text-xl font">Facebook Ads</h1>
                 </div>
               </div>
-              <div className="second bg-slate-800">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white">
+                <h1 className="text-base bg-green-500 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Facebook Ads
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-green-500 md:text-base lg:text-xl p-7 hidden lg:block">
                   Facebook Ads
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   We use Facebook ads for social media promotion by reaching a
                   large audience, fine-tuning ad targeting, and tracking
                   performance with robust analytics. They create targeted ad
@@ -92,7 +83,7 @@ const socialMediaMarketing = () => {
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow bg-green-800 rounded">
             <div
               id="more_services_2_about"
               className="items-center  text-white "
@@ -115,14 +106,14 @@ const socialMediaMarketing = () => {
                   <h1 className="text-xl font">Linkedin Ads</h1>
                 </div>
               </div>
-              <div className="second bg-slate-800">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white">
+                <h1 className="text-base bg-green-800 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Linkedin Ads
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-green-800 md:text-base lg:text-xl p-7  hidden lg:block">
                   Linkedin Ads
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   LasioWeb uses LinkedIn ads for social media promotion by
                   refining their profiles, creating effective LinkedIn Pages,
                   defining audience and goals, optimizing the page for search,
@@ -134,7 +125,7 @@ const socialMediaMarketing = () => {
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow bg-green-600 rounded">
             <div
               id="more_services_1_about"
               className="items-center  text-white "
@@ -157,14 +148,14 @@ const socialMediaMarketing = () => {
                   <h1 className="text-xl font">Google Ads</h1>
                 </div>
               </div>
-              <div className="second bg-slate-700">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white">
+                <h1 className="text-base bg-green-600 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Google Ads
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-green-900 md:text-base lg:text-xl p-7  hidden lg:block">
                   Google Ads
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   We use ad quality, keyword relevance,Continual testing,
                   optimization and website usability to create profitable
                   campaign.
@@ -173,7 +164,7 @@ const socialMediaMarketing = () => {
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow bg-green-900 rounded">
             <div
               id="more_services_2_about"
               className="items-center  text-white "
@@ -196,14 +187,14 @@ const socialMediaMarketing = () => {
                   <h1 className="text-xl font">Twitter or X Ads</h1>
                 </div>
               </div>
-              <div className="second bg-slate-700">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white">
+                <h1 className="text-base bg-green-900 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Twitter or X Ads
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-green-900 md:text-base lg:text-xl p-7  hidden lg:block">
                   Twitter or X Ads
                 </h1>
-                <p className="text-white px-5 mt-1">
+                <p className="text-gray-700 px-5 mt-1">
                   LasioWeb uses Twitter Ads by crafting compelling subject
                   lines, personalizing email content, segmenting its subscriber
                   list, sending regular newsletters, and analyzing open and
@@ -215,6 +206,8 @@ const socialMediaMarketing = () => {
           </div>
         </div>
       </section>
+      <GetStarted />
+      <Newsletter background="bg-green-800" />
     </div>
   );
 };

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { FormControl, useToast } from "@chakra-ui/react";
 import { requestContactForm } from "@/lib/api";
-import Nav from "@/components/Navblack";
+import Newsletter from "@/components/Newsletter";
 const initValues = {
   name: "",
   whatsapp_number: "",
@@ -63,21 +63,23 @@ const request = () => {
     } catch (error) {}
   };
   return (
-    <div className="text-sm">
-      {/* <Nav /> */}
-      <h1 className="text-center text-4xl font-bold mt-10">Submit a Request</h1>
-      <p className="text-center text-base">
-        Need any of our
-        <Link
-          rel="stylesheet"
-          href="/services"
-          className="md:text-blue-700 md:hover:text-blue-700 ms-1"
-        >
-          services
-        </Link>
-        ? Fill the form below and we'll get in touch shortly.
-      </p>
-      <section className="mt-0 p-10 md:w-3/6 lg:w-2/6">
+    <div>
+      <div className="absolute top-0 -z-10 h-24 bg-green-800 w-full"></div>
+      <div className="pt-32">
+        <h1 className="text-center text-4xl font-bold">Submit a Request</h1>
+        <p className="text-center mt-5 w-5/6 m-auto text-base">
+          Need any of our
+          <Link
+            rel="stylesheet"
+            href="/services"
+            className="md:text-blue-700 md:hover:text-blue-700 ms-1"
+          >
+            services
+          </Link>
+          ? Fill the form below and we'll get in touch shortly.
+        </p>
+      </div>
+      <section className="mt-0 p-10 md:w-4/6 lg:w-3/6">
         <FormControl className="bg-white p-5 drop-shadow">
           <div className="relative z-0 w-full mb-6 group">
             <input
@@ -367,7 +369,7 @@ const request = () => {
           <fieldset>
             <legend className="sr-only">Checkbox variants</legend>
 
-            <div className="flex">
+            <div className="grid grid-cols-2 md:grid-cols-3">
               <div className="flex items-center mb-4 me-3">
                 <input
                   id="checkbox-11"
@@ -418,58 +420,55 @@ const request = () => {
                   $1000 - $2000
                 </label>
               </div>
+            <div className="flex items-center mb-4 me-3">
+              <input
+                id="checkbox-14"
+                type="checkbox"
+                name="checkbox14"
+                value="$2000 - $ 5000"
+                onChange={handleChange}
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="checkbox-14"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                $2000 - $ 5000
+              </label>
             </div>
-            <div className="flex">
-              <div className="flex items-center mb-4 me-3">
-                <input
-                  id="checkbox-14"
-                  type="checkbox"
-                  name="checkbox14"
-                  value="$2000 - $ 5000"
-                  onChange={handleChange}
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  htmlFor="checkbox-14"
-                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  $2000 - $ 5000
-                </label>
-              </div>
 
-              <div className="flex items-center mb-4 me-3">
-                <input
-                  id="checkbox-15"
-                  type="checkbox"
-                  name="checkbox15"
-                  value="$5000 - $10000"
-                  onChange={handleChange}
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  htmlFor="checkbox-15"
-                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  $5000 - $10000
-                </label>
-              </div>
+            <div className="flex items-center mb-4 me-3">
+              <input
+                id="checkbox-15"
+                type="checkbox"
+                name="checkbox15"
+                value="$5000 - $10000"
+                onChange={handleChange}
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="checkbox-15"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                $5000 - $10000
+              </label>
+            </div>
 
-              <div className="flex items-center mb-4 me-3">
-                <input
-                  id="checkbox-16"
-                  type="checkbox"
-                  name="checkbox16"
-                  value="$20000 - $50000"
-                  onChange={handleChange}
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  htmlFor="checkbox-16"
-                  className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-                >
-                  $20000 - $50000
-                </label>
-              </div>
+            <div className="flex items-center mb-4 me-3">
+              <input
+                id="checkbox-16"
+                type="checkbox"
+                name="checkbox16"
+                value="$20000 - $50000"
+                onChange={handleChange}
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="checkbox-16"
+                className="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >
+                $20000 - $50000
+              </label>
             </div>
             <div className="flex items-center mb-4 me-3">
               <input
@@ -487,17 +486,19 @@ const request = () => {
                 Dont have a budget
               </label>
             </div>
+            </div>
           </fieldset>
 
           <button
             type="submit"
             onClick={onSubmit}
-            className="mt-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="mt-5 text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Send
           </button>
         </FormControl>
       </section>
+      <Newsletter background="bg-green-800" />
     </div>
   );
 };

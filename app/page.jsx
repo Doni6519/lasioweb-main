@@ -1,31 +1,34 @@
-import Nav from "@/components/Nav";
+import React from "react";
 import { getProjects } from "@/sanity/sanity-utils";
 import Image from "next/image";
 import Link from "next/link";
 import Portfolio from "@/components/Portfolio";
+import Newsletter from "@/components/Newsletter";
+// import Typewriter from "typewriter-effect";
+import Video from "next-video";
+import BackgroundVideo from "next-video/background-video";
 
 export default async function Home() {
   const projects = await getProjects();
-  // const swiper = useSwiper();
+
   return (
-    <div className="text-sm">
-      <div id="hero_home" className="hero">
-        <Image
-          width={2000}
-          height={2000}
-          src="/assets/images/background-img/home-bg.png"
-          className="absolute block  object-cover top-0 goback"
-          alt=""
-        />
-        <div id="hero_text" className="absolute z-100 top-0">
-          <h1 className="font-bold text-4xl">We craft web experiences</h1>
+    <div className="overflow-hidden">
+      <BackgroundVideo
+        src="https://res.cloudinary.com/dxmpvvt2k/video/upload/v1718679426/eld6w6dr0fb8ytruhkwq.mp4"
+        className="h-screen w-full max-w-screen-2xl"
+      >
+        <div className="h-screen w-screen max-w-screen-2xl bg-blue-800 absolute top-0 -z-10"></div>
+        <div id="" className="text-white w-screen max-w-screen-2xl ms-10 md:ms-20">
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">
+            We craft web experiences
+          </h1>
           <p className="text-2xl mt-3">
             <span className="font-bold">that</span> thrives business
           </p>
           <Link
             href="/request"
             type="button"
-            className="bg-white hover:bg-blue-300 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="bg-white hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Get started
             <svg
@@ -45,14 +48,13 @@ export default async function Home() {
             </svg>
           </Link>
         </div>
-      </div>
-
-      <section className="block md:flex w-5/6 first_item_hero">
+      </BackgroundVideo>
+      <section className="block md:flex w-5/6">
         <div className="mt-10">
-          <h1 className="text-sm md:text-4xl text-center md:text-left font-bold md:text-center lg:text-4xl md:w-4/5">
+          <h1 className="text-sm md:text-4xl md:text-left lg:text-4xl md:w-4/5">
             WE'RE A WEB DESIGN FIRM AND DIGITAL AGENCY
           </h1>
-          <div className="md:w-5/6 mt-7 text-center md:text-left">
+          <div className="md:w-5/6 mt-7 md:text-left">
             <p>
               LasioWeb is a global full service digital agency with capabilities
               across web design & development, marketing and branding. We work
@@ -84,32 +86,20 @@ export default async function Home() {
         </div>
         <div>
           <ul className="list-none  mt-10 text-lg text-center common_services hidden md:block">
-            <li className="hover:text-blue-900">
-              e-commerce
-            </li>
-            <li className="hover:text-blue-900 mt-2">
-              corporate
-            </li>
-            <li className="hover:text-blue-900 mt-2">
-              portfolio
-            </li>
-            <li className="hover:text-blue-900 mt-2">
-              Nonprofit
-            </li>
-            <li className="hover:text-blue-900 mt-2">
-              Legal
-            </li>
-            <li className="hover:text-blue-900 mt-2">
-              Financial
-            </li>
+            <li className="hover:text-blue-900">e-commerce</li>
+            <li className="hover:text-blue-900 mt-2">corporate</li>
+            <li className="hover:text-blue-900 mt-2">portfolio</li>
+            <li className="hover:text-blue-900 mt-2">Nonprofit</li>
+            <li className="hover:text-blue-900 mt-2">Legal</li>
+            <li className="hover:text-blue-900 mt-2">Financial</li>
           </ul>
         </div>
       </section>
       <section className="md:w-5/6 m_extra px-10">
-        <h1 className="text-base md:text-4xl text-center md:text-left font-bold md:text-center lg:text-4xl">
+        <h1 className="text-base md:text-4xl text-center md:text-left md:text-center lg:text-4xl">
           What We Do
         </h1>
-        <p className="text-center mt-5 w-5/6 md:w-2/6 m_auto">
+        <p className="text-center mt-5 w-5/6 md:w-3/6 m_auto">
           LasioWeb specializes in desining websites and applications for your
           long term business needs
         </p>
@@ -131,10 +121,10 @@ export default async function Home() {
           </svg>
         </p>
         <div className="grid gap-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover">
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow rounded">
             <div
               id="more_services_1"
-              className="items-center rounded text-white"
+              className="items-center rounded bg-blue-500 text-white"
             >
               <div
                 className="flex flex-col items-center first"
@@ -158,11 +148,11 @@ export default async function Home() {
                   </h1>
                 </div>
               </div>
-              <div className="second border border-gray-200">
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 lg:block lg:hidden">
+              <div className="second bg-white border border-gray-200">
+                <h1 className="bg-blue-500 text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 lg:block lg:hidden">
                   Web Design & Development
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 hidden lg:block">
+                <h1 className="bg-blue-500 text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 hidden lg:block">
                   Web Design & Dev...
                 </h1>
                 <p className="flex">
@@ -181,7 +171,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Consultation</span>
+                  <span className="text-gray-700">Consultation</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -199,7 +189,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Wireframe</span>
+                  <span className="text-gray-700">Wireframe</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -217,16 +207,16 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Final Design</span>
+                  <span className="text-gray-700">Final Design</span>
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow rounded">
             <div
               id="more_services_2"
-              className="items-center rounded text-white "
+              className="items-center bg-blue-800 rounded text-white "
             >
               <div
                 className="flex flex-col items-center first"
@@ -244,12 +234,12 @@ export default async function Home() {
                     <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zm3.515 7.008L14.438 10 8 13.433 1.562 10 4.25 8.567l3.515 1.874a.5.5 0 0 0 .47 0l3.515-1.874zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
                   </svg>
                 </div>
-                <div className="text-center w-full ">
+                <div className="text-center bg-blue-800 w-full ">
                   <h1 className="text-base font-bold">Logo & Branding</h1>
                 </div>
               </div>
-              <div className="second border border-gray-200">
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6">
+              <div className="second bg-white border border-gray-200">
+                <h1 className="text-base md:text-base bg-blue-800 lg:text-xl md:font-bold p-4 lg:p-6">
                   Logo & Branding
                 </h1>
                 <p className="flex">
@@ -268,7 +258,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Exploration</span>
+                  <span className="text-gray-700">Exploration</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -286,7 +276,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Sketches</span>
+                  <span className="text-gray-700">Sketches</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -304,7 +294,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Digitigation</span>
+                  <span className="text-gray-700">Digitigation</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -322,7 +312,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Color</span>
+                  <span className="text-gray-700">Color</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -340,16 +330,16 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Final Logo</span>
+                  <span className="text-gray-700">Final Logo</span>
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow rounded">
             <div
               id="more_services_3"
-              className="items-center rounded text-white "
+              className="items-center bg-blue-600 rounded text-white "
             >
               <div
                 className="flex flex-col items-center first"
@@ -373,11 +363,11 @@ export default async function Home() {
                   </h1>
                 </div>
               </div>
-              <div className="second border border-gray-200">
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 lg:hidden">
+              <div className="second bg-white border border-gray-200">
+                <h1 className="text-base bg-blue-600 md:text-base lg:text-xl md:font-bold p-4 lg:p-6 lg:hidden">
                   Search Engine Optimization
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 hidden lg:block">
+                <h1 className="text-base bg-blue-600 md:text-base lg:text-xl md:font-bold p-4 lg:p-6 hidden lg:block">
                   Search Engine Opt...
                 </h1>
                 <p className="flex">
@@ -396,7 +386,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Discover</span>
+                  <span className="text-gray-700">Discover</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -414,7 +404,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Strategy</span>
+                  <span className="text-gray-700">Strategy</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -432,7 +422,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Optimization</span>
+                  <span className="text-gray-700">Optimization</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -450,7 +440,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Content</span>
+                  <span className="text-gray-700">Content</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -468,16 +458,16 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Reporting</span>
+                  <span className="text-gray-700">Reporting</span>
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow rounded">
             <div
               id="more_services_4"
-              className="items-center rounded text-white "
+              className="items-center bg-blue-900 rounded text-white "
             >
               <div
                 className="flex flex-col items-center first"
@@ -501,11 +491,11 @@ export default async function Home() {
                   </h1>
                 </div>
               </div>
-              <div className="second border border-gray-200">
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 lg:hidden">
+              <div className="second bg-white border border-gray-200">
+                <h1 className="text-base md:text-base bg-blue-900 lg:text-xl md:font-bold p-4 lg:p-6 lg:hidden">
                   Social Media Marketing
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl md:font-bold p-4 lg:p-6 hidden lg:block">
+                <h1 className="text-base md:text-base lg:text-xl bg-blue-900 md:font-bold p-4 lg:p-6 hidden lg:block">
                   Social Media Mar...
                 </h1>
                 <p className="flex">
@@ -524,7 +514,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Discover</span>
+                  <span className="text-gray-700">Discover</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -542,7 +532,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Strategy</span>
+                  <span className="text-gray-700">Strategy</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -560,7 +550,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Optimization</span>
+                  <span className="text-gray-700">Optimization</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -578,7 +568,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Content</span>
+                  <span className="text-gray-700">Content</span>
                 </p>
                 <p className="flex">
                   <svg
@@ -596,7 +586,7 @@ export default async function Home() {
                       d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1"
                     />
                   </svg>
-                  <span>Reporting</span>
+                  <span className="text-gray-700">Reporting</span>
                 </p>
               </div>
             </div>
@@ -604,6 +594,7 @@ export default async function Home() {
         </div>
       </section>
       <Portfolio projects={projects} />
+      <Newsletter background="bg-blue-800" />
     </div>
   );
 }

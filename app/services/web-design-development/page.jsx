@@ -1,31 +1,20 @@
 import Link from "next/link";
 import GetStarted from "@/components/GetStarted";
 // import Nav from "@/components/Nav";
-import Image from "next/image";
+import Newsletter from "@/components/Newsletter";
+
 const webDev = () => {
   return (
     <div className="text-sm">
-      {/* <Nav color="text-white hover:text-blue-500"/> */}
-      <div id="web_home" className="hero">
-      <Image
-          width={2000}
-          height={2000}
-          src="/assets/images/background-img/web-dev-bg.jpg"
-          className="absolute block object-cover top-0 goback"
-          alt=""
-        />
-        <div id="hero_text" className=" absolute  z-100 top-0">
-          <h1 className="font-extrabold uppercase text-xl">
-            web design & development
-          </h1>
-          <p className="text-3xl">
-            Everyone can set up a website this days. We build strategic engaging
-            websites that enforce credibility and communicate key messages and
-            turning them into profits.
+      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-blue-800 h-screen">
+        <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">Web Design & Development</h1>
+          <p className="text-2xl mt-3">
+            Everyone can set up a website this days. We build strategic engaging websites that enforce credibility and communicate key messages and turning them into profits.
           </p>
         </div>
       </div>
-      <section className="flex justify-around first_item w-5/6"></section>
+      <section className="flex justify-around w-5/6"></section>
       <section className="md:flex w-5/6 mb-10">
         <div className="basis-2/4 md:me-5">
           <h1 className="font-bold">READY FOR A NEW WEBSITE?</h1>
@@ -85,6 +74,7 @@ const webDev = () => {
         </div>
       </section>
       <GetStarted />
+      <Newsletter background="bg-blue-800" />
     </div>
   );
 };

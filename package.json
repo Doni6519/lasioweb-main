@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev & npx next-video sync -w",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,14 +14,17 @@
     "@emotion/styled": "^11.11.0",
     "@next/third-parties": "^14.2.0",
     "@sanity/vision": "^3.19.0",
-    "framer-motion": "^10.16.5",
+    "cloudinary": "^2.2.0",
+    "framer-motion": "^10.18.0",
     "next": "^14.2.0",
     "next-sanity": "^5.5.10",
+    "next-video": "^1.1.0",
     "nodemailer": "^6.9.7",
     "react": "^18",
     "react-dom": "^18",
     "sanity": "^3.18.1",
-    "swiper": "^11.0.3"
+    "swiper": "^11.0.3",
+    "typewriter-effect": "^2.4.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

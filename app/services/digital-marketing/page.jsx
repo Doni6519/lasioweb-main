@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
-import ContentButton from "@/components/ContentButton";
+import GetStarted from "@/components/GetStarted";
 import { FormControl, useToast } from "@chakra-ui/react";
-import Nav from "@/components/Nav";
 import { dmContactForm } from "@/lib/api";
 import { useState } from "react";
+import Newsletter from "@/components/Newsletter";
+
 const initValues = {
   company: "",
   email: "",
@@ -46,23 +47,17 @@ const marketing = () => {
   };
   return (
     <div className="text-sm">
-      {/* <Nav color="text-white hover:text-black" /> */}
-      <div className="hero">
-        <Image
-          width={2000}
-          height={2000}
-          src="/assets/images/background-img/marketing-bg.png"
-          className="absolute block object-cover top-0 goback"
-          alt=""
-        />
-        <div id="hero_text" className=" absolute  z-100 top-0">
-          <h1 className="font-extrabold uppercase text-xl">Digital marketing</h1>
-          <p className="text-3xl mt-3">
-            Let's give you a space in the world's largest market.
+      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-red-800 h-screen">
+        <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">
+            Digital Marketing
+          </h1>
+          <p className="text-2xl mt-3">
+          Let's give you a space in the world's largest market.
           </p>
         </div>
       </div>
-      <section className="flex justify-around first_item w-5/6"></section>
+      <section className="flex justify-around w-5/6"></section>
       <section className="md:flex md:w-5/6 ps-10 pe-5 md:pe-10">
         <div className="me-10 md:basis-4/4 lg:basis-2/4">
           <h1 className="font-bold">OUR APPROACH TO DIGITAL MARKETING</h1>
@@ -153,7 +148,7 @@ const marketing = () => {
           how we promote content
         </h1>
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover_val">
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow bg-red-500 rounded">
             <div id="more_services_1_about" className="items-center text-white">
               <div
                 className="flex flex-col items-center first"
@@ -173,14 +168,14 @@ const marketing = () => {
                   <h1 className="text-xl font">Search Engine Marketing</h1>
                 </div>
               </div>
-              <div className="second bg-slate-800">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white">
+                <h1 className="text-base bg-red-500 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Search Engine Marketing
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-red-500 md:text-base lg:text-xl p-7  hidden lg:block">
                   Search Engine Marketing
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   LasioWeb LTD uses Search Engine Marketing (SEM) by identifying
                   relevant keywords, creating ad campaigns on platforms like
                   Google Ads and Bing Ads, bidding on keywords, writing engaging
@@ -191,7 +186,7 @@ const marketing = () => {
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow bg-red-800 rounded">
             <div
               id="more_services_2_about"
               className="items-center  text-white "
@@ -217,14 +212,14 @@ const marketing = () => {
                   <h1 className="text-xl font">SEO</h1>
                 </div>
               </div>
-              <div className="second bg-slate-800">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white">
+                <h1 className="text-base bg-red-800 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   SEO
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-red-800 md:text-base lg:text-xl p-7  hidden lg:block">
                   SEO
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   LasioWeb uses SEO by optimizing keywords and website, creating
                   quality content, building reputable backlinks, and tracking
                   performance with analytics tools to enhance online visibility
@@ -234,7 +229,7 @@ const marketing = () => {
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item border border-gray-200 shadow bg-red-600 rounded">
             <div
               id="more_services_1_about"
               className="items-center  text-white "
@@ -257,14 +252,14 @@ const marketing = () => {
                   <h1 className="text-xl font">Social Media Marketing</h1>
                 </div>
               </div>
-              <div className="second bg-slate-700">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white">
+                <h1 className="text-base bg-red-600 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Social Media Marketing
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-red-600 md:text-base lg:text-xl p-7  hidden lg:block">
                   Social Media Marketing
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   We use Social Media Marketing by creating engaging content
                   tailored to each platform, interacting with followers, using
                   targeted ads, and analyzing performance metrics to refine its
@@ -274,11 +269,8 @@ const marketing = () => {
             </div>
           </div>
 
-          <div className="slide_item rounded">
-            <div
-              id="more_services_2_about"
-              className="items-center  text-white "
-            >
+          <div className="slide_item border border-gray-200 shadow bg-red-900 rounded">
+            <div id="more_services_2_about" className="items-center text-white">
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
@@ -298,14 +290,14 @@ const marketing = () => {
                   <h1 className="text-xl font">Email Marketing</h1>
                 </div>
               </div>
-              <div className="second bg-slate-700">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white">
+                <h1 className="text-base md:text-base bg-red-900 lg:text-xl p-7 lg:block lg:hidden">
                   Email Marketing
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base md:text-base bg-red-900 lg:text-xl p-7  hidden lg:block">
                   Email Marketing
                 </h1>
-                <p className="text-white px-5 mt-1">
+                <p className="text-gray-700 px-5 mt-1">
                   LasioWeb uses Email Marketing by crafting compelling subject
                   lines, personalizing email content, segmenting its subscriber
                   list, sending regular newsletters, and analyzing open and
@@ -318,7 +310,7 @@ const marketing = () => {
         </div>
       </section>
       <section className="w-4/6 mb-10">
-        <h1 className="text-center text-2xl font-bold md:text-4xl">
+        <h1 className="uppercase text-center text-2xl font-semibold md:text-3xl">
           Our Capabilities
         </h1>
         <div className="grid md:grid-cols-1 md:grid-cols-3 mt-10 ">
@@ -354,14 +346,8 @@ const marketing = () => {
           </div>
         </div>
       </section>
-      <section className="w-5/6">
-        <ContentButton
-          header="Still have questions?"
-          paragraph="Curious about our process or what it's like to work with us? Pick a
-          package; we're happy to answer to give you the best creative designs."
-          button="CONTACT US"
-        />
-      </section>
+      <GetStarted />
+      <Newsletter background="bg-red-800" />
     </div>
   );
 };

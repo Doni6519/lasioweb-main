@@ -4,7 +4,10 @@ import GetStarted from "@/components/GetStarted";
 import { seoContactForm } from "@/lib/api";
 import { useState } from "react";
 import { FormControl, useToast } from "@chakra-ui/react";
-import Nav from "@/components/Nav";
+import Link from "next/link";
+import Newsletter from "@/components/Newsletter";
+import BackgroundVideo from "next-video/background-video";
+
 const initValues = {
   lastName: "",
   company: "",
@@ -16,7 +19,7 @@ const initValues = {
   budget2: "",
   budget3: "",
   message: "",
-  firstName: ""
+  firstName: "",
 };
 const initState = { values: initValues };
 
@@ -70,24 +73,22 @@ const seo = () => {
     }
   };
   return (
-    <div className="text-sm">
-      {/* <Nav color="text-white hover:text-blue-500" /> */}
-      <Image
-        width={2000}
-        height={2000}
-        src="/assets/images/background-img/seo-bg.jpg"
-        className="absolute block object-cover top-0 goback"
-        alt=""
-      />
-      <div id="seo_home" className="hero">
-        <div id="hero_text" className=" absolute  z-100 top-0">
-          <h1 className="font-extrabold uppercase text-xl">search engine optimization</h1>
-          <p className="text-3xl mt-3">
+    <div className="overflow-hidden">
+      <BackgroundVideo
+        src="https://res.cloudinary.com/dxmpvvt2k/video/upload/v1718683402/fskl04zxzn1m5ua2mnwf.mp4"
+        className="h-screen w-full max-w-screen-2xl"
+      >
+        <div className="h-screen w-screen max-w-screen-2xl bg-green-800 absolute top-0 -z-10"></div>
+        <div id="" className="text-white w-screen max-w-screen-2xl ms-10 md:ms-20">
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">
+            Search Engine Optimization
+          </h1>
+          <p className="text-2xl mt-3">
             Always appear first on searches related to you.
           </p>
         </div>
-      </div>
-      <section className=" justify-around first_item_extra w-5/6"></section>
+      </BackgroundVideo>
+      <section className=" justify-around  w-5/6"></section>
       <section className="md:flex w-5/6">
         <div className="basis-2/4 justify-between">
           <h1 className="text-base text-center md:text-start md:text-2xl font-bold">
@@ -127,7 +128,7 @@ const seo = () => {
           even global targeted keywords.
         </p>
         <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-4 mt-10 text-center slide_on_hover_val">
-          <div className="slide_item rounded">
+          <div className="slide_item rounded bg-green-500">
             <div id="more_services_1_about" className="items-center text-white">
               <div
                 className="flex flex-col items-center first"
@@ -148,14 +149,14 @@ const seo = () => {
                   <h1 className="text-xl font">Onsite Optimization</h1>
                 </div>
               </div>
-              <div className="second bg-slate-800">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white bg-slate-800">
+                <h1 className="text-base bg-green-500 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Onsite Optimization
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-green-500 md:text-base lg:text-xl p-7  hidden lg:block">
                   Onsite Optimization
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   Full website audit and optimization using content, meta tags,
                   keyword density and more.
                 </p>
@@ -163,7 +164,7 @@ const seo = () => {
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item bg-green-800 rounded">
             <div
               id="more_services_2_about"
               className="items-center  text-white "
@@ -186,14 +187,14 @@ const seo = () => {
                   <h1 className="text-xl font">Content Creation & Marketing</h1>
                 </div>
               </div>
-              <div className="second bg-slate-800">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white bg-slate-800">
+                <h1 className="text-base bg-green-800 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Content Creation & Marketing
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-green-800 md:text-base lg:text-xl p-7  hidden lg:block">
                   Content Creation & Marketing
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   Our experts create keyword rich content and can assist you in
                   marketing them also.
                 </p>
@@ -201,7 +202,7 @@ const seo = () => {
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item bg-green-600 rounded">
             <div
               id="more_services_1_about"
               className="items-center  text-white "
@@ -224,14 +225,14 @@ const seo = () => {
                   <h1 className="text-xl font">Research & Execution</h1>
                 </div>
               </div>
-              <div className="second bg-slate-700">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white bg-slate-700">
+                <h1 className="text-base bg-green-600 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   Research & Execution
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-green-600 md:text-base lg:text-xl p-7  hidden lg:block">
                   Research & Execution
                 </h1>
-                <p className="text-white px-5">
+                <p className="text-gray-700 px-5">
                   We use keyword research and link acquisition to create
                   optimizations tailored to you.
                 </p>
@@ -239,7 +240,7 @@ const seo = () => {
             </div>
           </div>
 
-          <div className="slide_item rounded">
+          <div className="slide_item bg-green-900 rounded">
             <div
               id="more_services_2_about"
               className="items-center  text-white "
@@ -265,14 +266,14 @@ const seo = () => {
                   <h1 className="text-xl font">SEO Measuring & Web A...</h1>
                 </div>
               </div>
-              <div className="second bg-slate-700">
-                <h1 className="text-base md:text-base lg:text-xl p-7 lg:block lg:hidden">
+              <div className="second bg-white bg-slate-700">
+                <h1 className="text-base bg-green-900 md:text-base lg:text-xl p-7 lg:block lg:hidden">
                   SEO Measuring & Web Analytics
                 </h1>
-                <h1 className="text-base md:text-base lg:text-xl p-7  hidden lg:block">
+                <h1 className="text-base bg-green-900 md:text-base lg:text-xl p-7  hidden lg:block">
                   SEO Measuring & Web Analytics
                 </h1>
-                <p className="text-white px-5 mt-1">
+                <p className="text-gray-700 px-5 mt-1">
                   Analyzing results and measuring conversion.
                 </p>
               </div>
@@ -304,10 +305,11 @@ const seo = () => {
         </div>
         <div className="basis-2/4">
           <h1 className="text-center font-bold mt-10 md:mt-0">
-            REQUEST A FREE SEO SITE ANALYSIS IN SECONDS
+            REQUEST A FREE SEO SITE ANALYSIS IN SECOND bg-whiteS bg-green-900
           </h1>
           <p className="text-center mt-2 mb-6">
             Complete the form below to get your free quote and analysis.
+            bg-green-900{" "}
           </p>
           <FormControl className="w-5/6 m_auto">
             <div className="md:flex">
@@ -443,7 +445,7 @@ const seo = () => {
             ></textarea>
             <button
               type="submit"
-              className="px-7 py-4 text-white float-right mt-4 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              className="px-7 py-4 text-white float-right mt-4 bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
               onClick={onSubmit}
             >
               SUBMIT
@@ -451,8 +453,8 @@ const seo = () => {
           </FormControl>
         </div>
       </section>
-      *
       <GetStarted />
+      <Newsletter background="bg-green-800" />
     </div>
   );
 };

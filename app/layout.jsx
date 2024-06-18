@@ -3,6 +3,10 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { ChakraProvider } from "@chakra-ui/react";
 import { GoogleTagManager } from "@next/third-parties/google";
+import Newsletter from "@/components/Newsletter";
+import { Nunito } from "next/font/google";
+
+const nunito = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
@@ -26,7 +30,7 @@ const RootLayout = ({ children }) => {
         />
         <link rel="icon" type="image/x-icon" href="/assets/images/logo.png" />
       </head>
-      <body className="font-sans" id="body">
+      <body className={`max-w-screen-2xl mx-auto ${nunito.className}`} id="body">
         <ChakraProvider>
           <Nav />
 
@@ -36,7 +40,6 @@ const RootLayout = ({ children }) => {
           </main>
           <GoogleTagManager gtmId="G-C7V0KLX9FF" />
         </ChakraProvider>
-
         {/* <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> */}
         {/* <script src="../path/to/flowbite/dist/flowbite.min.js"></script> */}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
