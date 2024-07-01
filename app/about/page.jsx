@@ -318,7 +318,7 @@ const page = () => {
             </div>
         </div>
       </div>
-      <Newsletter background="bg-green-800" />
+      <Newsletter background="bg-green-800" button="bg-green-700" hover="hover:bg-green-500" />
     </div>
   );
 };

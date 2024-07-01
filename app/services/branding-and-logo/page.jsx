@@ -65,7 +65,7 @@ const branding = () => {
           />
         </Link>
       </div>
-      <Newsletter background="bg-blue-800" />
+      <Newsletter background="bg-blue-800" button="bg-blue-700" hover="hover:bg-blue-500" />
     </div>
   );
 };

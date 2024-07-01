@@ -25,7 +25,7 @@ const blog = () => {
         </div>
         <div className="text-3xl hidden md:block">Browse Topics</div>
       </section>
-      <Newsletter background="bg-green-800" />
+      <Newsletter background="bg-green-800" button="bg-green-700" hover="hover:bg-green-500" />
     </>
   );
 };

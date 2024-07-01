@@ -449,7 +449,7 @@ const seo = () => {
       </section>
       <div className="mt-24"></div>
       <GetStarted />
-      <Newsletter background="bg-green-800" />
+      <Newsletter background="bg-green-800" button="bg-green-700" hover="hover:bg-green-500" />
     </div>
   );
 };

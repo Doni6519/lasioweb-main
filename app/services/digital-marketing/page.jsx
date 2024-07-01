@@ -348,7 +348,7 @@ const marketing = () => {
         </div>
       </section>
       <GetStarted />
-      <Newsletter background="bg-red-800" />
+      <Newsletter background="bg-red-800" button="bg-red-700" hover="hover:bg-red-500" />
     </div>
   );
 };

@@ -265,7 +265,7 @@ const contact = () => {
           </svg>
           <div>
             <h1 className="text-base md:text-xl font-bold">How can we help?</h1>
-            <a href="mailto:">info@lasioweb.com</a>
+            <a href="mailto:">lasiowebs@gmail.com</a>
           </div>
         </div>
       </section>
