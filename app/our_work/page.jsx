@@ -120,7 +120,7 @@ export default async function ourWork() {
           </button>
       </div>
       <div
-        className="grid mx-auto gap-4 grid-cols-1 mb-10 md:grid-cols-2 w-5/6"
+        className="grid mx-auto gap-4 grid-cols-1 mb-10 md:grid-cols-2 lg:grid-cols-3 w-5/6"
         id="to_filter"
       >
         {projects.map((project) => (
@@ -131,7 +131,7 @@ export default async function ourWork() {
             className={project.category + " all relative w-full"}
             data-carousel="static"
           >
-            <div className="relative h-56 md:h-96 overflow-hidden rounded-lg ">
+            <div className="relative h-56 overflow-hidden rounded-lg ">
               <div
                 className="hidden duration-700 ease-in-out"
                 data-carousel-item

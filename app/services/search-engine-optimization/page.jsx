@@ -6,7 +6,6 @@ import { useState } from "react";
 import { FormControl, useToast } from "@chakra-ui/react";
 import Link from "next/link";
 import Newsletter from "@/components/Newsletter";
-import BackgroundVideo from "next-video/background-video";
 
 const initValues = {
   lastName: "",
@@ -35,11 +34,12 @@ const seo = () => {
         [target.name]: target.value,
       },
     }));
-  const onSubmit = async () => {
+  const onSubmit = async (e) => {
     // setState((prev) => ({
     //   ...prev,
     //   isLoading: true
     // }));
+    e.preventDefault();
     try {
       await seoContactForm(values);
       setState(initState);
@@ -73,13 +73,9 @@ const seo = () => {
     }
   };
   return (
-    <div className="overflow-hidden">
-      <BackgroundVideo
-        src="https://res.cloudinary.com/dxmpvvt2k/video/upload/v1718683402/fskl04zxzn1m5ua2mnwf.mp4"
-        className="h-screen w-full max-w-screen-2xl"
-      >
-        <div className="h-screen w-screen max-w-screen-2xl bg-green-800 absolute top-0 -z-10"></div>
-        <div id="" className="text-white w-screen max-w-screen-2xl ms-10 md:ms-20">
+    <div className="text-sm">
+      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-green-800 h-screen">
+        <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
           <h1 className="font-bold text-4xl mt-20 md:mt-0">
             Search Engine Optimization
           </h1>
@@ -87,7 +83,7 @@ const seo = () => {
             Always appear first on searches related to you.
           </p>
         </div>
-      </BackgroundVideo>
+      </div>
       <section className=" justify-around  w-5/6"></section>
       <section className="md:flex w-5/6">
         <div className="basis-2/4 justify-between">
@@ -281,7 +277,7 @@ const seo = () => {
           </div>
         </div>
       </section>
-      <section className="md:ps-10 md:pe-10 md:flex w-5/6 mb-11 m_extra">
+      <section className="md:ps-10 md:pe-10 md:flex w-5/6 mb-11 mb-10">
         <div className="basis-2/4">
           <h1 className="w-5/6 text-xl md:text-4xl">
             Let our Years of proven SEO experience help boost your rankings and
@@ -311,7 +307,7 @@ const seo = () => {
             Complete the form below to get your free quote and analysis.
             bg-green-900{" "}
           </p>
-          <FormControl className="w-5/6 m_auto">
+          <form onSubmit={onSubmit} className="w-5/6 m_auto">
             <div className="md:flex">
               <input
                 required
@@ -381,7 +377,6 @@ const seo = () => {
               </div>
               <div className="basis-2/4 md:ms-2">
                 <input
-                  required
                   type="text"
                   placeholder="Website URL"
                   className="w-full block mb-5"
@@ -446,13 +441,13 @@ const seo = () => {
             <button
               type="submit"
               className="px-7 py-4 text-white float-right mt-4 bg-green-700 hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
-              onClick={onSubmit}
             >
               SUBMIT
             </button>
-          </FormControl>
+          </form>
         </div>
       </section>
+      <div className="mt-24"></div>
       <GetStarted />
       <Newsletter background="bg-green-800" />
     </div>

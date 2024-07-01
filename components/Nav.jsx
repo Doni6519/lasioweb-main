@@ -119,12 +119,12 @@ const Nav = () => {
             </Link>
           </li>
           <li onClick={handleClick}>
-            <Link
+            <a
               href="/our_work"
               className="block py-2 pl-3 pr-4 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0"
             >
               Our work
-            </Link>
+            </a>
           </li>
           <li onClick={handleClick}>
             <Link
@@ -207,12 +207,12 @@ const Nav = () => {
               </Link>
             </li>
             <li>
-              <Link
+              <a
                 href="/our_work"
                 className={`block font-bold py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent ${hoverColor} md:p-0`}
               >
                 Our work
-              </Link>
+              </a>
             </li>
             <li>
               <Link

@@ -27,11 +27,8 @@ const marketing = () => {
         [target.name]: target.value,
       },
     }));
-  const onSubmit = async () => {
-    // setState((prev) => ({
-    //   ...prev,
-    //   isLoading: true
-    // }));
+  const onSubmit = async (e) => {
+    e.preventDefault();
     try {
       await dmContactForm(values);
       setState(initState);
@@ -53,7 +50,7 @@ const marketing = () => {
             Digital Marketing
           </h1>
           <p className="text-2xl mt-3">
-          Let's give you a space in the world's largest market.
+            Let's give you a space in the world's largest market.
           </p>
         </div>
       </div>
@@ -73,7 +70,11 @@ const marketing = () => {
             <a href="tel:+9070807080">09070807080</a>; we're happy to answer all
             your question.
           </p>
-          <FormControl className="mt-5 lg:w-5/6" style={{ fontSize: 1 }}>
+          <form
+            onSubmit={onSubmit}
+            className="mt-5 lg:w-5/6"
+            style={{ fontSize: 1 }}
+          >
             <div className="flex">
               <div className="basis-2/4 me-2">
                 <input
@@ -87,6 +88,7 @@ const marketing = () => {
                 />
                 <input
                   type="text"
+                  required
                   placeholder="Phone Number"
                   name="phone"
                   value={values.phone}
@@ -97,9 +99,9 @@ const marketing = () => {
               <div className="basis-2/4 ms-2">
                 <input
                   type="email"
+                  required
                   placeholder="Email"
                   className="w-full block mb-5"
-                  required
                   name="email"
                   value={values.email}
                   onChange={handleChange}
@@ -128,12 +130,11 @@ const marketing = () => {
             ></textarea>
             <button
               type="submit"
-              onClick={onSubmit}
-              className="px-7 py-4 text-white float-right mt-4 text-sm"
+              className="px-7 py-4 text-white bg-red-700 hover:bg-red-800 float-right mt-4 text-sm"
             >
               SUBMIT
             </button>
-          </FormControl>
+          </form>
         </div>
         <div className="ms-10 hidden md:block">
           <Image

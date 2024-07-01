@@ -1,6 +1,6 @@
 "use client";
 import { sendContactForm } from "@/lib/api";
-import { FormControl, useToast } from "@chakra-ui/react";
+import { Button, useToast } from "@chakra-ui/react";
 import { useState } from "react";
 import Nav from "@/components/Navblack";
 const initValues = {
@@ -15,7 +15,7 @@ const initState = { values: initValues };
 const contact = () => {
   const toast = useToast();
   const [state, setState] = useState(initState);
-  const { values, error } = state;
+  const { values, error, isLoading } = state;
   const handleChange = ({ target }) =>
     setState((prev) => ({
       ...prev,
@@ -24,12 +24,14 @@ const contact = () => {
         [target.name]: target.value,
       },
     }));
-  const onSubmit = async () => {
-    // setState((prev) => ({
-    //   ...prev,
-    //   isLoading: true
-    // }));
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    document.getElementById("submitButton").setAttribute("class", "hidden");
     try {
+      setState((prev) => ({
+        ...prev,
+        isLoading: true,
+      }));
       await sendContactForm(values);
       setState(initState);
       toast({
@@ -40,8 +42,12 @@ const contact = () => {
         position: "top",
         isClosable: true,
       });
-      // document.getElementById("toast").innerHTML =
-      //   '<div id="toast-simple" className="flex items-center mb-5 w-full max-w-xs p-4 space-x-4 rtl:space-x-reverse text-gray-500 bg-green-100 divide-x rtl:divide-x-reverse divide-gray-200 rounded-lg shadow dark:text-gray-400 dark:divide-gray-700 space-x dark:bg-gray-800" role="alert"><svg className="w-5 h-5 text-blue-600 dark:text-blue-500 rotate-45" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 17 8 2L9 1 1 19l8-2Zm0 0V9"/></svg><div className="ps-4 text-sm font-normal">Message sent successfully.</div></div>';
+      document
+        .getElementById("submitButton")
+        .setAttribute(
+          "class",
+          "absolute text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+        );
     } catch (error) {
       setState((prev) => ({
         ...prev,
@@ -55,7 +61,7 @@ const contact = () => {
         <h1 className="mt-32 text-4xl text-white font-bold ">Contact us</h1>
         <p className="text-white mb-10 md:mb-0">Lets talk about your ideas.</p>
         <section className="bg-white md:w-3/6 lg:w-2/6 p-10 drop-shadow md:absolute form">
-          <FormControl>
+          <form method="post" onSubmit={onSubmit}>
             <div id="toast"></div>
             {/* {error && (
               <div
@@ -187,15 +193,27 @@ const contact = () => {
               name="message"
               value={values.message}
               onChange={handleChange}
+              required
             ></textarea>
-            <button
-              type="submit"
-              className="mt-5 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              onClick={onSubmit}
-            >
-              Send
-            </button>
-          </FormControl>
+            <div className="mt-5 mx-auto">
+              <Button
+                disabled={true}
+                variant="solid"
+                colorScheme="blue"
+                isLoading={isLoading}
+              >
+                Subscribe
+              </Button>
+              <button
+                type="submit"
+                id="submitButton"
+                style={{ width: 109 }}
+                class="absolute text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+              >
+                Send
+              </button>
+            </div>
+          </form>
         </section>
       </section>
       <section

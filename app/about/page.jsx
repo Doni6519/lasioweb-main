@@ -1,21 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import Newsletter from "@/components/Newsletter";
-import BackgroundVideo from "next-video/background-video";
 
 const page = () => {
   return (
-    <div className="overflow-hidden">
-      <BackgroundVideo
-        src="https://res.cloudinary.com/dxmpvvt2k/video/upload/v1718683076/wksqfwge3mxvmrusxyl8.mp4"
-        className="h-screen w-full max-w-screen-2xl"
-      >
-        <div className="h-screen w-screen max-w-screen-2xl bg-green-800 absolute top-0 -z-10"></div>
+    <div className="">
+      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-green-800 h-screen">
         <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
           <h1 className="font-bold text-4xl mt-20 md:mt-0">About us</h1>
           <p className="text-2xl mt-3">
-            We are experienced web designers who solve problems and grow
-            businesses.
+          We are experienced web designers who solve problems and grow businesses.
           </p>
           <Link
             href="/request"
@@ -40,7 +34,7 @@ const page = () => {
             </svg>
           </Link>
         </div>
-      </BackgroundVideo>
+      </div>
       <section className="w-5/6 md:w-4/6">
         <h1 className="text-center uppercase text-xl font-bold md:text-3xl">
           Who We Are
@@ -55,14 +49,16 @@ const page = () => {
         <h1 className="text-center text-xl font-bold md:text-3xl uppercase mt-10">
           Our Expertise
         </h1>
-        <h1 className="mt-5 text-xl font-semibold">Web Design</h1>
+        <h1 className="mt-5 text-xl font-semibold">Web Design</h1> 
         <p className="mt-3">
           We believe that a website is the digital face of your business. Our
           team of experienced web designers is dedicated to creating visually
           appealing and user-friendly websites that reflect your brand's
           identity and values.
         </p>
-        <h1 className="mt-5 text-xl font-semibold">Logo and Branding</h1>
+        <h1 className="mt-5 text-xl font-semibold">
+          Logo and Branding
+        </h1>
         <p className="mt-3">
           Your logo and branding are the first things that people notice about
           your business. At LasioWeb, we create unique and memorable logos and
@@ -78,7 +74,9 @@ const page = () => {
           improve your website's ranking on search engine results pages,
           increasing your visibility and driving more traffic to your site.
         </p>
-        <h1 className="mt-5 text-xl font-semibold">Social Media Marketing</h1>
+        <h1 className="mt-5 text-xl font-semibold">
+          Social Media Marketing
+        </h1>
         <p className="mt-3">
           Social media platforms are powerful tools for reaching and engaging
           with your target audience. Our social media marketing team helps you
@@ -107,9 +105,7 @@ const page = () => {
             />
           </div>
           <div className="h-80 p-10 text vision">
-            <h1 className="text-center text-2xl font-semibold">
-              Vision Statement
-            </h1>
+            <h1 className="text-center text-2xl font-semibold">Vision Statement</h1>
             <p className="mt-3">
               To be the largest web development agency globally.
             </p>
@@ -177,7 +173,9 @@ const page = () => {
           </div>
 
           <div className="slide_item bg-green-800">
-            <div className="items-center text-white ">
+            <div
+              className="items-center text-white "
+            >
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
@@ -221,7 +219,9 @@ const page = () => {
           </div>
 
           <div className="slide_item bg-green-600">
-            <div className="items-center  text-white ">
+            <div
+              className="items-center  text-white "
+            >
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
@@ -300,22 +300,22 @@ const page = () => {
       </section>
       <div className="min-h-60 w-full py-10">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-gray-700">
-          <div>
-            <h1 className="text-4xl font-bold">1000+</h1>
-            <p>Students enrolled</p>
-          </div>
-          <div>
-            <h1 className="text-4xl font-bold">10+</h1>
-            <p>Partners</p>
-          </div>
-          <div>
-            <h1 className="text-4xl font-bold">70+</h1>
-            <p>Educators</p>
-          </div>
-          <div>
-            <h1 className="text-4xl font-bold">22</h1>
-            <p>Awards</p>
-          </div>
+            <div>
+              <h1 className="text-4xl font-bold">1000+</h1>
+              <p>Students enrolled</p>
+            </div>
+            <div>
+              <h1 className="text-4xl font-bold">10+</h1>
+              <p>Partners</p>
+            </div>
+            <div>
+              <h1 className="text-4xl font-bold">70+</h1>
+              <p>Educators</p>
+            </div>
+            <div>
+              <h1 className="text-4xl font-bold">22</h1>
+              <p>Awards</p>
+            </div>
         </div>
       </div>
       <Newsletter background="bg-green-800" />
