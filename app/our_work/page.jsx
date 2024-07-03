@@ -36,11 +36,10 @@ export default async function ourWork() {
     <div className="text-sm">
       <div className="flex mb-24 items-center md:flex-row p-5 md:p-10 justify-between bg-blue-800 h-screen">
         <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
-          <h1 className="font-bold text-4xl mt-20 md:mt-0">
-            Our Work
-          </h1>
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">Our Work</h1>
           <p className="text-2xl mt-3">
-            Each work as helped strengthing our experience and dilevery, thereby making us the best.
+            Each work as helped strengthing our experience and dilevery, thereby
+            making us the best.
           </p>
           <Link
             href="/request"
@@ -94,140 +93,57 @@ export default async function ourWork() {
         </select>
       </section> */}
       <div className="w-46 mb-10 mt-8 w-5/6 grid grid-cols-2 gap-x-7 gap-y-3 md:gap-0 md:flex md:justify-between md:items-center md:w-4/6 mx-auto">
-          <button
-            type="button"
-            class="text-white w bg-blue-800 border border-gray-300 focus:outline-none hover:bg-gray-100 hover:text-gray-700 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-          >
-            All
-          </button>
-          <button
-            type="button"
-            class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-          >
-            Website
-          </button>
-          <button
-            type="button"
-            class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-          >
-            Branding
-          </button>
-          <button
-            type="button"
-            class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
-          >
-            Expired
-          </button>
+        <button
+          type="button"
+          class="text-white w bg-blue-800 border border-gray-300 focus:outline-none hover:bg-gray-100 hover:text-gray-700 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        >
+          All
+        </button>
+        <button
+          type="button"
+          class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        >
+          Website
+        </button>
+        <button
+          type="button"
+          class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        >
+          Branding
+        </button>
+        <button
+          type="button"
+          class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+        >
+          Expired
+        </button>
       </div>
       <div
         className="grid mx-auto gap-4 grid-cols-1 mb-10 md:grid-cols-2 lg:grid-cols-3 w-5/6"
         id="to_filter"
       >
         {projects.map((project) => (
-          <div
-            // controls-carousel
-            id={project.category}
-            key={project._id}
-            className={project.category + " all relative w-full"}
-            data-carousel="static"
-          >
-            <div className="relative h-56 overflow-hidden rounded-lg ">
-              <div
-                className="hidden duration-700 ease-in-out"
-                data-carousel-item
-              >
-                <Link href={`/our_work/${project.slug}`}>
-                  <Image
-                    width={1000}
-                    height={1000}
-                    src={project.image}
-                    className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                    alt=""
-                  />
-                </Link>
-              </div>
-              <div
-                className="hidden duration-700 ease-in-out "
-                data-carousel-item="active"
-              >
-                <Link href={`/our_work/${project.slug}`}>
-                  <Image
-                    width={1000}
-                    height={1000}
-                    src={project.secondImage}
-                    className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                    alt=""
-                  />{" "}
-                </Link>
-              </div>
-              <div
-                className="hidden duration-700 ease-in-out"
-                data-carousel-item
-              >
-                <Link href={`/our_work/${project.slug}`}>
-                  <Image
-                    width={1000}
-                    height={1000}
-                    src={project.thirdImage}
-                    className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
-                    alt=""
-                  />{" "}
-                </Link>
-              </div>
+          <div className="relative h-56 overflow-hidden rounded-lg ">
+            <div className="">
+              <Link href={`/our_work/${project.slug}`}>
+                <Image
+                  width={1000}
+                  height={1000}
+                  src={project.image}
+                  className="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 object-cover"
+                  alt=""
+                />
+              </Link>
             </div>
-            <button
-              type="button"
-              className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-prev
-            >
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg
-                  className="w-4 h-4 text-white dark:text-gray-800"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M5 1 1 5l4 4"
-                  />
-                </svg>
-                <span className="sr-only">Previous</span>
-              </span>
-            </button>
-            <button
-              type="button"
-              className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-              data-carousel-next
-            >
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-black dark:bg-gray-800/30 group-hover:bg-black/50 dark:group-hover:bg-gray-800/60  dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg
-                  className="w-4 h-4 text-white dark:text-gray-800"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 6 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m1 9 4-4-4-4"
-                  />
-                </svg>
-                <span className="sr-only">Next</span>
-              </span>
-            </button>
           </div>
         ))}
       </div>
       <GetStarted />
-      <Newsletter background="bg-blue-800" button="bg-blue-700" hover="hover:bg-blue-500" />
+      <Newsletter
+        background="bg-blue-800"
+        button="bg-blue-700"
+        hover="hover:bg-blue-500"
+      />
     </div>
   );
 }

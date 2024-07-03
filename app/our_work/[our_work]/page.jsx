@@ -165,7 +165,7 @@ export default async function Project({ params }) {
             </p>
           </div>
           <hr className="m-0 p-0 mb-2" />
-          <Link href={project.url}>
+          <Link target="_blank" href={project.url}>
             <button
               type="button"
               className="mt-7 px-6 py-3.5 text-base font-medium text-white inline-flex items-center bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
