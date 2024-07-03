@@ -102,7 +102,7 @@ export default async function Project({ params }) {
                 d="M10 6v4l3.276 3.276M19 10a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
               />
             </svg>
-            <p className="font-bold">July 2023</p>
+            <p className="font-bold">{project.date}</p>
           </div>
           <hr className="m-0 p-0 mb-3 mt-3" />
           <div className="flex mt-0 mb-0">

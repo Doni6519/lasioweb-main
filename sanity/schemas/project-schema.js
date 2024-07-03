@@ -14,6 +14,11 @@ const project = {
       type: "string",
     },
     {
+      name: "date",
+      title: "Date",
+      type: "string",
+    },
+    {
         name: "url",
         title: "URL",
         type: "string",
