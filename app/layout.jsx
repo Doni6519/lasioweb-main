@@ -7,6 +7,7 @@ import Script from "next/script";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
+
 export const metadata = {
   title: {
     default: "Lasioweb | Website Design Company in Nigeria",

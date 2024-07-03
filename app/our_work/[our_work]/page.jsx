@@ -5,7 +5,8 @@ const projects = await getProjects();
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Nav from "@/components/Nav";
+import Newsletter from "@/components/Newsletter";
+
 export default async function Project({ params }) {
   const slug = params.our_work;
   const project = await getProject(slug);
@@ -13,8 +14,8 @@ export default async function Project({ params }) {
     <div className="text-sm">
       {/* <Nav color="text-black hover:text-blue-500" /> */}
       <div
-        id="top_black"
-        className="bg-black h-24 pb-2 top-0 absolute w-full -z-10"
+        id=""
+        className="bg-blue-800 h-24 pb-2 top-0 w-full -z-10"
       ></div>
       <section className="w-full mt-0 py-6 our_work_menu">
         <div className="flex justify-between w-5/6 m-auto">
@@ -83,7 +84,7 @@ export default async function Project({ params }) {
           />
         </div>
       </section>
-      <section className="w-5/6 ">
+      <section className="w-5/6 mb-10">
         <div className="w-4/6 md:w-3/6 lg:w-2/6">
           <div className="flex mt-0 mb-0">
             <svg
@@ -291,6 +292,7 @@ export default async function Project({ params }) {
           </div>
         ))}
       </section> */}
+      <Newsletter background="bg-blue-800" button="bg-blue-700" hover="hover:bg-blue-500" />
     </div>
   );
 }
