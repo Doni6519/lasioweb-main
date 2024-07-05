@@ -3,6 +3,7 @@ import { sendContactForm } from "@/lib/api";
 import { Button, useToast } from "@chakra-ui/react";
 import { useState } from "react";
 import Nav from "@/components/Navblack";
+import Newsletter from "@/components/Newsletter";
 const initValues = {
   name: "",
   phone: "",
@@ -195,19 +196,19 @@ const contact = () => {
               onChange={handleChange}
               required
             ></textarea>
-            <div className="mt-5 mx-auto">
+            <div className="mt-5 mx-auto w-32">
               <Button
                 disabled={true}
                 variant="solid"
                 colorScheme="blue"
                 isLoading={isLoading}
               >
-                Subscribe
+                --------
               </Button>
               <button
                 type="submit"
                 id="submitButton"
-                style={{ width: 109 }}
+                style={{ width: 109 , marginLeft: -90}}
                 class="absolute text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               >
                 Send
@@ -265,10 +266,11 @@ const contact = () => {
           </svg>
           <div>
             <h1 className="text-base md:text-xl font-bold">How can we help?</h1>
-            <a href="mailto:">lasiowebs@gmail.com</a>
+            <a href="mailto:lasiowebs@gmail.com">lasiowebs@gmail.com</a>
           </div>
         </div>
       </section>
+      {/* <Newsletter background="bg-blue-900" button="bg-blue-700" hover="hover:bg-blue-500" /> */}
     </div>
   );
 };
