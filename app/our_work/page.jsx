@@ -92,7 +92,7 @@ export default async function ourWork() {
           ))}
         </select>
       </section> */}
-      <div className="w-46 mb-10 mt-8 w-5/6 grid grid-cols-2 gap-x-7 gap-y-3 md:gap-0 md:flex md:justify-between md:items-center md:w-4/6 mx-auto">
+      {/* <div className="w-46 mb-10 mt-8 w-5/6 grid grid-cols-2 gap-x-7 gap-y-3 md:gap-0 md:flex md:justify-between md:items-center md:w-4/6 mx-auto">
         <button
           type="button"
           class="text-white w bg-blue-800 border border-gray-300 focus:outline-none hover:bg-gray-100 hover:text-gray-700 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
@@ -117,7 +117,7 @@ export default async function ourWork() {
         >
           Expired
         </button>
-      </div>
+      </div> */}
       <div
         className="grid mx-auto gap-4 grid-cols-1 mb-10 md:grid-cols-2 lg:grid-cols-3 w-5/6"
         id="to_filter"
