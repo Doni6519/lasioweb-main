@@ -33,8 +33,6 @@ export async function getProjects() {
       subCategory,
       "slug": slug.current,
       "image": image.asset->url,
-      "secondImage": secondImage.asset->url,
-      "thirdImage": thirdImage.asset->url
   }`
   );
 }
@@ -54,10 +52,10 @@ export async function getProject(slug) {
       name,
       category,
       subCategory,
+      client,
+      date,
       "slug": slug.current,
-      "image": image.asset->url,
-      "secondImage": secondImage.asset->url,
-      "thirdImage": thirdImage.asset->url
+      "image": image.asset->url
   }`,
   {slug}
   );
