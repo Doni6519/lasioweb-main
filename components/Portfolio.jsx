@@ -46,6 +46,7 @@ export default function Portfolio({ projects }) {
                         src={project.image}
                         className="absolute block w-full h-full object-cover "
                         alt=""
+                        
                       />
                     </Link>
                   </div>
