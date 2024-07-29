@@ -299,22 +299,22 @@ const page = () => {
         </div>
       </section>
       <div className="min-h-60 w-full py-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-gray-700">
-            <div>
+        <div className="grid grid-cols-2 md:grid-cols-2 gap-4 text-center text-gray-700">
+            {/* <div>
               <h1 className="text-4xl font-bold">1000+</h1>
               <p>Students enrolled</p>
-            </div>
+            </div> */}
             <div>
               <h1 className="text-4xl font-bold">10+</h1>
-              <p>Partners</p>
+              <p>Clients</p>
             </div>
-            <div>
+            {/* <div>
               <h1 className="text-4xl font-bold">70+</h1>
               <p>Educators</p>
-            </div>
+            </div> */}
             <div>
-              <h1 className="text-4xl font-bold">22</h1>
-              <p>Awards</p>
+              <h1 className="text-4xl font-bold">20+</h1>
+              <p>Projects</p>
             </div>
         </div>
       </div>
