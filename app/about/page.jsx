@@ -1,38 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import Newsletter from "@/components/Newsletter";
+import BackgroundVideo from "next-video/background-video";
 
 const page = () => {
   return (
     <div className="">
-      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-green-800 h-screen">
+      <div style={{backgroundPosition: "bottom center",backgroundImage: "url('https://res.cloudinary.com/dj2ybe6v0/image/upload/v1728909113/Black_white_digital_marketing_facebook_cover_1_zs3vgl.png')"}} className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-green-800 h-screen bg-green-800">
         <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
-          <h1 className="font-bold text-4xl mt-20 md:mt-0">About us</h1>
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">
+            About Us
+          </h1>
           <p className="text-2xl mt-3">
-          We are experienced web designers who solve problems and grow businesses.
+          We are experienced web designers who solve problems and grow
+          businesses.
           </p>
-          <Link
-            href="/request"
-            type="button"
-            className="bg-white hover:bg-green-300 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Hire us
-            <svg
-              className="w-3.5 h-3.5 ml-2 text-green-800"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </Link>
         </div>
       </div>
       <section className="w-5/6 md:w-4/6">
@@ -49,16 +31,14 @@ const page = () => {
         <h1 className="text-center text-xl font-bold md:text-3xl uppercase mt-10">
           Our Expertise
         </h1>
-        <h1 className="mt-5 text-xl font-semibold">Web Design</h1> 
+        <h1 className="mt-5 text-xl font-semibold">Web Design</h1>
         <p className="mt-3">
           We believe that a website is the digital face of your business. Our
           team of experienced web designers is dedicated to creating visually
           appealing and user-friendly websites that reflect your brand's
           identity and values.
         </p>
-        <h1 className="mt-5 text-xl font-semibold">
-          Logo and Branding
-        </h1>
+        <h1 className="mt-5 text-xl font-semibold">Logo and Branding</h1>
         <p className="mt-3">
           Your logo and branding are the first things that people notice about
           your business. At LasioWeb, we create unique and memorable logos and
@@ -74,9 +54,7 @@ const page = () => {
           improve your website's ranking on search engine results pages,
           increasing your visibility and driving more traffic to your site.
         </p>
-        <h1 className="mt-5 text-xl font-semibold">
-          Social Media Marketing
-        </h1>
+        <h1 className="mt-5 text-xl font-semibold">Social Media Marketing</h1>
         <p className="mt-3">
           Social media platforms are powerful tools for reaching and engaging
           with your target audience. Our social media marketing team helps you
@@ -105,7 +83,9 @@ const page = () => {
             />
           </div>
           <div className="h-80 p-10 text vision">
-            <h1 className="text-center text-2xl font-semibold">Vision Statement</h1>
+            <h1 className="text-center text-2xl font-semibold">
+              Vision Statement
+            </h1>
             <p className="mt-3">
               To be the largest web development agency globally.
             </p>
@@ -173,9 +153,7 @@ const page = () => {
           </div>
 
           <div className="slide_item bg-green-800">
-            <div
-              className="items-center text-white "
-            >
+            <div className="items-center text-white ">
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
@@ -219,9 +197,7 @@ const page = () => {
           </div>
 
           <div className="slide_item bg-green-600">
-            <div
-              className="items-center  text-white "
-            >
+            <div className="items-center  text-white ">
               <div
                 className="flex flex-col items-center first"
                 style={{ margin: "auto" }}
@@ -288,8 +264,6 @@ const page = () => {
                   Communication
                 </h1>
                 <p className="text-gray-500 px-5 mt-1">
-                  Effective communication is key in understanding the needs of
-                  the client and delivering a product that meets those needs.
                   Before implementing any project, we clearly map out and
                   understand our client goals and how to achieve each one.
                 </p>
@@ -300,25 +274,29 @@ const page = () => {
       </section>
       <div className="min-h-60 w-full py-10">
         <div className="grid grid-cols-2 md:grid-cols-2 gap-4 text-center text-gray-700">
-            {/* <div>
+          {/* <div>
               <h1 className="text-4xl font-bold">1000+</h1>
               <p>Students enrolled</p>
             </div> */}
-            <div>
-              <h1 className="text-4xl font-bold">10+</h1>
-              <p>Clients</p>
-            </div>
-            {/* <div>
+          <div>
+            <h1 className="text-4xl font-bold">10+</h1>
+            <p>Clients</p>
+          </div>
+          {/* <div>
               <h1 className="text-4xl font-bold">70+</h1>
               <p>Educators</p>
             </div> */}
-            <div>
-              <h1 className="text-4xl font-bold">20+</h1>
-              <p>Projects</p>
-            </div>
+          <div>
+            <h1 className="text-4xl font-bold">20+</h1>
+            <p>Projects</p>
+          </div>
         </div>
       </div>
-      <Newsletter background="bg-green-800" button="bg-green-700" hover="hover:bg-green-500" />
+      <Newsletter
+        background="bg-green-800"
+        button="bg-green-700"
+        hover="hover:bg-green-500"
+      />
     </div>
   );
 };

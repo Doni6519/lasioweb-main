@@ -1,18 +1,24 @@
 import ContentButton from "@/components/ContentButton";
 import GetStarted from "@/components/GetStarted";
 import Newsletter from "@/components/Newsletter";
+import BackgroundVideo from "next-video/background-video";
 
 const socialMediaMarketing = () => {
   return (
     <div className="text-sm">
-      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-green-800 h-screen">
+      <BackgroundVideo
+        src="https://res.cloudinary.com/dj2ybe6v0/video/upload/v1728898743/Blue_White_3D_Project_Plan_Business_Presentation_30_byhgac.mp4"
+        className="h-screen w-full max-w-screen-2xl"
+      >
+        <div className="flex">
         <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
           <h1 className="font-bold text-4xl mt-20 md:mt-0">Social Media Marketing</h1>
           <p className="text-2xl mt-3">
           Data driven strategies to increase your brand awareness and get you ahead of your competition.
           </p>
         </div>
-      </div>
+        </div>
+      </BackgroundVideo>
       <section className="md:flex w-5/6">
         <div className="basis-3/4">
           <h1 className="mt-10 text-2xl md:text-4xl">Reaching your audience</h1>
@@ -207,7 +213,11 @@ const socialMediaMarketing = () => {
         </div>
       </section>
       <GetStarted />
-      <Newsletter background="bg-green-800" button="bg-green-700" hover="hover:bg-green-500" />
+      <Newsletter
+        background="bg-green-800"
+        button="bg-green-700"
+        hover="hover:bg-green-500"
+      />
     </div>
   );
 };

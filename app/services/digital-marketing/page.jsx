@@ -44,7 +44,7 @@ const marketing = () => {
   };
   return (
     <div className="text-sm">
-      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-red-800 h-screen">
+      <div style={{backgroundPosition: "top center",backgroundImage: "url('https://res.cloudinary.com/dj2ybe6v0/image/upload/v1728903200/Black_white_digital_marketing_facebook_cover_v14ggk.png')"}} className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-red-800 h-screen">
         <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
           <h1 className="font-bold text-4xl mt-20 md:mt-0">
             Digital Marketing

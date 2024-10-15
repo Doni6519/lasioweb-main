@@ -4,6 +4,7 @@ import Link from "next/link";
 import Newsletter from "@/components/Newsletter";
 import { motion, AnimatePresence } from "framer-motion";
 import GetStarted from "@/components/GetStarted";
+import BackgroundVideo from "next-video/background-video";
 
 export default async function ourWork() {
   // const categories = await getCategory();
@@ -34,37 +35,18 @@ export default async function ourWork() {
   // }
   return (
     <div className="text-sm">
-      <div className="flex mb-24 items-center md:flex-row p-5 md:p-10 justify-between bg-blue-800 h-screen">
-        <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
+      <BackgroundVideo
+        src="https://res.cloudinary.com/dj2ybe6v0/video/upload/v1728896843/Blue_White_3D_Project_Plan_Business_Presentation_27_baw68l.mp4"
+        className="h-screen w-full max-w-screen-2xl bg-blue-800"
+      >
+        <div id="" className="basis-4/4 max-w-xl md:-ms-80 text-white">
           <h1 className="font-bold text-4xl mt-20 md:mt-0">Our Work</h1>
           <p className="text-2xl mt-3">
-            Each work as helped strengthing our experience and dilevery, thereby
+            Each work as helped strengthing our experience and delivery, thereby
             making us the best.
           </p>
-          <Link
-            href="/request"
-            type="button"
-            className="bg-white hover:bg-blue-300 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-          >
-            Hire Us
-            <svg
-              className="w-3.5 h-3.5 ml-2"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </Link>
         </div>
-      </div>
+      </BackgroundVideo>
       {/* <section className="hidden md:grid grid sm:grid-cols-1 md:grid-cols-10 w-5/6 text-xs">
         <a className="" onClick={handleFilter}>
           all

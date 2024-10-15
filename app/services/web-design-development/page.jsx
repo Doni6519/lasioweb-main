@@ -2,15 +2,27 @@ import Link from "next/link";
 import GetStarted from "@/components/GetStarted";
 // import Nav from "@/components/Nav";
 import Newsletter from "@/components/Newsletter";
+import BackgroundVideo from "next-video/background-video";
 
 const webDev = () => {
   return (
     <div className="text-sm">
-      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-blue-800 h-screen">
+      <div
+        style={{
+          backgroundPosition: "bottom center",
+          backgroundImage:
+            "url('https://res.cloudinary.com/dj2ybe6v0/image/upload/v1728913870/Black_white_digital_marketing_facebook_cover_2_ckkxgt.png",
+        }}
+        className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-green-800 h-screen bg-green-800"
+      >
         <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
-          <h1 className="font-bold text-4xl mt-20 md:mt-0">Web Design & Development</h1>
+          <h1 className="font-bold text-4xl mt-20 md:mt-0">
+            Web Design & Development
+          </h1>
           <p className="text-2xl mt-3">
-            Everyone can set up a website this days. We build strategic engaging websites that enforce credibility and communicate key messages and turning them into profits.
+            Everyone can set up a website this days. We build strategic engaging
+            websites that enforce credibility and communicate key messages and
+            turning them into profits.
           </p>
         </div>
       </div>
@@ -74,7 +86,11 @@ const webDev = () => {
         </div>
       </section>
       <GetStarted />
-      <Newsletter background="bg-blue-800" button="bg-blue-700" hover="hover:bg-blue-500" />
+      <Newsletter
+        background="bg-blue-800"
+        button="bg-blue-700"
+        hover="hover:bg-blue-500"
+      />
     </div>
   );
 };

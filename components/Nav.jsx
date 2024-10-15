@@ -45,13 +45,13 @@ const Nav = () => {
       textColor = "text-red-500";
       hoverColor = "md:hover:text-red-500";
       bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-red-400";
-      bgColor = "bg-red-500 hover:bg-red-700 shadow-red-500/50";
+      bgColor = "bg-red-600 hover:bg-red-800 ";
       break;
     case "/services/digital-marketing":
       textColor = "text-red-500";
       hoverColor = "md:hover:text-red-500";
       bgGradient = "bg-gradient-to-b from-stone-100 via-stone-100 to-red-400";
-      bgColor = "bg-red-500 hover:bg-red-700 shadow-red-500/50";
+      bgColor = "bg-red-700 hover:bg-red-900";
       break;
     default:
       textColor = "text-blue-500";

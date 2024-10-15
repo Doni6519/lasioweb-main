@@ -2,41 +2,25 @@ import Image from "next/image";
 import GetStarted from "../../components/GetStarted";
 import Link from "next/link";
 import Newsletter from "@/components/Newsletter";
+import BackgroundVideo from "next-video/background-video";
 
 const services = () => {
   return (
     <>
-      <div className="flex items-center md:flex-row p-5 md:p-10 justify-between bg-red-800 h-screen">
-        <div id="" className="basis-4/4 md:basis-2/4 text-white md:ms-20">
-          <h1 className="font-bold text-4xl mt-20 md:mt-0">Services</h1>
-          <p className="text-2xl mt-3">
-            We help connect businesses to their target customers and boost
-            conversions.
+      <BackgroundVideo
+        src="https://res.cloudinary.com/dj2ybe6v0/video/upload/v1728896277/Blue_White_3D_Project_Plan_Business_Presentation_26_m5vrte.mp4"
+        className="h-screen w-full max-w-screen-2xl bg-black"
+      >
+        <div className="max-w-xl md:-ms-80">
+          <h1 className="font-bold text-white text-4xl mt-20 md:mt-0">
+          Services
+          </h1>
+          <p className="text-2xl mt-3 text-white">
+          We help connect businesses to their target customers and boost
+          conversions.
           </p>
-          <Link
-            href="/request"
-            type="button"
-            className="bg-white hover:bg-red-300 hover:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-black font-bold mt-10 rounded-full text-sm px-8 py-4 text-center inline-flex items-center"
-          >
-            Hire us
-            <svg
-              className="w-3.5 h-3.5 ml-2 text-red-800"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 14 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9"
-              />
-            </svg>
-          </Link>
         </div>
-      </div>
+      </BackgroundVideo>
       <section className="w-full mb-10">
         <h1 className="line_in_middle mb-10 text-xl ">Services We Offer</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 gap-y-7">
