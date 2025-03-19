@@ -101,7 +101,7 @@ export default async function ourWork() {
         </button>
       </div> */}
       <div
-        className="grid mx-auto gap-4 grid-cols-1 mb-10 md:grid-cols-2 lg:grid-cols-3 w-5/6"
+        className="grid mx-auto gap-4 grid-cols-1 mb-10 md:grid-cols-2 lg:grid-cols-3 w-5/6 mt-10"
         id="to_filter"
       >
         {projects.map((project) => (

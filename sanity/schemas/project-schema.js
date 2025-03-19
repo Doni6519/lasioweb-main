@@ -19,21 +19,21 @@ const project = {
       type: "string",
     },
     {
-        name: "url",
-        title: "URL",
-        type: "string",
-      },
+      name: "url",
+      title: "URL",
+      type: "string",
+    },
     {
       title: "Category",
       name: "category",
       type: "string",
     },
     {
-        title: "Sub Category",
-        name: "subCategory",
-        type: "string",
-        // to: [{ type: "subCategory" }],
-      },
+      title: "Sub Category",
+      name: "subCategory",
+      type: "string",
+      // to: [{ type: "subCategory" }],
+    },
     {
       name: "slug",
       title: "Slug",
@@ -56,7 +56,7 @@ const project = {
           type: "string",
         },
       ],
-    }
+    },
   ],
 };
 

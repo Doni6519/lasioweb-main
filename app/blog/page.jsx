@@ -18,58 +18,44 @@ const blog = () => {
         </div>
       </BackgroundVideo>
       <section
-        className="flex flex-col md:flex-row justify-between items-center w-5/6 md:w-4/6 min-h-24"
+        className="flex flex-col gap- md:flex-row justify-between w-5/6 min-h-24"
         id="posts"
       >
-        <div className="order-last sm:order-first">
+        <div className="basis-2/3">
           <h1 className="text-3xl mb-5">All Posts</h1>
-          <div className="ms-">
-            <div class="max-w p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div class="max-w me-10 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
                 <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
                   Who is a UX Designer
                 </h5>
               </a>
-              <div className="grid grid-cols-3">
+              <div className="flex gap-5 my-5 text-sm">
                 <p>
                   <span className="font-bold">Published:</span> March 18, 2024
                 </p>
                 <p>
-                  <span className="font-bold">Category:</span> March 18, 2024
+                  <span className="font-bold">Category:</span> Design
                 </p>
                 <p>
-                  <span className="font-bold">Author:</span> March 18, 2024
+                  <span className="font-bold">Author:</span> Meshack Daniel
                 </p>
               </div>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
                 Go to this step by step guideline process on how to certify for
                 your weekly benefits:
               </p>
-              <a
-                href="#"
-                class="inline-flex font-medium items-center text-blue-600 hover:underline"
-              >
-                See our guideline
-                <svg
-                  class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 18 18"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778"
-                  />
-                </svg>
-              </a>
             </div>
-          </div>
         </div>
-        <div className="text-3xl hidden md:block">Browse Topics</div>
+        <div className="basis-1/3">
+          <h1 className="text-3xl hidden md:block">Browse Topics</h1>
+          <ul className="mt-2">
+            <li className="py-1">🤑 Money</li>
+            <li className="py-1">🛠 Tech</li>
+            <li className="py-1">🚀 Productivity</li>
+            <li className="py-1">🚀 Design</li>
+            <li className="py-1">🚀 Programming</li>
+          </ul>
+        </div>
       </section>
       <Newsletter
         background="bg-green-800"
